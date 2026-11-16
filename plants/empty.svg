@@ -1,0 +1,21 @@
+<svg class="plant" viewBox="0 0 240 296" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="money plant, empty" overflow="visible"><defs>
+    <linearGradient id="pemptypot" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0" stop-color="#D2703E"/><stop offset="0.45" stop-color="#C45C2A"/><stop offset="1" stop-color="#9E4520"/></linearGradient>
+    <linearGradient id="pemptyrim" x1="0" x2="1">
+      <stop offset="0" stop-color="#DC7C4A"/><stop offset="0.5" stop-color="#CC6533"/><stop offset="1" stop-color="#A84B22"/></linearGradient>
+    <linearGradient id="pemptystem" x1="0" x2="0" y1="1" y2="0">
+      <stop offset="0" stop-color="#4C5A38"/><stop offset="0.6" stop-color="#5E4458"/><stop offset="1" stop-color="#6E3D63"/></linearGradient>
+    <linearGradient id="pemptydstem" x1="0" x2="0" y1="1" y2="0">
+      <stop offset="0" stop-color="#6E5638"/><stop offset="1" stop-color="#8A6A45"/></linearGradient>
+    </defs><g transform="translate(120 287) scale(0.8) translate(-120 -287)">
+    <ellipse cx="120" cy="287" rx="66" ry="6" fill="#5C3D2E" opacity="0.16"/>
+    <path d="M62,196 L178,196 L164,282 Q163,286 158,286 L82,286 Q77,286 76,282 Z" fill="url(#pemptypot)"/>
+    <path d="M66,214 L174,214" stroke="#E08A5C" stroke-opacity="0.22" stroke-width="1"/>
+    <path d="M68,232 L172,232" stroke="#8E3E18" stroke-opacity="0.16" stroke-width="1"/>
+    <path d="M70,250 L170,250" stroke="#E08A5C" stroke-opacity="0.18" stroke-width="1"/>
+    <path d="M73,266 L167,266" stroke="#8E3E18" stroke-opacity="0.14" stroke-width="1"/>
+    <path d="M84,200 Q80,240 86,282" stroke="#F2B08A" stroke-opacity="0.35" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <rect x="56" y="184" width="128" height="16" rx="3.5" fill="url(#pemptyrim)"/>
+    <rect x="56" y="198" width="128" height="3" fill="#7E3615" opacity="0.28"/>
+    <ellipse cx="120" cy="186" rx="60" ry="5.2" fill="#3B2A21"/>
+    <ellipse cx="112" cy="185" rx="34" ry="2.4" fill="#4A3529" opacity="0.8"/></g></svg>
