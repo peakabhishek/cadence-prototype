@@ -57,7 +57,7 @@ img.plant,svg.plant{display:block;overflow:visible}
 .btn.outline.quiet,.btn.quiet-outline{color:var(--text-muted)}
 .btn.text{background:none;color:var(--leaf);height:44px;width:auto;padding:0 6px;box-shadow:none}
 .btn.quiet{background:none;color:var(--text-muted);height:44px;width:auto;padding:0 18px;font-weight:600;box-shadow:none}
-.btn:focus-visible{outline:3px solid rgba(27,94,59,.35);outline-offset:2px}
+.btn:focus-visible,.ltabs a:focus-visible,.ltabs button:focus-visible{outline:2px solid var(--leaf);outline-offset:2px}
 
 .field{height:56px;border-radius:12px;background:var(--surface);border:1.5px solid var(--line);display:flex;align-items:center;padding:0 14px;font-size:17px;gap:10px;position:relative}
 .field.ph{color:var(--text-muted)}
