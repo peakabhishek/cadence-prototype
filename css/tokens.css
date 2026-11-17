@@ -35,14 +35,14 @@
   --glow-wash: #F9F3EA;     /* top of the morning-light gradient */
 
   /* Colour — semantic */
-  --wither-ink: #74492B;    /* withered label text, “Left”, shortfall copy */
+  --wither-ink: #74492B;    /* withered label text, “Gave up”, shortfall copy */
   --wither-bg: #F3E6D6;     /* withered page + save-failed alert */
   --wither-leaf: #8B5E3C;   /* illustration + large outcome marks only, never small text */
   --shortfall: #B98A62;     /* dashed gap / unmet top border (not text) */
   --short-card: #FBF4EC;    /* unmet weekly goal card */
   --short-card-line: #E5CFB6;
   --short-badge-line: #D9BFA2;
-  --reason-chip: #E7D6C4;   /* “You left the tab.” / “You gave up.” */
+  --reason-chip: #E7D6C4;   /* “You gave up.” reason chip */
   --wither-chrome: #ECDDCB;
   --wither-light: #F6EBDD;
   --radio-idle: #B9A790;    /* unselected goal-card radio */

@@ -16,6 +16,8 @@
   const EN = "\u2013";
   const EM = "\u2014";
   const MD = "\u00b7";
+  const LQ = "\u201c";
+  const RQ = "\u201d";
 
   const ICONS = {
     today: '<path d="M7 14h10l-1.3 6.2a1 1 0 0 1-1 .8H9.3a1 1 0 0 1-1-.8z"/><path d="M12 14V9"/><path d="M12 10.5c0-2.6 1.8-4.5 4.5-4.5 0 2.6-1.9 4.5-4.5 4.5z"/><path d="M12 9c0-2-1.4-3.5-3.5-3.5 0 2 1.4 3.5 3.5 3.5z"/>',
@@ -295,11 +297,11 @@
     ];
     const sessions = [
       exampleSess("g1", 25, "2026-11-09", 8, 30, "finished"),
-      exampleSess("g2", 50, "2026-11-09", 10, 0, "withered", "left-tab", 22),
+      exampleSess("g2", 50, "2026-11-09", 10, 0, "withered", "gave-up", 22),
       exampleSess("g1", 25, "2026-11-10", 8, 0, "finished"),
       exampleSess("g2", 50, "2026-11-10", 9, 30, "finished"),
       exampleSess("g1", 25, "2026-11-12", 8, 40, "finished"),
-      exampleSess("g2", 50, "2026-11-12", 11, 18, "withered", "left-tab", 23),
+      exampleSess("g2", 50, "2026-11-12", 11, 18, "withered", "gave-up", 23),
       exampleSess("g2", 50, "2026-11-12", 14, 10, "finished"),
       exampleSess("g3", 25, "2026-11-12", 18, 5, "finished"),
       exampleSess("g3", 25, "2026-11-13", 8, 0, "finished"),
@@ -331,6 +333,19 @@
   function finishedMins(sess) {
     return isFinished(sess) ? (sess.plannedMinutes || sess.elapsedMinutes || 0) : 0;
   }
+  // Legacy (17 Nov 2026): sessions saved under the retired tab-away rule ("left-tab") render neutral as "ended early".
+  // Steve, 17 Nov 2026: their saved focused minutes, up to when they ended, count toward day and week totals;
+  // no hidden time is added back. They are not withered. In the current week they also count toward goal time boxes; past weeks stay frozen.
+  function isLegacyEarly(sess) {
+    return sess.status === "withered" && sess.reason === "left-tab";
+  }
+  function isWithered(sess) {
+    return sess.status === "withered" && !isLegacyEarly(sess);
+  }
+  function countedMins(sess) {
+    if (isLegacyEarly(sess)) return Math.max(0, Math.round(sess.elapsedMinutes || 0));
+    return finishedMins(sess);
+  }
 
   function weekStats() {
     const today = parseYMD(state.protoDate);
@@ -342,23 +357,24 @@
     });
     const goals = namedGoals();
     const finished = sessions.filter(isFinished);
-    const withered = sessions.filter(function (s) { return s.status === "withered"; });
-    const totalMins = finished.reduce(function (a, s) { return a + finishedMins(s); }, 0);
+    const withered = sessions.filter(isWithered);
+    const totalMins = sessions.reduce(function (a, s) { return a + countedMins(s); }, 0);
     const buckets = { morning: 0, afternoon: 0, evening: 0 };
-    finished.forEach(function (s) {
+    sessions.forEach(function (s) {
       const h = sessionDate(s).getHours();
-      if (h < 12) buckets.morning += finishedMins(s);
-      else if (h < 17) buckets.afternoon += finishedMins(s);
-      else buckets.evening += finishedMins(s);
+      if (h < 12) buckets.morning += countedMins(s);
+      else if (h < 17) buckets.afternoon += countedMins(s);
+      else buckets.evening += countedMins(s);
     });
     const byGoal = goals.map(function (g) {
       const gs = sessions.filter(function (s) { return s.goalId === g.id; });
       const fin = gs.filter(isFinished);
-      const wth = gs.filter(function (s) { return s.status === "withered"; });
-      const mins = fin.reduce(function (a, s) { return a + finishedMins(s); }, 0);
+      const wth = gs.filter(isWithered);
+      // Current week: legacy "ended early" minutes count toward the goal's box like other saved focused minutes (Steve, 17 Nov 2026).
+      const mins = gs.reduce(function (a, s) { return a + countedMins(s); }, 0);
       const todayFin = fin.filter(function (s) { return ymd(sessionDate(s)) === state.protoDate; });
       const todayW = wth.filter(function (s) { return ymd(sessionDate(s)) === state.protoDate; });
-      const todayMins = todayFin.reduce(function (a, s) { return a + finishedMins(s); }, 0);
+      const todayMins = gs.filter(function (s) { return ymd(sessionDate(s)) === state.protoDate; }).reduce(function (a, s) { return a + countedMins(s); }, 0);
       const boxed = g.boxMinutes != null && g.boxMinutes > 0;
       const weekEnded = today >= sun;
       let hit, kind, badgeText;
@@ -394,7 +410,7 @@
       const isAhead = d > today;
       const daySess = sessions.filter(function (s) { return ymd(sessionDate(s)) === key; });
       const dayFin = daySess.filter(isFinished);
-      const mins = dayFin.reduce(function (a, s) { return a + finishedMins(s); }, 0);
+      const mins = daySess.reduce(function (a, s) { return a + countedMins(s); }, 0);
       days.push({ date: d, key: key, isAhead: isAhead, sessions: daySess, mins: mins, isToday: key === state.protoDate });
     }
     return { mon: mon, sun: sun, today: today, sessions: sessions, finished: finished, withered: withered, totalMins: totalMins, buckets: buckets, byGoal: byGoal, hits: hits, goals: goals, days: days };
@@ -544,7 +560,7 @@
       ghtml += '<div class="enough">' + ic("check", 18) + " Three goals " + EM + " plenty for one day.</div>";
     }
     const rule = empty
-      ? '<div class="rulebox" style="margin-top:28px">' + ic("check", 18) + "<div>Sessions are saved on this laptop, in your OneDrive folder. A plant grows when you finish, and withers if you leave or give up " + EM + " except in the first 10 seconds.</div></div>"
+      ? '<div class="rulebox" style="margin-top:28px">' + ic("check", 18) + "<div>Sessions are saved on this laptop, in your OneDrive folder. A plant grows when you finish, and withers only if you press Give up. Cancel is free in the first 10 seconds.</div></div>"
       : '<div class="rulebox" style="margin-top:10px">' + ic("check", 18) + "<div><b>Time box:</b> hit when finished sessions reach it. <b>No time box:</b> hit when one session is finished. Withered sessions don" + AP + "t count.</div></div>";
     const sub = empty ? "Add a goal to begin " + EM + " something you want to sit with." : "What matters today?";
     const foot = honestFoot();
@@ -580,6 +596,12 @@
   }
 
   function sessionCard(sess) {
+    if (isLegacyEarly(sess)) {
+      const em = Math.round(sess.elapsedMinutes || 0);
+      const found0 = state.goals.find(function (x) { return x.id === sess.goalId; });
+      const g0 = sess.goalName || (found0 && found0.name) || "Goal";
+      return '<div class="pot legacy">' + plant("sprout") + '<div class="t tab">' + fmtTime(new Date(sess.startedAt)) + '</div><div class="g">' + esc(g0) + '</div><div class="d tab">' + (em < 1 ? "<1" : em) + " min " + MD + ' ended early</div><div class="o"><span class="echip">Ended early</span></div></div>';
+    }
     const st = sess.status === "withered" ? "withered" : "full";
     const t = fmtTime(new Date(sess.startedAt));
     const found = state.goals.find(function (x) { return x.id === sess.goalId; });
@@ -588,9 +610,10 @@
     if (sess.status === "withered") {
       const left = sess.elapsedMinutes || 0;
       const leftLabel = left < 1 ? "<1 min" : Math.round(left) + " min";
-      d = sess.plannedMinutes + " min " + MD + " left at " + leftLabel;
+      // Withering comes only from Give up (17 Nov 2026). Legacy "left-tab" records are handled above.
+      d = sess.plannedMinutes + " min " + MD + " gave up at " + leftLabel;
     }
-    const o = sess.status === "withered" ? "Left" : "Grew";
+    const o = sess.status === "withered" ? "Gave up" : "Grew";
     return '<div class="pot ' + (sess.status === "withered" ? "w" : "") + '">' + plant(st) + '<div class="t tab">' + t + '</div><div class="g">' + esc(g) + '</div><div class="d tab">' + d + '</div><div class="o"><i></i>' + o + "</div></div>";
   }
 
@@ -603,8 +626,8 @@
     const stats = weekStats();
     const todayS = todaySessions();
     const todayFin = todayS.filter(isFinished);
-    const todayW = todayS.filter(function (s) { return s.status === "withered"; });
-    const todayMins = todayFin.reduce(function (a, s) { return a + finishedMins(s); }, 0);
+    const todayW = todayS.filter(isWithered);
+    const todayMins = todayS.reduce(function (a, s) { return a + countedMins(s); }, 0);
     const cards = named.map(function (g) {
       const gs = stats.byGoal.find(function (x) { return x.goal.id === g.id; });
       let meta;
@@ -665,7 +688,7 @@
     if (inGrace) {
       ctl = '<div style="margin-top:30px;display:flex;align-items:center;gap:14px"><div class="lprog" style="width:200px;margin:0;height:5px"><i style="width:' + gracePct + '%;background:var(--text-muted);opacity:.6"></i></div><span id="grace-label" style="font-size:17px;font-weight:600;color:var(--text)" class="tab">' + graceLeft + 's to cancel freely</span></div><div class="btnrow" style="margin-top:20px"><button class="btn outline" style="height:56px;font-size:18px;padding:0 40px" data-act="cancel">Cancel</button></div><div class="note">' + ic("check", 17) + " No plant will wither</div>";
     } else {
-      ctl = '<div class="lprog"><i id="sess-bar" style="width:' + progressPct.toFixed(1) + '%"></i></div><div class="btnrow"><button class="btn outline" style="height:52px;font-size:17px;padding:0 30px;color:var(--text-muted)" data-act="give-up">Give up</button></div><div class="note" style="margin-top:6px">' + ic("tab", 17) + " Leaving this tab also ends the session.</div>";
+      ctl = '<div class="lprog"><i id="sess-bar" style="width:' + progressPct.toFixed(1) + '%"></i></div><div class="btnrow"><button class="btn outline" style="height:52px;font-size:17px;padding:0 30px;color:var(--text-muted)" data-act="give-up">Give up</button></div><div class="note" style="margin-top:6px">' + ic("tab", 17) + " You can switch tabs. Your session keeps counting.</div>";
     }
     const banner = notifBanner();
     const bannerWrap = banner ? '<div style="margin-bottom:22px">' + banner + "</div>" : "";
@@ -702,8 +725,9 @@
   }
 
   function viewWithered(info) {
-    const reason = info.reason === "gave-up" ? "You gave up." : "You left the tab.";
-    const icon = info.reason === "gave-up" ? ic("hand", 18) : ic("tab", 18);
+    // Only Give up withers a plant (17 Nov 2026); a hidden tab keeps the session counting.
+    const reason = "You gave up.";
+    const icon = ic("hand", 18);
     const started = new Date(info.startedAt);
     const ended = new Date(info.endedAt);
     const left = Math.round(info.elapsedMinutes || 0);
@@ -718,8 +742,8 @@
     const todayS = todaySessions();
     const stats = weekStats();
     const todayFin = todayS.filter(isFinished);
-    const todayW = todayS.filter(function (s) { return s.status === "withered"; });
-    const todayMins = todayFin.reduce(function (a, s) { return a + finishedMins(s); }, 0);
+    const todayW = todayS.filter(isWithered);
+    const todayMins = todayS.reduce(function (a, s) { return a + countedMins(s); }, 0);
     const empty = todayS.length === 0;
     const side = stats.byGoal.map(function (g) {
       if (g.boxed) {
@@ -744,7 +768,7 @@
       ? '<div class="empty-sill">' + plant("empty", 240) + '<div class="sill" style="position:relative;left:0;right:0;bottom:auto;top:auto;height:24px;width:100%"></div><p class="cap" style="font-size:15px;text-align:center;padding:20px 0 18px;position:relative;z-index:2">Today' + AP + "s sill is empty. Start a session when you" + AP + "re ready.</p></div>"
       : '<div class="sill" style="bottom:118px;left:0;right:0;top:auto;height:24px"></div><div class="pots4">' + todayS.map(sessionCard).join("") + "</div>";
     const timeBit = todayS.length ? " " + MD + " " + fmtTime(protoNow()) : "";
-    return '<div class="win">' + chrome("Today") + '<div class="light"></div>' + panes(560, 800) + '<div class="lap">' + tabs("grove", fmtDayLong(parseYMD(state.protoDate)) + timeBit) + '<div class="l7 ' + (empty ? "l7e" : "") + '"><div class="sillp"><div style="display:flex;justify-content:space-between;align-items:flex-start"><div><h1 class="title" style="font-size:40px">Today' + AP + 's grove</h1><div class="tally" style="margin-top:12px"><span class="big tab" style="font-size:60px">' + tallyNum + '</span><span class="lbl" style="font-size:20px">' + tallyLbl + '</span></div></div><button class="btn primary" style="width:auto;padding:0 26px;height:50px" data-act="nav" data-view="pick">Start a session</button></div>' + sill + '</div><div class="panel gside"><span class="label">Goals this week, as of today</span>' + side + '<div class="rulebox" style="margin-top:auto">' + ic("check", 18) + "<div><b>Time box:</b> hit only when the box is met. <b>No time box:</b> hit when one session is finished. Hours count only finished sessions.</div></div></div></div>" + footline() + "</div></div>";
+    return '<div class="win">' + chrome("Today") + '<div class="light"></div>' + panes(560, 800) + '<div class="lap">' + tabs("grove", fmtDayLong(parseYMD(state.protoDate)) + timeBit) + '<div class="l7 ' + (empty ? "l7e" : "") + '"><div class="sillp"><div style="display:flex;justify-content:space-between;align-items:flex-start"><div><h1 class="title" style="font-size:40px">Today' + AP + 's grove</h1><div class="tally" style="margin-top:12px"><span class="big tab" style="font-size:60px">' + tallyNum + '</span><span class="lbl" style="font-size:20px">' + tallyLbl + '</span></div></div><button class="btn primary" style="width:auto;padding:0 26px;height:50px" data-act="nav" data-view="pick">Start a session</button></div>' + sill + '</div><div class="panel gside"><span class="label">Goals this week, as of today</span>' + side + '<div class="rulebox" style="margin-top:auto">' + ic("check", 18) + "<div><b>Time box:</b> hit only when the box is met. <b>No time box:</b> hit when one session is finished. " + (stats.sessions.some(isLegacyEarly) ? "Hours count finished sessions and the saved minutes of older " + LQ + "ended early" + RQ + " ones." : "Hours count only finished sessions.") + "</div></div></div></div>" + footline() + "</div></div>";
   }
 
   function shortName(n) {
@@ -819,7 +843,7 @@
         }
         return '<div class="d7"><div class="st">' + plant("empty") + '</div><div class="dn">' + fmtDayShort(d.date) + '</div><div class="dd tab">' + fmtDateShort(d.date) + '</div><div class="dm z">' + EM + "</div></div>";
       }
-      const pl = d.sessions.map(function (s) { return plant(s.status === "withered" ? "withered" : "full"); }).join("");
+      const pl = d.sessions.map(function (s) { return plant(isLegacyEarly(s) ? "sprout" : s.status === "withered" ? "withered" : "full"); }).join("");
       const mm = d.mins > 0 ? fmtMins(d.mins) : "0m";
       const z = d.mins > 0 ? "" : "z";
       return '<div class="d7"><div class="st">' + pl + '</div><div class="dn">' + fmtDayShort(d.date) + '</div><div class="dd tab">' + fmtDateShort(d.date) + '</div><div class="dm tab ' + z + '">' + mm + "</div></div>";
@@ -927,10 +951,7 @@
     if (ses.phase === "grace") {
       if (now - ses.graceOrigin >= GRACE_MS) {
         ses.phase = "live";
-        if (document.hidden) {
-          endSession("withered", "left-tab");
-          return;
-        }
+        // A hidden tab keeps counting; it never withers or pauses the session.
         // remainingSec already accounts for the 10 real seconds of grace
         render();
         return;
@@ -1013,10 +1034,11 @@
   }
 
   function onVisibility() {
-    if (!document.hidden) return;
+    // Hidden tab, any length of time: the session keeps counting (Steve, 17 Nov 2026).
+    // Browsers throttle timers in hidden tabs, so catch the clock up from real elapsed time on return.
+    if (document.hidden) return;
     if (state.view !== "session" || !state.session) return;
-    if (state.session.phase === "grace") return;
-    endSession("withered", "left-tab");
+    onTick();
   }
 
   function onClick(e) {

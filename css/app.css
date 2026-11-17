@@ -285,3 +285,7 @@ img.plant,svg.plant{display:block;overflow:visible}
 .alert p{font-size:15px;color:var(--text-muted);margin-top:6px;line-height:1.45}
 
 .ic{flex:none}
+
+/* Legacy "ended early" session card (17 Nov 2026): neutral, no wither colour */
+.pot.legacy .o{color:var(--text-muted)}
+.echip{display:inline-flex;align-items:center;height:22px;padding:0 9px;border-radius:999px;background:var(--surface);color:var(--text-muted);box-shadow:inset 0 0 0 1px var(--line);font-size:13px;font-weight:600}
