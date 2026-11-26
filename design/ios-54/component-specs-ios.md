@@ -4,7 +4,7 @@
 
 Frames for every component: `frames/B/*.png` (390×844 @2x). Board: `boards/B-windowsill-native.png`.
 
-**Spec assumptions (Steve, 26 Nov; not decided by Design):** the phone shares the Mac’s goals (same IST day, same 6-goal limit). Adding and ticking goals works offline and syncs later. A goal can be edited on both devices. No notifications, widgets or Live Activities in v1. v1 is today’s goals plus focus sessions, for Abhishek only. Merge rule over 6 goals: pinned at [#54 comment 7196971740](https://github.com/peakabhishek/cadence/issues/54#issuecomment-7196971740).
+**Spec assumptions (Steve, 26 Nov; not decided by Design):** the phone shares the Mac’s goals (same IST day, same 6-goal limit). Adding goals and running focus sessions works offline and syncs later. There is no manual tick (Q6, 27 Nov 2026). A goal can be edited on both devices. No notifications, widgets or Live Activities in v1. v1 is today’s goals plus focus sessions, for Abhishek only. Merge rule over 6 goals: pinned at [#54 comment 7196971740](https://github.com/peakabhishek/cadence/issues/54#issuecomment-7196971740).
 
 ---
 
@@ -28,11 +28,14 @@ Frames for every component: `frames/B/*.png` (390×844 @2x). Board: `boards/B-wi
 - Primary button “Start focusing” sits above the tab bar: full width minus 32px, `--ios-button-h`, `--ios-r-button`, `--ios-tint` / `--ios-on-tint`.
 
 ## 3. Goal row
-- Min height `--ios-cell-min-h`. Left: tick (`--ios-tick`, 1.8px ring `--ios-label-2`; ticked = filled `--ios-tint` with `--ios-on-tint` check). Title `--ios-body`, one line, ellipsis. Right: detail `--ios-subhead` `--ios-label-2`: “30 / 45 min”, “Not yet” (no time box), or “Add time box” in `--ios-tint`.
+- Min height `--ios-cell-min-h`. Left: a status mark, not a control (`--ios-tick`, 1.8px ring `--ios-label-2`; Hit = filled `--ios-tint` with `--ios-on-tint` check). No hover, pressed or focus style on the mark, and no button chrome. Title `--ios-body`, one line, ellipsis. Right: detail `--ios-subhead` `--ios-label-2`: “30 / 45 min”, “Not yet” (no time box), or “Add time box” in `--ios-tint`.
+- **Hit (Q6, 27 Nov 2026):** the mark only shows derived `hit`. `hit` is finished focus minutes compared with the time box, the same rule the Mac uses. There is no manual tick. Tapping the mark does nothing. Tapping the row opens Focus. Nothing about the tick is stored, synced, or given a not-synced marker.
 - Separator inset `--ios-separator-inset`.
 - Swipe left: **Remove** (in `--ios-warn-ink` on `--ios-warn-bg`, not system red). Removing shows the shipped inline line “Removed <goal>. Undo”.
-- **Not synced yet** marker: a 14px cloud-slash icon after the title, `--ios-label-2`, when the row has changes queued offline.
-- Tick vs the “hit” rule (finished minutes reach the box): open question for the spec. Mocks show a ticked row = hit.
+- **Trailing sync marker:** never on the tick. A 15px icon in the row’s trailing slot, after the time detail, `--ios-label-2`, when that row’s sessions or edits have not been merged by the Mac.
+  - Queued on the phone (not yet uploaded), including offline, queued, sync failed and syncHeld: cloud-slash, `aria-label` “Changes not synced, saved on this phone”.
+  - Uploaded, but the Mac’s `lastAppliedSeq` does not cover it yet: laptop icon, matching frame 20’s “Waiting for your Mac” status line. The waiting marker clears by itself once the Mac applies the change, even when that happens the next day.
+- **VoiceOver:** the tick is not a button. It is read as part of the row label, for example “Read one paper, 30 of 30 minutes, hit” and, when not hit, “Write the weekly review, 30 of 45 minutes” (short forms: “Read, 30 of 30 minutes, hit” / “Read, 10 of 30 minutes”). Append the trailing marker phrase when one is showing. Details: `notes/tick-q6.md`.
 
 ## 4. Add-goal sheet
 - System-style sheet from the bottom, `--ios-r-sheet` top corners, grabber 36×5 `--ios-grabber`, background `--ios-sheet-bg`. Nav row: “Cancel” (left, `--ios-tint`), “New goal” (`--ios-headline`), “Add” (right, `--ios-headline` `--ios-tint`; greyed `--ios-label-2` until there is a title).
@@ -98,7 +101,7 @@ Both are installable (local Xcode build for v1; TestFlight blocked while the App
 |---|---|---|
 | Keyboard | WKWebView resizes or pans; use `@capacitor/keyboard` (`resize: native`) and pin the sheet to `keyboardWillShow` height. Hide the form accessory bar (`Keyboard.setAccessoryBarVisible(false)`). | Sheet follows the keyboard via `safeAreaInset`/keyboard layout guide; no accessory bar. |
 | Status bar and safe areas | `viewport-fit=cover` + `env(safe-area-inset-*)`; status bar style set by `@capacitor/status-bar` (dark text on light). | Safe areas are automatic; `preferredStatusBarStyle`. |
-| Haptics | Optional via `@capacitor/haptics` (light tap on tick and Move in, success on Grew). Design never relies on them. | `UIImpactFeedbackGenerator` / `.sensoryFeedback`. Same moments. |
+| Haptics | Optional via `@capacitor/haptics` (light tap on Move in, success on Grew and when a finished session turns a goal Hit). Design never relies on them. | `UIImpactFeedbackGenerator` / `.sensoryFeedback`. Same moments. |
 | System sheets | Sheets are drawn in HTML to match iOS (grabber, 12px corners, swipe down to close). Detents are emulated. | Real `.sheet` with `.presentationDetents`. |
 | Type | `-apple-system` gives SF Pro; Dynamic Type via `font: -apple-system-body` keywords or a native plugin reading the content size. | `UIFont.preferredFont` / `.font(.body)`; Fraunces registered as a custom font with `UIFontMetrics` scaling. |
 | Blur tab bar | `backdrop-filter` (supported in WKWebView). | `UITabBar` standard appearance. |

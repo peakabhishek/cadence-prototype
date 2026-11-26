@@ -142,8 +142,10 @@ h1.t{font-family:var(--disp);font-weight:600;font-size:32px;line-height:1.1;font
 .grp{background:var(--surface);border-radius:12px;overflow:hidden}
 .row{display:flex;align-items:center;gap:12px;min-height:50px;padding:0 16px;font-size:17px;position:relative}
 .row+.row:before{content:"";position:absolute;top:0;left:52px;right:0;border-top:.5px solid var(--line);border-top-width:1px}
-.tick{width:24px;height:24px;border-radius:50%;border:1.8px solid var(--muted);display:flex;align-items:center;justify-content:center;flex:none}
-.tick.on{background:var(--primary);border-color:var(--primary);color:var(--on-primary)}
+.tick{width:24px;height:24px;border-radius:50%;border:1.8px solid var(--muted);display:flex;align-items:center;justify-content:center;flex:none;pointer-events:none;background:transparent;box-shadow:none;-webkit-appearance:none;appearance:none}
+.tick.on{background:var(--primary);border-color:var(--primary);color:var(--on-primary);box-shadow:none}
+.tick:hover,.tick:active,.tick:focus{background:transparent;border-color:var(--muted);box-shadow:none}
+.tick.on:hover,.tick.on:active,.tick.on:focus{background:var(--primary);border-color:var(--primary);color:var(--on-primary);box-shadow:none}
 .row .tt{flex:1;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .row .bx{font-size:15px;color:var(--muted)}
 .row .bx.add{color:var(--primary)}
@@ -195,6 +197,7 @@ body.hasdemo .scr{padding-top:78px}
 .src{display:block;font-size:13px;color:var(--muted);margin-top:1px}
 .v2{font-size:12px;font-weight:700;color:var(--warn-ink);background:var(--warn-bg);padding:2px 7px;border-radius:999px;margin-left:6px}
 .us{color:var(--muted);margin-left:4px}
+.trail{flex:none;color:var(--muted);display:flex;align-items:center;margin-left:4px}
 .removed{font-size:15px;color:var(--muted);padding:10px 4px;display:flex;justify-content:space-between}
 .removed b{color:var(--primary);font-weight:700}
 .tzh{display:flex;gap:4px;align-items:center;font-size:12.5px;font-weight:600;color:var(--muted);margin-top:3px}
@@ -228,8 +231,18 @@ def rows(o, goals):
     for i, g in enumerate(goals, 1):
         title, box, detail, hit = g[:4]; fl = g[4] if len(g) > 4 else ""
         extra = ""
-        if "unsynced" in fl: extra += f'<span class="us">{ic("cloudoff", 15)}</span>'
-        if "twov" in fl: extra += '<span class="v2">2 versions</span>'
+        trail = ""
+        if k == "B":
+            # Q6: sync markers live in the trailing slot, never on the tick.
+            if "waiting" in fl:
+                trail = f'<span class="trail">{ic("laptop", 15)}</span>'
+            elif "unsynced" in fl:
+                trail = f'<span class="trail">{ic("cloudoff", 15)}</span>'
+            if "twov" in fl:
+                extra += '<span class="v2">2 versions</span>'
+        else:
+            if "unsynced" in fl: extra += f'<span class="us">{ic("cloudoff", 15)}</span>'
+            if "twov" in fl: extra += '<span class="v2">2 versions</span>'
         det = detail if box or detail == "Not yet" else ""
         bxcls = "bx"
         if k == "A":
@@ -237,7 +250,7 @@ def rows(o, goals):
                   f'<span class="tt">{title}{extra}</span><span class="{bxcls}">{det}</span></div>')
         elif k == "B":
             h += (f'<div class="row"><span class="tick{" on" if hit else ""}">{ic("check",14,2.6) if hit else ""}</span>'
-                  f'<span class="tt">{title}{extra}</span><span class="{bxcls}">{det}</span></div>')
+                  f'<span class="tt">{title}{extra}</span><span class="{bxcls}">{det}</span>{trail}</div>')
         else:
             h += (f'<div class="g{" new" if "new" in fl else ""}">{ring(o, frac(detail), hit)}'
                   f'<span class="tt">{title}{extra}</span><span class="{bxcls}">{det}</span></div>')
@@ -547,10 +560,14 @@ def s_queued(o):
     return page(o, today_view(o, g, status="queued", plant=None))
 
 def s_waiting(o):
-    return page(o, today_view(o, GOALS, status="waiting", plant=None))
+    g = [GOALS[0], (GOALS[1][0], GOALS[1][1], GOALS[1][2], True, "waiting"), GOALS[2], GOALS[3]]
+    return page(o, today_view(o, g, status="waiting", plant=None))
 
 def s_macupdate(o):
-    g = [GOALS[0], (GOALS[1][0], GOALS[1][1], GOALS[1][2], True, "unsynced"), GOALS[2], GOALS[3], ("Call the bank", "", "Not yet", False, "unsynced")]
+    # Hit row shows the waiting laptop: the finished session was uploaded, but the
+    # older Mac schema has not applied it (lastAppliedSeq does not cover it yet).
+    # The new unsynced goal still uses the held / not-synced icon.
+    g = [GOALS[0], (GOALS[1][0], GOALS[1][1], GOALS[1][2], True, "waiting"), GOALS[2], GOALS[3], ("Call the bank", "", "Not yet", False, "unsynced")]
     return page(o, today_view(o, g, status="macupdate", plant=None))
 
 def s_clock(o):

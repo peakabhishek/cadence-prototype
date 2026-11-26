@@ -6,7 +6,7 @@ Open in Safari on the iPhone, then Share > Add to Home Screen to run it full scr
 Every screen shows "Demo data, not synced". Nothing is saved anywhere except this browser (localStorage).
 
 ## Try it
-- **Today**: tick a goal, "+" or "Add goal" opens the sheet (type, pick a time box, Add). Swipe a goal left to Remove, Undo appears.
+- **Today**: a filled tick means Hit, from finished focus minutes against the time box. Tapping the tick does nothing; tapping the goal opens Focus. "+" or "Add goal" opens the sheet (type, pick a time box, Add). Swipe a goal left to Remove, Undo appears.
   At 6 goals the Add goal row is dimmed and the sheet shows "Today already has 6 goals. Remove one to add this."
 - **Focus** tab: pick a goal and a length (25, 50, or 1 min for demo), Start focusing. The countdown is computed from the start time, so it stays right after you lock the phone or switch apps. Let it finish for "Grew." or tap Give up for the withered plant.
 - **Tap the sync line** under the title for the Sync sheet (Sync now).

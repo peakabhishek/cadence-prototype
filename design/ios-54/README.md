@@ -34,7 +34,7 @@ The lock-screen and Live Activity concept was dropped, because notifications and
 ## Spec assumptions (Steve, 26 Nov; Design didn’t decide these)
 
 - The phone shares the Mac’s goals: same IST day, same 6-goal limit.
-- Offline is in scope. Adding and ticking goals works offline and syncs later.
+- Offline is in scope. Adding goals and running focus sessions works offline and syncs later. There is no manual tick (Q6, 27 Nov 2026): the tick only shows derived `hit` from finished minutes against the time box.
 - A goal can be edited on both devices, and the conflict is resolved with no data loss.
 - No notifications, widgets or Live Activities in v1.
 - v1 is today’s goals plus focus sessions, for Abhishek only. The phone shows today only, with no past-day screens.
@@ -46,7 +46,7 @@ The lock-screen and Live Activity concept was dropped, because notifications and
 1. **Build path:** Capacitor wrapper or native Swift. B works for both; see the differences in component-specs-ios.md §11.
 2. **Sync:** how the phone reaches the OneDrive file (Microsoft Graph directly, or through the Mac). Also: whether “Waiting for your Mac” and “Mac needs an update” (schema version) are real states, how clock skew is corrected, and whether a conflict keeps whole versions (as mocked) or merges field by field.
 3. **Offline:** what is cached on the phone, and what the first open with nothing cached shows (frame 08). Also: limits on queued edits, and how queued edits survive a reinstall when the free install expires after 7 days (Steve’s acceptance check).
-4. **Ticking a goal:** what a tick means next to the shipped “hit” rule, where finished minutes have to reach the time box.
+4. **Ticking a goal:** decided (Q6, 27 Nov 2026). v1 has no manual tick. The tick only shows derived `hit` (finished minutes against the time box). Tapping it does nothing; tapping the goal opens Focus. See `notes/tick-q6.md`.
 5. **Focus on iPhone:** what happens when the phone locks or the app goes to the background, given the Mac’s 10-minute sleep rule. Also: whether a session can run on both devices at once.
 6. **Notifications, widgets, Live Activities:** out of v1 (assumption). Is it acceptable for a session to end with no alert?
 7. **Apple Developer account:** cost is Abhishek’s call and the account is on hold. Until then: local Xcode installs only, and no TestFlight.

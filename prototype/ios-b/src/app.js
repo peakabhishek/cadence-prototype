@@ -22,12 +22,20 @@ function ic(n, s, sw) { s = s || 18; return '<svg class="ic" width="' + s + '" h
 function plant(stage, cls) { return '<img src="' + PLANTS[stage] + '" alt="money plant, ' + stage + '"' + (cls ? ' class="' + cls + '"' : '') + '>'; }
 
 /* ---------- state ---------- */
-var LS = 'cadence-ios-b-demo-v1';
+var LS = 'cadence-ios-b-demo-v2';
 var DAY = 'Thursday 26 Nov';
-function G(title, box, mins, extra) { return Object.assign({ id: 0, title: title, box: box, mins: mins, done: false, unsynced: false }, extra || {}); }
+function G(title, box, mins, extra) { return Object.assign({ id: 0, title: title, box: box, mins: mins, unsynced: false, waiting: false }, extra || {}); }
+function isHit(g) { return !!(g.box && g.mins >= g.box); }
+function rowLabel(g) {
+  var core = g.box ? (g.title + ', ' + g.mins + ' of ' + g.box + ' minutes' + (isHit(g) ? ', hit' : '')) : (g.title + ', Not yet');
+  if (g.waiting) core += ', Waiting for your Mac';
+  else if (g.unsynced) core += ', Changes not synced, saved on this phone';
+  if (g.twov) core += ', 2 versions';
+  return core;
+}
 function fresh() {
   var s = { v: 1, nextId: 20, tab: 'today', plants: 2, mins: 70, sync: 'ok', seq: 0, coachOff: false, parked: [], session: null, end: null, goals: [
-    G('Write the weekly review', 45, 30, { id: 1 }), G('Read one paper', 30, 30, { id: 2, done: true }),
+    G('Write the weekly review', 45, 30, { id: 1 }), G('Read one paper', 30, 30, { id: 2 }),
     G('Gym', null, 0, { id: 3 }), G('Plan Friday' + AP + 's demo', 25, 0, { id: 4 })] };
   return s;
 }
@@ -45,9 +53,16 @@ var MAC_V = { title: 'Read two papers', box: 45 };
 function viewGoals() {
   var sc = T.scn, g = list().map(function (x) { return Object.assign({}, x); });
   if (T.alt) return g;
-  if (['offline', 'queued', 'macupdate', 'syncheld', 'failed'].indexOf(sc) >= 0) {
+  if (['offline', 'queued', 'syncheld', 'failed'].indexOf(sc) >= 0) {
     if (g[1]) g[1].unsynced = true;
-    if (['offline', 'queued', 'macupdate', 'syncheld'].indexOf(sc) >= 0 && g.length < 6 && !g.some(function (x) { return x.title === 'Call the bank'; })) g.push(G('Call the bank', null, 0, { id: -1, unsynced: true }));
+    if (['offline', 'queued', 'syncheld'].indexOf(sc) >= 0 && g.length < 6 && !g.some(function (x) { return x.title === 'Call the bank'; })) g.push(G('Call the bank', null, 0, { id: -1, unsynced: true }));
+  }
+  if (sc === 'waiting') {
+    if (g[1]) { g[1].waiting = true; g[1].unsynced = false; }
+  }
+  if (sc === 'macupdate') {
+    if (g[1]) { g[1].waiting = true; g[1].unsynced = false; }
+    if (g.length < 6 && !g.some(function (x) { return x.title === 'Call the bank'; })) g.push(G('Call the bank', null, 0, { id: -1, unsynced: true }));
   }
   if (sc === 'conflict' && g[1] && !T.conflict) { g[1].twov = true; }
   if (T.conflict === 'later' && g[1]) g[1].twov = true;
@@ -113,12 +128,16 @@ function banners() {
 function plantStage(n) { return n <= 0 ? 'empty' : n === 1 ? 'early' : n < 4 ? 'mid' : 'full'; }
 function fmtMins(m) { var h = Math.floor(m / 60), r = m % 60; return h ? h + 'h ' + (r ? r + 'm' : '').trim() : r + 'm'; }
 function goalRow(g) {
-  var det = g.box ? (g.mins + ' / ' + g.box + ' min') : (g.done ? 'Done' : 'Not yet');
-  var chips = (g.unsynced ? '<span class="us" aria-label="Not synced yet">' + ic('cloudoff', 15) + '</span>' : '') + (g.twov ? '<span class="v2">2 versions</span>' : '');
-  var act = g.twov ? ' data-act="conflict-open"' : '';
+  var hit = isHit(g);
+  var det = g.box ? (g.mins + ' / ' + g.box + ' min') : 'Not yet';
+  var chips = g.twov ? '<span class="v2" aria-hidden="true">2 versions</span>' : '';
+  var trail = '';
+  if (g.waiting) trail = '<span class="trail" aria-hidden="true">' + ic('laptop', 15) + '</span>';
+  else if (g.unsynced) trail = '<span class="trail" aria-hidden="true">' + ic('cloudoff', 15) + '</span>';
+  var act = g.twov ? 'conflict-open' : 'open-focus';
   return '<div class="swipe" data-id="' + g.id + '"><button class="rm" data-act="remove" data-id="' + g.id + '" aria-label="Remove ' + esc(g.title) + '">Remove</button>' +
-    '<div class="row goal"' + act + ' data-id="' + g.id + '"><button class="tickbtn" role="checkbox" aria-checked="' + !!g.done + '" aria-label="Mark ' + esc(g.title) + ' done" data-act="tick" data-id="' + g.id + '"><span class="tick' + (g.done ? ' on' : '') + '">' + (g.done ? ic('check', 14, 2.6) : '') + '</span></button>' +
-    '<span class="tt">' + esc(g.title) + chips + '</span><span class="bx">' + det + '</span></div></div>';
+    '<button class="row goal" data-act="' + act + '" data-id="' + g.id + '" aria-label="' + esc(rowLabel(g)) + '"><span class="tick' + (hit ? ' on' : '') + '" aria-hidden="true">' + (hit ? ic('check', 14, 2.6) : '') + '</span>' +
+    '<span class="tt" aria-hidden="true">' + esc(g.title) + chips + '</span><span class="bx" aria-hidden="true">' + det + '</span>' + trail + '</button></div>';
 }
 function parkedBlock(day) {
   if (!S.parked.length || T.alt) return '';
@@ -162,9 +181,9 @@ function viewToday() {
 function viewFocus() {
   if (S.session) return viewSession();
   var gs = viewGoals();
-  if (T.pick == null || !gs.some(function (g) { return g.id === T.pick; })) { var f = gs.filter(function (g) { return !g.done; })[0] || gs[0]; T.pick = f ? f.id : null; }
+  if (T.pick == null || !gs.some(function (g) { return g.id === T.pick; })) { var f = gs.filter(function (g) { return !isHit(g); })[0] || gs[0]; T.pick = f ? f.id : null; }
   var rows = gs.map(function (g) {
-    var on = g.id === T.pick, det = g.box ? (g.mins + ' / ' + g.box + ' min') : (g.done ? 'Done' : 'Not yet');
+    var on = g.id === T.pick, det = g.box ? (g.mins + ' / ' + g.box + ' min') : 'Not yet';
     return '<button class="row" data-act="pick" data-id="' + g.id + '" role="radio" aria-checked="' + on + '"><span class="tick' + (on ? ' on' : '') + '">' + (on ? ic('check', 14, 2.6) : '') + '</span><span class="tt">' + esc(g.title) + '</span><span class="bx">' + det + '</span></button>';
   }).join('');
   var durs = [[25, '25 min'], [50, '50 min'], [1, '1 min (demo)']].map(function (d) { return '<button class="chip' + (T.dur === d[0] ? ' on' : '') + '" data-act="dur" data-d="' + d[0] + '" role="radio" aria-checked="' + (T.dur === d[0]) + '">' + d[1] + '</button>'; }).join('');
@@ -314,13 +333,13 @@ function startSync() {
   setTimeout(function () {
     T.syncing = false; var sc = T.scn;
     if (S.seq === 1) { parkMove(); T.auto = true; }
-    if (sc === 'queued' || sc === 'waiting' || sc === 'failed' || sc === 'syncing' || !sc) { T.scn = null; S.goals.forEach(function (g) { g.unsynced = false; }); S.sync = 'ok'; }
+    if (sc === 'queued' || sc === 'waiting' || sc === 'failed' || sc === 'syncing' || !sc) { T.scn = null; S.goals.forEach(function (g) { g.unsynced = false; g.waiting = false; }); S.sync = 'ok'; }
     render();
   }, 1300);
 }
 function parkMove() {
   var late = S.goals.filter(function (g) { return g.title === 'Call the bank'; })[0];
-  S.goals = S.goals.filter(function (g) { return g !== late; }); S.goals.forEach(function (g) { g.unsynced = false; });
+  S.goals = S.goals.filter(function (g) { return g !== late; }); S.goals.forEach(function (g) { g.unsynced = false; g.waiting = false; });
   var mac = G('Morning pages', 15, 0, { id: S.nextId++ });
   var at = S.goals.findIndex(function (g) { return g.title === 'Deep work on the stack'; }); if (at < 0) at = S.goals.length;
   S.goals.splice(at, 0, mac);
@@ -331,7 +350,7 @@ function endSession(kind) {
   var now = Date.now(), el = Math.min(now - s.startedAt, s.dur * 60000), kept = Math.floor(el / 60000);
   var g = S.goals.filter(function (x) { return x.id === s.goalId; })[0];
   if (kind === 'grew') {
-    if (g) { g.mins += s.dur; if (g.box && g.mins >= g.box) g.done = true; }
+    if (g) { g.mins += s.dur; if (offlineNow()) g.unsynced = true; }
     S.plants += 1; S.mins += s.dur;
   }
   S.end = { kind: kind, title: s.title, dur: s.dur, kept: kept, started: clock12(s.startedAt), ended: clock12(kind === 'grew' ? s.startedAt + s.dur * 60000 : now) };
@@ -348,7 +367,7 @@ function tickSession() {
 }
 function scn(k) {
   T.sheet = null; T.removed = null; T.movedIn = false; T.conflict = null; T.alt = null;
-  if (k === 'normal') { T.scn = null; S.goals.forEach(function (g) { g.unsynced = false; }); if (S.seq !== 1) S.sync = 'ok'; }
+  if (k === 'normal') { T.scn = null; S.goals.forEach(function (g) { g.unsynced = false; g.waiting = false; }); if (S.seq !== 1) S.sync = 'ok'; }
   else if (k === 'parked') { startParked(); T.scn = null; S.tab = 'today'; }
   else if (k === 'six') { sixGoals(); T.scn = null; S.tab = 'today'; }
   else if (k === 'empty') { T.alt = { goals: [] }; T.scn = 'empty'; S.tab = 'today'; }
@@ -359,13 +378,13 @@ function scn(k) {
   rerenderAll();
 }
 function startParked() {
-  S.goals = [G('Write the weekly review', 45, 30, { id: 1 }), G('Read one paper', 30, 30, { id: 2, done: true }), G('Gym', null, 0, { id: 3 }), G('Plan Friday' + AP + 's demo', 25, 0, { id: 4 }),
+  S.goals = [G('Write the weekly review', 45, 30, { id: 1 }), G('Read one paper', 30, 30, { id: 2 }), G('Gym', null, 0, { id: 3 }), G('Plan Friday' + AP + 's demo', 25, 0, { id: 4 }),
     G('Deep work on the stack', 60, 20, { id: 5 }), G('Call the bank', null, 0, { id: 6, unsynced: true })];
   S.goals[1].unsynced = true;
   S.parked = []; S.seq = 1; S.coachOff = false; S.sync = 'queued'; S.nextId = 20;
 }
 function sixGoals() {
-  var base = fresh().goals; S.goals = base.concat([G('Morning pages', 15, 15, { id: 5, done: true }), G('Deep work on the stack', 60, 20, { id: 6 })]); S.parked = []; S.seq = 0;
+  var base = fresh().goals; S.goals = base.concat([G('Morning pages', 15, 15, { id: 5 }), G('Deep work on the stack', 60, 20, { id: 6 })]); S.parked = []; S.seq = 0;
 }
 function reset() { S = fresh(); T.scn = null; T.sheet = null; T.alt = null; T.removed = null; T.movedIn = false; T.conflict = null; T.pick = null; T.dur = 50; try { localStorage.removeItem(LS); } catch (e) {} rerenderAll(); }
 
@@ -379,7 +398,7 @@ document.addEventListener('click', function (e) {
     case 'sheet-close': closeSheet(); break;
     case 'add-commit': commitAdd(); break;
     case 'box': box = Number(el.getAttribute('data-b')); [].forEach.call(document.querySelectorAll('.chips .chip'), function (c) { var on = c === el; c.classList.toggle('on', on); c.setAttribute('aria-checked', on); }); $('#tbval').textContent = box ? box + ' min' : 'No time box'; break;
-    case 'tick': { var g = findGoal(id); if (g) { g.done = !g.done; render(); } break; }
+    case 'open-focus': { T.pick = id; S.tab = 'focus'; T.sheet = null; render(); break; }
     case 'remove': { var arr = list(), i = arr.findIndex(function (x) { return x.id === id; }); if (i >= 0) { T.removed = { g: arr[i], i: i }; arr.splice(i, 1); T.movedIn = false; if (S.parked.length) T.auto = true; render(); } break; }
     case 'undo': if (T.removed) { list().splice(T.removed.i, 0, T.removed.g); T.removed = null; render(); } break;
     case 'movein': { if (list().length >= 6) return; var p = S.parked.filter(function (x) { return x.id === id; })[0]; if (p) { list().push(G(p.title, null, 0, { id: S.nextId++ })); S.parked = S.parked.filter(function (x) { return x !== p; }); S.seq = Math.max(S.seq, 4); T.movedIn = true; T.removed = null; T.auto = true; render(); } break; }
@@ -419,7 +438,7 @@ document.addEventListener('keydown', function (e) {
 /* swipe left to remove */
 var swipeMoved = false, sw = null;
 document.addEventListener('pointerdown', function (e) {
-  var r = e.target.closest('.swipe .row'); if (!r || e.target.closest('.tickbtn')) return;
+  var r = e.target.closest('.swipe .row'); if (!r) return;
   sw = { r: r, x: e.clientX, y: e.clientY, base: r.classList.contains('open') ? -96 : 0, dx: 0, lock: null };
 });
 document.addEventListener('pointermove', function (e) {

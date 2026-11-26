@@ -72,12 +72,15 @@ html.sim .sim-only{display:block}
 .swipe .rm{position:absolute;right:0;top:0;bottom:0;width:96px;background:var(--ios-warn-bg);color:var(--ios-warn-ink);font-weight:600;font-size:{{15}};display:flex;align-items:center;justify-content:center}
 .swipe .row{touch-action:pan-y;transition:transform .22s var(--ios-sheet-ease)}
 .swipe .row.drag{transition:none}
-.tickbtn{width:44px;height:44px;margin:0 -8px 0 -10px;display:grid;place-items:center;flex:none}
-.tick{width:var(--ios-tick);height:var(--ios-tick);border-radius:50%;border:1.8px solid var(--ios-label-2);display:flex;align-items:center;justify-content:center}
-.tick.on{background:var(--ios-tint);border-color:var(--ios-tint);color:var(--ios-on-tint)}
+.tick{width:var(--ios-tick);height:var(--ios-tick);border-radius:50%;border:1.8px solid var(--ios-label-2);display:flex;align-items:center;justify-content:center;flex:none;pointer-events:none;background:transparent;box-shadow:none;-webkit-appearance:none;appearance:none}
+.tick.on{background:var(--ios-tint);border-color:var(--ios-tint);color:var(--ios-on-tint);box-shadow:none}
+.tick:hover,.tick:active,.tick:focus{background:transparent;border-color:var(--ios-label-2);box-shadow:none}
+.tick.on:hover,.tick.on:active,.tick.on:focus{background:var(--ios-tint);border-color:var(--ios-tint);color:var(--ios-on-tint);box-shadow:none}
+.row.goal{width:100%}
 .row .tt{flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 .row .bx{font-size:{{15}};color:var(--ios-label-2);white-space:nowrap}
 .us{color:var(--ios-label-2);margin-left:6px}
+.trail{flex:none;color:var(--ios-label-2);display:flex;align-items:center;margin-left:4px}
 .v2{font-size:{{12}};font-weight:700;color:var(--ios-warn-ink);background:var(--ios-warn-bg);padding:2px 7px;border-radius:var(--ios-r-chip);margin-left:6px}
 .row.addrow{color:var(--ios-tint);min-height:var(--ios-cell-min-h)}
 .row.addrow .pl{width:24px;display:flex;justify-content:center}
