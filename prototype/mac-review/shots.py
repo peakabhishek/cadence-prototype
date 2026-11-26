@@ -6,7 +6,8 @@ import os; os.makedirs(OUT, exist_ok=True)
 STATES = [("01-today-note-review", "today"), ("02-sheet-one-entry", "one"), ("03-sheet-many-scrolling", "many"),
           ("04-undo-keep-mac", "undo-keep"), ("05-undo-use-phone", "undo-use"), ("06-last-resolved-note-gone", "resolved"),
           ("07-loading", "loading"), ("08-error-still-held", "error"), ("09-day-boundary-midnight-ist", "midnight"),
-          ("10-closed-without-action", "closed")]
+          ("10-closed-without-action", "closed"),
+          ("11-today-applied-note-once", "upgrade"), ("12-sheet-empty", "empty"), ("13-undo-keep-for-all", "undo-all")]
 res = {}
 with sync_playwright() as p:
     b = p.chromium.launch(executable_path="/usr/bin/google-chrome", args=["--no-sandbox"])
@@ -19,7 +20,7 @@ with sync_playwright() as p:
     for name, st in STATES:
         pg.goto("http://127.0.0.1:8799/prototype/mac-review/?state=%s&frame=1" % st)
         pg.wait_for_load_state("networkidle"); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(300)
-        if st == "many": pg.evaluate("document.querySelector('.list').scrollTop=150"); pg.wait_for_timeout(100)
+        if st == "many": pg.evaluate("document.querySelector('.list').scrollTop=0"); pg.wait_for_timeout(100)
         info = pg.evaluate("""()=>({text:document.body.innerText, note:(document.querySelector('.note .txt')||{}).textContent||null,
           sheet:!!document.querySelector('.sheet'), rows:document.querySelectorAll('.row[data-id]').length,
           listScroll: (()=>{const l=document.querySelector('.list');return l?[l.scrollTop,l.scrollHeight,l.clientHeight]:null})(),

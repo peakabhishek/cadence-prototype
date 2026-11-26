@@ -1,78 +1,103 @@
 # Mac “Review held changes” sheet (cadence#58)
 
-Iris (Design), 27 Nov 2026. Frames: `design/ios-54/frames/mac/review-sheet/` (1440×900 CSS px, rendered @2x = 2880×1800). Clickable: [`prototype/mac-review/`](https://peakabhishek.github.io/cadence-prototype/prototype/mac-review/). The frames are screenshots of that prototype (`prototype/mac-review/shots.py`), so the frames and the prototype can’t drift apart. All data is synthetic.
+Iris (Design), 27 Nov 2026, updated for the #58 scope in Steve’s comment 7204074363, Quinn’s plan 7204084211 and the spec V3 “Held end state”. Frames: `design/ios-54/frames/mac/review-sheet/` (1440×900 CSS px, rendered @2x = 2880×1800). Clickable: [`prototype/mac-review/`](https://peakabhishek.github.io/cadence-prototype/prototype/mac-review/). The frames are screenshots of that prototype (`prototype/mac-review/shots.py`), so the frames and the prototype can’t drift apart. All data is synthetic. Option B tokens and style are unchanged.
 
-**Behaviour source.** Steve accepted Iris’s proposal (Abhishek can still overrule it). Steve and Tony then agreed two more rules: “Use phone’s version” overwrites only the fields that the held entry changed, and the kept-Mac log holds only the entry id, device, date and reason. **The storage and sync assumptions below are Steve’s (product) and Linus’s (build) to confirm. This file only draws them.**
+**Credits.** Scope: Steve. Snapshot approach (fields untouched since the hold apply from the phone, only Mac-edited fields go to Review): Linus. “Can’t tell which is newer” wording for fields with no stamp: Tony. **Storage and sync assumptions below are Steve’s (product) and Linus’s (build) to confirm. This file only draws them.**
+
+## What changed in this update
+1. **Session rows** read “Add 30-min session from your phone (18 Nov)” with the button “Add this session”. The Mac’s day total sits beside it as muted context (“Mac’s total for 18 Nov: 20 min”). The row never says “set focus to X”: adding a session replaces no total.
+2. **Goal-edit rows use set wording**: “Name: Deep work (Mac has Focus)”, “Time box: 60 min (Mac has 45 min)”.
+3. **Two reasons for a field the Mac also has.** With a snapshot (the Mac that held it had #58): “You changed the name on this Mac after this was held”. With no snapshot or no stamp (the holding Mac ran #55 only): “Can’t tell which is newer. Mac has Focus”. The second never claims the Mac edit came later.
+4. **Frame 03 is the main frame**: rows grouped by goal, with per-goal “Keep Mac’s version” and “Use phone’s version” (“Add this session” for a goal whose only held change is a session). “Keep Mac’s version for all” is the only bulk action.
+5. **Today note is routine housekeeping**: same leaf-wash note, no error colour, “3 phone changes to review” + “Review”.
+6. **New frame 11**: the once-only note after the upgrade, “8 phone changes applied, 3 to review”.
+7. New frames 12 (empty) and 13 (Undo after “Keep Mac’s version for all”). Notes below cover save timing, failure, Esc, no confirm dialog and the day boundary.
 
 ## Frames
 | # | File | State |
 |---|---|---|
-| 1 | `01-today-note-review.png` | Today with the syncHeld note (today’s copy) and the “Review” text-link button. The count is 3. |
-| 2 | `02-sheet-one-entry.png` | The sheet with one too-old entry. |
-| 3 | `03-sheet-many-scrolling.png` | 7 entries, scrolled 150 px into the list: too old, lost the compare, unreadable and newer schema mixed. The footer stays fixed. |
-| 4 | `04-undo-keep-mac.png` | After “Keep Mac’s version”: the row is gone, the count is 2, and the Undo toast shows. |
-| 5 | `05-undo-use-phone.png` | After “Use phone’s version”: the same layout with the Use toast. |
-| 6 | `06-last-resolved-note-gone.png` | The last entry is resolved: the sheet has closed, the note is gone, and the Undo toast stays on Today. |
-| 7 | `07-loading.png` | The sheet while the held list is being read: skeleton rows and “Reading held changes…”, no choice buttons. |
-| 8 | `08-error-still-held.png` | The choice couldn’t be saved. The row is back in its place, still held, with retry copy. |
-| 9 | `09-day-boundary-midnight-ist.png` | The sheet left open across midnight IST: Today behind it moved to Sat 28 Nov, and the rows and dates are unchanged. Has an annotation. |
+| 1 | `01-today-note-review.png` | Today with the housekeeping note “3 phone changes to review” and the “Review” text link. |
+| 2 | `02-sheet-one-entry.png` | The sheet with one held change (goal Focus, snapshot reason). |
+| 3 | `03-sheet-many-scrolling.png` | **Main frame.** 9 held changes grouped by goal (session, snapshot and no-stamp reasons, a goal with 2 changes, too-old, unreadable and newer-schema group last). The list scrolls, the footer stays fixed. |
+| 4 | `04-undo-keep-mac.png` | After “Keep Mac’s version” on Focus: the group is gone, the count is 2, the Undo toast shows. |
+| 5 | `05-undo-use-phone.png` | After “Add this session” on Read one paper: the same layout with the session toast. |
+| 6 | `06-last-resolved-note-gone.png` | The last group is resolved with “Use phone’s version”: the sheet has closed, the note is gone, and the Undo toast stays on Today. |
+| 7 | `07-loading.png` | The sheet while the held list is being read: skeleton groups and “Reading held changes…”, no choice buttons. |
+| 8 | `08-error-still-held.png` | A choice couldn’t be saved. The group is back in its place, still held, with retry copy. |
+| 9 | `09-day-boundary-midnight-ist.png` | Sheet left open across midnight IST: Today behind it moved to Sat 28 Nov, the groups, rows, dates and count are unchanged. Has an annotation. |
 | 10 | `10-closed-without-action.png` | Closed without choosing: the note shows the same count. Has an annotation. |
+| 11 | `11-today-applied-note-once.png` | **New.** Today right after the Mac upgrade: “8 phone changes applied, 3 to review” with “Review” and “Got it”. Has an annotation. |
+| 12 | `12-sheet-empty.png` | **New.** Empty state: the sheet is open and the Mac finds nothing held (for example the upgrade applied it meanwhile). “No held changes. Nothing needs your choice right now.” and Close only. |
+| 13 | `13-undo-keep-for-all.png` | **New.** After “Keep Mac’s version for all”: one toast for all 7 changes, the unreadable and newer-schema rows stay, the count is 2. |
 
-Annotations (frames 9 and 10, dashed box at top left) are not product UI.
+Annotations (frames 9, 10 and 11, dashed box at top left) are not product UI.
 
 ## Copy (exact, curly apostrophes, never “discard”)
 | Where | Copy |
 |---|---|
-| Today note, several (unchanged from #55) | “3 changes from your phone weren’t applied, to avoid overwriting newer edits.” |
-| Today note, one (unchanged from #55) | “1 change from your phone wasn’t applied, to avoid overwriting newer edits.” |
+| Today note, several | “3 phone changes to review” |
+| Today note, one | “1 phone change to review” |
 | Note button (text link) | “Review” |
+| Once-only note after the upgrade | “8 phone changes applied, 3 to review” + “Review” + “Got it”. With nothing to review: “8 phone changes applied” + “Got it”. |
 | Sheet title | “Held changes from your phone” |
 | Sheet subtitle, several | “Your Mac didn’t apply these N changes, to avoid overwriting newer edits. Nothing changes until you choose.” |
 | Sheet subtitle, one | “Your Mac didn’t apply this change, to avoid overwriting newer edits. Nothing changes until you choose.” |
 | Subtitle while loading | “Your Mac didn’t apply some changes from your phone, to avoid overwriting newer edits.” |
+| Subtitle when empty | “Nothing from your phone is held right now.” |
 | Loading line | “Reading held changes…” |
-| Choice row, line 1 | Goal name, as the Mac has it now. Example: “Read one paper” |
-| Choice row, line 2 (the ONE field the phone would set, then the Mac’s current value) | “Focus on 18 Nov: 30 min logged (Mac has 20 min)” · “Time box: 60 min (Mac has 45 min)” · “Name: “Gym, legs day” (Mac has “Gym”)” · “Added to 17 Nov (Mac doesn’t have it)” |
-| Choice row, line 3 | “From your phone on 18 Nov · More than 7 days old”, or “From your phone on 25 Nov · Your Mac changed this later” (lost the field-by-field compare) |
-| Choice buttons | “Keep Mac’s version” (default, filled) · “Use phone’s version” (outline) |
-| Unreadable row | Title: “A change from your phone”. Meta: “From your phone on 24 Nov · This Mac can’t read it yet”. Line: “Update Cadence on this Mac to apply this.” No buttons. |
-| Newer-schema row | Title: “Changes from a newer Cadence on your phone”. Meta: “From your phone · Made by a newer version of Cadence”. Line: “Update Cadence on this Mac to apply this.” No buttons. |
+| Empty state | “No held changes” / “Nothing needs your choice right now.” |
+| Group header | Goal name as the Mac has it now (“Focus”), plus “2 changes” when the group has more than one row. |
+| Session row | “Add 30-min session from your phone (18 Nov)” · muted “Mac’s total for 18 Nov: 20 min”. Meta: “More than 7 days old”. |
+| Goal-edit row (snapshot) | “Name: Deep work (Mac has Focus)”. Meta: “You changed the name on this Mac after this was held”. Time box: “You changed the time box on this Mac after this was held”. |
+| Goal-edit row (no snapshot or no stamp) | “Time box: 60 min”. Meta: “Can’t tell which is newer. Mac has 45 min”. Name: “Can’t tell which is newer. Mac has Focus”. The Mac value sits in the meta line here, so it isn’t said twice. |
+| Goal-edit and add row (too old) | “Name: Gym, legs day (Mac has Gym)” / “Added to 17 Nov (Mac doesn’t have it)”. Meta: “From your phone on 19 Nov · More than 7 days old”. |
+| Group buttons | “Keep Mac’s version” (default, filled) · “Use phone’s version” (outline). A group whose only change is a session: “Add this session” (“Add these sessions” for several). |
+| Unreadable group | Header “Can’t be applied on this Mac yet”. Rows: “A change from your phone” / “From your phone on 24 Nov · This Mac can’t read it yet” and “Changes from a newer Cadence on your phone” / “From your phone · Made by a newer version of Cadence”. Line: “Update Cadence on this Mac to apply this.” No buttons. |
 | Footer hint | “Closing keeps every change held.” |
-| Footer buttons | “Keep Mac’s version for all” (shown only with 2 or more choice rows) · “Close” |
-| Toast after Keep | “Kept your Mac’s version for Read one paper.” + “Undo” |
-| Toast after Use | “Used your phone’s version for Read one paper.” + “Undo” |
-| Toast after Keep for all | “Kept your Mac’s version for 5 changes.” + “Undo” |
-| Error in the row | “Couldn’t save your choice, so this change is still held. Check that your OneDrive folder is available.” + “Try again” |
+| Footer buttons | “Keep Mac’s version for all” (shown only with 2 or more changes you can choose) · “Close” |
+| Toast after Keep | “Kept your Mac’s version for Focus.” + “Undo” |
+| Toast after Use | “Used your phone’s version for Focus.” + “Undo” |
+| Toast after Add this session | “Added the 30-min session to Read one paper.” + “Undo” |
+| Toast after Keep for all | “Kept your Mac’s version for 7 changes.” + “Undo” |
+| Error in a group | “Couldn’t save your choice, so this change is still held. Check that your OneDrive folder is available.” (“these changes are still held” for a group of 2 or more) + “Try again” |
+| Error after “for all” | “Couldn’t save your choice, so all 7 changes are still held. Check that your OneDrive folder is available.” + “Try again” (banner above the list; prototype only, via the demo bar) |
 
-Dates are always absolute (“on 18 Nov”, IST day of the phone’s stamp), never “yesterday” or “8 days ago”, so nothing in a row changes at midnight.
+Dates are always absolute (“18 Nov”, IST day of the phone’s stamp), never “yesterday” or “8 days ago”, so nothing in a row changes at midnight.
 
 ## VoiceOver labels
 | Control | Label (pattern, then example) |
 |---|---|
 | Review | “Review N held changes” / “Review 1 held change” |
-| Keep Mac’s version | “Keep Mac’s version for {goal}: keeps {Mac value} and drops the phone’s {phone value}”. Example: “Keep Mac’s version for Read one paper: keeps 20 min on 18 Nov and drops the phone’s 30 min” |
-| Use phone’s version | “Use phone’s version for {goal}: sets {field} to {phone value}, replacing the Mac’s {Mac value}”. Example: “Use phone’s version for Read one paper: sets 30 min logged on 18 Nov, replacing the Mac’s 20 min” |
+| Keep Mac’s version (group) | “Keep Mac’s version for {goal}: {what it keeps and drops}”. Example: “Keep Mac’s version for Focus: keeps the name Focus and drops the phone’s name Deep work” |
+| Use phone’s version (group) | “Use phone’s version for {goal}: {what it sets, replacing the Mac’s value}”. Example: “Use phone’s version for Focus: renames it to Deep work, replacing the Mac’s Focus” |
+| Add this session | “Add this session to {goal}: adds a 30-min session on 18 Nov. The Mac’s own sessions stay as they are” |
 | Keep Mac’s version for all | “Keep Mac’s version for all N changes you can choose. The phone changes are dropped.” |
 | Close and × | “Close. Every change stays held.” |
 | Try again | “Try again: ” + the label of the button that failed |
+| Got it | “Got it. Hide this note” |
 | Undo | “Undo” inside a polite live-region toast that reads the toast sentence first |
 
-Sheet: `role="dialog"`, `aria-modal="true"`, labelled by the title, described by the subtitle. The list is a list (“Held changes”). Loading sets `aria-busy`. The error is `role="alert"`. Esc closes. On close, focus goes back to Review.
+Sheet: `role="dialog"`, `aria-modal="true"`, labelled by the title, described by the subtitle. The list is a list (“Held changes, grouped by goal”), each group a list item with its rows as a nested list. Loading sets `aria-busy`. Errors are `role="alert"`. Esc closes. On close, focus goes back to Review.
 
 ## Interaction rules
-1. The note keeps today’s copy and count (`heldCount` from #55) and adds one text-link button. It is not a second card. The note disappears when nothing is held.
-2. Review opens the sheet. Each held entry is one row. Too-old rows and rows that lost the field-by-field compare get the two buttons. Unreadable and newer-schema rows get no buttons and clear by themselves once the Mac is updated.
-3. **Each choice row names exactly the field the phone value would set, with the Mac’s current value next to it.** “Use phone’s version” is Abhishek’s explicit choice: it overwrites only the fields that the held entry changed, even where the Mac has a newer stamp. One row is one held entry. If an entry changed two fields, both go on line 2 of the same row (see the open questions).
-4. “Keep Mac’s version” is the default (filled button, first in tab order) and drops the phone change. It is the **only** way a phone change gets dropped. The log stores only the entry id, device, date and reason, with no goal names or values. There is **no history UI**.
-5. No confirm dialog. Each choice removes the row at once and shows a 5-second Undo toast at the bottom centre (the existing Mac `.toast`). A new choice ends the previous toast. Undo puts the row back in its place and the count back.
-6. **The prototype assumes the choice is written when the 5-second Undo ends.** Until then the entry is still held on disk, so quitting the app within the 5 seconds leaves it held. Linus to confirm, or to replace this with an immediate write plus a reverse write on Undo.
-7. If the write fails, the row comes back in place, still held, with the error and Try again (frame 8). Nothing is dropped.
-8. Closing the sheet (Close, ×, Esc, or a click outside) without a choice keeps every entry held, and the note count stays the same (frame 10).
-9. When the last entry is resolved, the sheet closes and the note disappears. The toast stays on Today, and Undo brings the note back but doesn’t reopen the sheet (frame 6). If only unreadable or newer-schema rows remain, the sheet stays open with them, and “Keep Mac’s version for all” is hidden.
-10. Day boundary: a sheet left open across midnight IST keeps its rows, dates and count. Nothing auto-resolves. Today behind it moves to the new day as usual, and the note stays on the new day (frame 9).
+1. The note is housekeeping: leaf-wash, no error colour, one text-link “Review”. It is not a second card. The count is the number of held changes (`heldCount`), the same number as in the sheet subtitle. The note disappears when nothing is held.
+2. Review opens the sheet. Held changes are **grouped by goal**; each group has one pair of buttons that applies to every change in that group. Unreadable and newer-schema changes sit in a last group with no buttons and clear by themselves once the Mac is updated.
+3. **Set wording only for goal fields.** “Use phone’s version” is Abhishek’s explicit choice: it overwrites only the fields that the held entry changed. A session is never “set”: “Add this session” adds that one session (deduped by id) and replaces no Mac total. The Mac’s day total is shown as context only.
+4. “Keep Mac’s version” is the default (filled button, first in tab order) and drops the phone change. The log stores only the entry id, device, date and reason, with no goal names or values (DPDP Act). There is **no history UI**.
+5. **No confirm dialog.** A choice removes its group at once and shows a 5-second Undo toast at the bottom centre. A new choice ends the previous toast. Undo puts the group back in its place and the count back.
+6. **A choice is saved when the 5-second Undo ends**, not at once. Until then the entry is still held on disk, so quitting the app inside the 5 seconds leaves it held (spec V3).
+7. **“Keep Mac’s version for all” is one write**, saved after its Undo ends. It is the only bulk action. It leaves the unreadable and newer-schema changes alone.
+8. **A failed save puts the entry back as held**, in its place, with the error and Try again (frame 8). Nothing is dropped and nothing half-applies. For “for all”, every change comes back and one banner above the list says so.
+9. **Closing (Close, ×, Esc or a click outside) keeps everything held**, and the note count stays the same (frame 10).
+10. When the last change is resolved, the sheet closes and the note disappears. The toast stays on Today, and Undo brings the note back but doesn’t reopen the sheet (frame 6). If only unreadable or newer-schema changes remain, the sheet stays open with them and “Keep Mac’s version for all” is hidden.
+11. **Once-only applied note (frame 11).** After the upgrade applies untouched phone edits, the first Today view shows “N phone changes applied, M to review”. The counts are what the upgrade did and never change afterwards (not at midnight, not while the sheet is open). “Review” opens the sheet with exactly M changes. “Review” or “Got it” ends it, and Today then shows the housekeeping note for what is still held. With M = 0 there is no “Review”. With N = 0 this note isn’t shown at all, only the normal note. The counts have to match what actually happened (spec V3 done-when).
+12. **Empty state (frame 12).** The sheet is only reachable from the note, but the list can be empty when it opens or while it is open (for example the upgrade applied the change meanwhile). It then says so and offers Close only.
+
+## Day boundary (frame 9, every time-based screen)
+A sheet left open across midnight IST keeps its groups, rows, dates and count. Nothing auto-resolves and the 5-second Undo is unaffected. Today behind it moves to the new day as usual and the note stays. Row dates are absolute, so they stay correct. The once-only applied note (frame 11) is not recomputed at midnight. A session row’s “Mac’s total for 18 Nov” is a total for that named day, so it never changes meaning at midnight.
 
 ## Tokens used (colours only from `tokens.css` = cadence `web/tokens.css`, then `ios-tokens.css` at 5436723)
-- Note: `--leaf-wash` background, `--leaf-deep` text. Review link: `--leaf`.
+- Note (both the routine note and the once-only applied note): `--leaf-wash` background, `--leaf-deep` text. Review and Got it links: `--leaf`. No error colour.
 - Sheet: `--surface`, `--r-sheet`, `--shadow-dialog`, `--scrim` behind it, `--line` separators. Title in `--font-display` and `--text`. Body in `--font-ui` and `--text`, with `--text-muted` for the Mac value, meta, hint and icons.
 - Buttons: filled `--leaf` with `--on-leaf` and `--shadow-primary`. Outline `--leaf` on `--surface`. Text buttons `--leaf`. Height `--tap-min`, radius `--r-pill`.
 - Error: `--wither-bg` and `--wither-ink`. Skeleton: `--track`. Toast: `--surface`, `--line` ring, `--shadow-card`, check in `--success`.
@@ -94,8 +119,22 @@ Sheet: `role="dialog"`, `aria-modal="true"`, labelled by the title, described by
 | Skeleton bar vs sheet (decorative) | `--track` #EFE4D5 | `--surface` #FFFBF6 | 1.22:1 | – | decorative |
 | Separator (decorative) | `--line` #E6D7C4 | `--surface` #FFFBF6 | 1.37:1 | – | decorative |
 
+- New in this update: goal group header and count (`--text`, `--text-muted`), the thin rule left of each held-change line (`--line`, decorative), the empty-state check (`--text-muted`). No new colour pairs, so the contrast table below still covers everything.
+
 ## Assumptions to confirm (Steve: product, Linus: storage and sync)
-- The Mac can show the goal name, the one field and the Mac’s current value for too-old and lost-compare entries.
+- The Mac can show the goal name as it has it now, the one field, and the Mac’s current value (or “Mac doesn’t have it”) for each held change.
+- The Mac knows, per held field, whether the entry was held with a snapshot (frame “You changed the name on this Mac after this was held”) or without one (“Can’t tell which is newer”). This is a stored reason per field.
+- For a held session the Mac can read the Mac’s total for the session’s day.
 - For an unreadable entry it can still read the phone’s stamp day. If it can’t, the row drops “on 24 Nov”.
 - A newer-schema file is one row with no date, matching `heldCount` counting `schema_held` as 1.
-- “Lost the field-by-field compare” is a held reason that the Mac stores, alongside `too_old` and `invalid`.
+- The applied and to-review counts for the once-only note are recorded by the upgrade itself and survive a crash or reload until the note has been seen.
+
+## Open questions (for Steve’s spec; questions, not decisions)
+1. Is the Today note copy “N phone changes to review” the new `syncHeld` note copy? #55’s copy (“N changes from your phone weren’t applied, to avoid overwriting newer edits.”) is already built and tested. The sheet subtitle keeps the longer sentence.
+2. Is one choice per goal enough when a goal has several held fields (each group applies to all its rows), or is a choice per field ever needed?
+3. Mixed groups: a goal with a held session and a held goal edit. Frames show groups with only one kind. Does “Keep Mac’s version” drop the session too, and what does “Use phone’s version” do with the session?
+4. Held removes and restores (Quinn’s case 5) aren’t drawn. What should they say?
+5. When does the once-only applied note count as shown: when Today renders it, or when “Review” or “Got it” is used? What if the Mac quits before it is seen?
+6. If every phone edit applied and nothing is left to review, is “8 phone changes applied” still wanted as a one-time note?
+7. Where can the Mac read the Mac’s total for a past day that the session row shows (“Mac’s total for 18 Nov: 20 min”)?
+8. What does “Use phone’s version” do on a day that already has 6 goals (the parked rule, §4.3)?
