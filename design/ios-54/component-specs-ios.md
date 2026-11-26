@@ -17,6 +17,7 @@ Frames for every component: `frames/B/*.png` (390×844 @2x). Board: `boards/B-wi
 ## 1. Tab bar and nav bar
 - **Tab bar:** two tabs, **Today** (list icon) and **Focus** (timer icon). Height `--ios-tabbar-h` + `--ios-safe-bottom`. Background `--ios-tabbar-bg` with `backdrop-filter: blur(var(--ios-tabbar-blur))`, top hairline `--ios-separator`. Selected: `--ios-tint`, filled icon. Idle: `--ios-label-2`, outline icon. Labels `--ios-caption2`. No Week tab in v1.
 - **Nav bar:** 44px. Large title (“Today”, `--ios-large-title`, tracking `--ios-tracking-tight`) under it, left-aligned, 16px margin. Under the title: the date and the sync status (§7) on one line, `--ios-subhead` `--ios-label-2`. Right: a 32px `--ios-tint-wash` circle with a plus (Add goal). The large title collapses to a 17px centred title on scroll.
+- **Not on India time:** when the phone’s time zone isn’t IST, a small hint sits under the date line: moon icon + “Days follow India time” (`--ios-footnote` 600, `--ios-label-2`). Never shown on IST. Frame 20.
 - The tab bar hides during a running focus session and on full-screen errors.
 
 ## 2. Today’s goal list
@@ -40,14 +41,15 @@ Frames for every component: `frames/B/*.png` (390×844 @2x). Board: `boards/B-wi
 - **At 6 goals:** the Add button stays enabled; tapping it keeps the text and shows, under the field, exactly: “Today already has 6 goals. Remove one to add this.” in `--ios-warn-ink`. Nothing is added.
 
 ## 5. Parked group and Move in
-Rule: [#54 comment 7196971740](https://github.com/peakabhishek/cadence/issues/54#issuecomment-7196971740) (final).
-- **Note** (info banner at the top of Today, `--ios-tint-wash` / `--ios-tint-strong`), exactly: “1 goal didn’t fit today’s 6. It’s in Parked.” / plural: “2 goals didn’t fit today’s 6. They’re in Parked.”
-- **Parked section:** its own inset grouped section under the goals, header “PARKED”. Rows show the title, a muted “From your phone · 9:12 PM” style source line, and a **Move in** button (small tinted capsule).
+Rule: Steve’s spec §4.3 ([Notion](https://app.notion.com/p/4240cf07a80181748457fe2ab43ca898)) and [#54 comment 7196971740](https://github.com/peakabhishek/cadence/issues/54#issuecomment-7196971740). A day keeps its first 6 goals by commit time; goals already showing never move; only the late-arriving goal is parked.
+- **Phone:** a goal added offline shows in today’s list (not-synced marker). After sync, if it lost on commit time, it slides (~300 ms) from the list into the Parked group and carries an inline note under its title, exactly: “This goal didn’t fit today’s 6. It’s in Parked.” Frames 13 (before), 14 (moving, annotated), 15 (after).
+- **Mac:** the Parked group note reads exactly “1 goal synced from your phone didn’t fit today’s 6. It’s in Parked.” Frame `frames/mac/mac-parked-note.png`.
+- No other parked copy variants.
+- **Parked section:** its own inset grouped section under the goals, header “PARKED” and “not counted”. Rows show the title, the inline note, and a **Move in** button (small tinted capsule).
 - **Move in disabled** while the day has 6 goals: capsule in `--ios-fill` with `--ios-label-2` text (still 4.5:1+), `aria-disabled="true"`, and a hint under the section: “Remove one of today’s goals first.” (`--ios-footnote`, `--ios-label-2`).
 - **Move in enabled** as soon as the day has fewer than 6: capsule `--ios-tint` / `--ios-on-tint`; the hint disappears.
 - After **Move in** the goal joins the list at the end; the Parked section disappears when empty. Parked goals never move in on their own.
-- **Past days:** Parked rows are read-only, no Move in.
-- **Displaced goal** (frame labelled *only if Steve keeps first-6-by-save-time*): when a phone goal with an earlier save time syncs in and pushes a visible goal out, the note reads exactly “A goal synced from your phone took this spot. Yours is in Parked.”
+- **Past days:** Parked rows are read-only, no Move in. The phone shows today only in v1, so there is no past-day screen on iPhone; this applies to the Mac.
 - Parked goals don’t count toward the day, the week or Friday’s `weeks` data; the “4 of 6” counter ignores them.
 
 ## 6. Focus session timer
@@ -59,7 +61,16 @@ Rule: [#54 comment 7196971740](https://github.com/peakabhishek/cadence/issues/54
 - What happens on screen lock / app switch is a spec question (the Mac’s 10-minute sleep rule); the mock note “Your session keeps counting if you switch apps.” is placeholder copy.
 
 ## 7. Sync status (depends on sync decision)
-- One line under the large title: synced = check icon + “Last synced 9:40 PM”; syncing = rotating sync icon + “Syncing…”; offline = cloud-slash + “Offline”; failed = alert icon + “Not synced” in `--ios-warn-ink`.
+- One line under the large title (`--ios-subhead`, `--ios-label-2`, 14px icon), one state at a time:
+  - synced: check + “Last synced 9:40 PM”
+  - syncing: rotating sync icon + “Syncing…”
+  - **queued:** cloud + “2 changes waiting to upload” (edits saved on the phone, not yet uploaded; count pluralises: “1 change waiting to upload”)
+  - **waiting for Mac:** laptop + “Waiting for your Mac” (edits uploaded but not yet merged)
+  - **Mac needs update:** laptop + “Your Mac needs an update to sync. Your changes are saved here.” Shown when the Mac’s server uses an older data-file schema. Neutral/waiting style (`--ios-label-2`), never warn or red. Editing stays normal; edits queue and rows show the not-synced marker. Wraps to its own line under the date. Frame 21.
+  - **Phone clock off:** timer icon + “Phone clock is off. Times are being corrected.” Shown when the phone clock is more than 5 minutes off OneDrive’s time. Neutral style, not blocking; editing stays normal. Frame 23.
+  - offline: cloud-slash + “Offline”
+  - failed: alert + “Not synced” in `--ios-warn-ink`
+- Same spot and style for every state; only the icon and words change. Frames 01, 10, 11, 18–21, 23. Long states wrap to their own line under the date.
 - Tapping the line opens a small **Sync sheet**: device rows (“This iPhone”, “MacBook”), “Last synced 9:40 PM”, queued changes (“2 changes waiting”), and “Sync now”.
 - **Offline banner** (info): “You’re offline. Changes stay on this phone and sync when you’re back.”
 - **Sync failed banner** (warn): title “Couldn’t sync.” body “Your changes are safe on this phone.” action “Try again”.
@@ -76,7 +87,7 @@ Rule: [#54 comment 7196971740](https://github.com/peakabhishek/cadence/issues/54
 - **Empty (signed in, no goals today):** plant card with the empty pot and “No plants yet today”, goals section with only **Add goal**, and the hint “Up to 6 goals a day. Focus on one and a money plant grows. Only Give up withers it.”
 - **Loading:** large title and date render at once; plant card and 4 rows are skeletons (`--ios-fill`, 8px radius, gentle shimmer, no spinner). “Start focusing” disabled.
 - **Error (nothing cached, can’t load):** centred in the content area: cloud-slash icon in a 56px `--ios-tint-wash` circle, title “We couldn’t load today.” (`--ios-title3`), body “Cadence couldn’t reach your goals. Nothing has been lost.”, primary “Try again”. Tab bar stays.
-- **Day boundary:** a session that started before midnight IST and ends after it counts for the day it started. End screen: “Grew.” (`--ios-end-title`), meta “Started 11:50 PM Thursday · ended 12:30 AM”, info note “It’s Friday now. Today starts with a fresh list.”, buttons “See Thursday’s grove” (primary) and “Go to today” (outline). An app left open overnight rolls to the new day silently once no session is running; drafts keep their text.
+- **Day boundary:** a session that started before midnight IST and ends after it counts for the day it started. End screen: “Grew.” (`--ios-end-title`), meta “Started 11:50 PM Thursday · ended 12:30 AM”, info note “It’s Friday now. Today starts with a fresh list.”, one button “Go to today” (primary). No “See Thursday’s grove” on iPhone: v1 shows today only, no past-day screens. An app left open overnight rolls to the new day silently once no session is running; drafts keep their text.
 
 ## 11. Capacitor wrapper vs native Swift — where they differ
 Both are installable (local Xcode build for v1; TestFlight blocked while the Apple Developer account is on hold). The design works for both; these are the build differences:
