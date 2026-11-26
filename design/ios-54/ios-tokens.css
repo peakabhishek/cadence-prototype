@@ -1,0 +1,115 @@
+/* Cadence for iPhone — Option B “Windowsill, native iOS” tokens (cadence#54)
+   PROVISIONAL until Abhishek approves the iPhone visual direction.
+   Iris (Design), 26 Nov 2026.
+
+   This file EXTENDS the approved Windowsill tokens; it does not fork them.
+   Load order:
+     1. tokens.css   (handoff/tokens.css = cadence web/tokens.css, unchanged)
+     2. ios-tokens.css (this file)
+   Every colour below is either a var() reference to tokens.css or a new
+   --ios-* / --banner-* token. Nothing in tokens.css is redefined, so the Mac
+   web app is untouched. Contrast results: contrast.md (option B section).
+
+   Works the same in a Capacitor wrapper and in native Swift (map each token
+   to an asset-catalog colour / UIFont text style there). Where the two build
+   paths differ, see component-specs-ios.md § “Capacitor vs Swift”. */
+
+:root {
+  /* ---------- Colour: roles (all from tokens.css) ---------- */
+  --ios-tint: var(--leaf);                 /* #1B5E3B buttons, links, selected tab, ticks */
+  --ios-tint-strong: var(--leaf-deep);     /* #0F3D27 timer, hero numbers */
+  --ios-on-tint: var(--on-leaf);           /* #F7F0E6 on --ios-tint, 6.85:1 */
+  --ios-tint-wash: var(--leaf-wash);       /* #E6EEE3 selected rows, info banner, toolbar circle */
+  --ios-bg: var(--bg);                     /* #F7F0E6 grouped background */
+  --ios-cell: var(--surface);              /* #FFFBF6 inset grouped cells, sheets */
+  --ios-label: var(--text);                /* #2A2118 primary label */
+  --ios-label-2: var(--text-muted);        /* #5C5146 secondary label, placeholder, inactive tab (7.7:1 on cell) */
+  --ios-separator: var(--line);            /* #E6D7C4 hairlines (decorative) */
+  --ios-fill: var(--track);                /* #EFE4D5 progress track, skeleton, chips */
+  --ios-warn-ink: var(--wither-ink);       /* #74492B sync failed, conflict, Give up, sign-in expired */
+  --ios-warn-bg: var(--wither-bg);         /* #F3E6D6 */
+  --ios-pot: var(--terracotta);            /* illustration only, never text */
+  --ios-glow: var(--sun);                  /* illustration only, never text */
+  --ios-scrim: var(--scrim);
+
+  /* New iOS-only surfaces */
+  --ios-tabbar-bg: rgba(255, 251, 246, 0.92);  /* --surface at 92% + blur(20px) */
+  --ios-tabbar-blur: 20px;
+  --ios-grabber: var(--line);
+  --ios-sheet-bg: var(--surface);
+  --ios-plant-card: linear-gradient(180deg, #FBF4EA 0%, #F5E3C6 100%); /* glow-wash -> sun, decorative */
+
+  /* Demo-mode banner (Steve’s product rule). Shown only while the mock
+     storage adapter is active; same config flag. Not dismissible.
+     Text on background: 7.52:1 (AA). */
+  --banner-demo-bg: #F6D9A8;      /* same value as --sun */
+  --banner-demo-text: #5A3A12;
+  --banner-demo-h: 24px;
+  --banner-demo: var(--banner-demo-bg);   /* shorthand alias asked for in the brief */
+
+  /* ---------- Type: system font stack + iOS text styles ----------
+     UI text uses the system font (SF Pro on iPhone). In a Capacitor WKWebView,
+     the `font: -apple-system-<style>` keywords follow Dynamic Type; the px values
+     are the default (“Large”) size and the fallback. Fraunces (self-hosted,
+     web/fonts) stays for the timer and the end-screen title only. */
+  --ios-font: -apple-system, BlinkMacSystemFont, "SF Pro Text", "SF Pro Display", system-ui, "Helvetica Neue", sans-serif;
+  --ios-font-rounded: ui-rounded, -apple-system, system-ui, sans-serif;
+  --ios-font-display: var(--font-display);  /* Fraunces */
+
+  /*                size / line-height / weight      Dynamic Type style     */
+  --ios-large-title: 700 34px/41px var(--ios-font);  /* .largeTitle  (screen titles: Today) */
+  --ios-title1: 700 28px/34px var(--ios-font);       /* .title1      (sheet titles) */
+  --ios-title2: 700 22px/28px var(--ios-font);       /* .title2      (plant-card tally) */
+  --ios-title3: 600 20px/25px var(--ios-font);       /* .title3      (alert titles) */
+  --ios-headline: 600 17px/22px var(--ios-font);     /* .headline    (buttons, nav title) */
+  --ios-body: 400 17px/22px var(--ios-font);         /* .body        (goal rows, fields) */
+  --ios-callout: 400 16px/21px var(--ios-font);      /* .callout     (banner body) */
+  --ios-subhead: 400 15px/20px var(--ios-font);      /* .subheadline (row detail: 30 / 45 min) */
+  --ios-footnote: 400 13px/18px var(--ios-font);     /* .footnote    (section headers, sync status, hints) */
+  --ios-caption1: 400 12px/16px var(--ios-font);     /* .caption1 */
+  --ios-caption2: 500 11px/13px var(--ios-font);     /* .caption2    (tab labels, 10.5–11px) */
+  --ios-timer: 600 76px/1 var(--ios-font-display);   /* custom, scales with .largeTitle; tabular-nums */
+  --ios-end-title: 600 34px/1.1 var(--ios-font-display);
+  --ios-tracking-tight: -0.02em;                     /* large title / title1 */
+
+  /* ---------- Spacing (base 8 from tokens.css, plus iOS margins) ---------- */
+  --ios-margin: 16px;            /* inset grouped side margin = --s-4 */
+  --ios-cell-pad-x: 16px;
+  --ios-cell-min-h: 50px;        /* ≥ --tap-min (44px) */
+  --ios-separator-inset: 52px;   /* hairline starts after the tick */
+  --ios-section-gap: 24px;       /* = --s-5 */
+  --ios-section-header-pad: 14px 16px 7px;
+  --ios-nav-h: 44px;
+  --ios-tabbar-h: 49px;          /* + safe-area bottom */
+  --ios-button-h: 52px;
+  --ios-tick: 24px;
+
+  /* ---------- Radius ---------- */
+  --ios-r-cell-group: 12px;      /* inset grouped section */
+  --ios-r-button: 14px;          /* filled / tinted buttons */
+  --ios-r-sheet: 12px;           /* sheet top corners (system-like) */
+  --ios-r-banner: 14px;
+  --ios-r-chip: var(--r-pill);
+  --ios-r-field: 10px;
+
+  /* ---------- Icons ---------- */
+  --ios-icon-stroke: 1.9px;      /* SF Symbols “regular” look; outline when idle, filled when selected */
+  --ios-icon-size: 22px;         /* tab bar 24px, inline 16–18px */
+
+  /* ---------- Safe areas (iPhone 390×844 values as fallbacks) ----------
+     Capacitor: needs viewport-fit=cover; env() then reports real insets.
+     Swift: use safeAreaInsets / .safeAreaInset; these values are reference only. */
+  --ios-safe-top: env(safe-area-inset-top, 47px);       /* 54px on Dynamic Island models */
+  --ios-safe-bottom: env(safe-area-inset-bottom, 34px); /* home indicator */
+  --ios-safe-left: env(safe-area-inset-left, 0px);
+  --ios-safe-right: env(safe-area-inset-right, 0px);
+  --ios-keyboard-h: 336px;       /* reference only; read the real height at runtime */
+
+  /* ---------- Motion ---------- */
+  --ios-sheet-ease: cubic-bezier(0.32, 0.72, 0, 1);
+  --ios-sheet-dur: 380ms;
+}
+
+/* Dark mode: NOT part of Option B. Until a dark direction is approved the app
+   stays light (Capacitor: no prefers-color-scheme rules; Swift:
+   UIUserInterfaceStyle = Light). Option C “Night garden” is the candidate. */
