@@ -7,7 +7,8 @@ STATES = [("01-today-note-review", "today"), ("02-sheet-one-entry", "one"), ("03
           ("04-undo-keep-mac", "undo-keep"), ("05-undo-use-phone", "undo-use"), ("06-last-resolved-note-gone", "resolved"),
           ("07-loading", "loading"), ("08-error-still-held", "error"), ("09-day-boundary-midnight-ist", "midnight"),
           ("10-closed-without-action", "closed"),
-          ("11-today-applied-note-once", "upgrade"), ("12-sheet-empty", "empty"), ("13-undo-keep-for-all", "undo-all")]
+          ("11-today-applied-note-once", "upgrade"), ("12-sheet-empty", "empty"), ("13-undo-keep-for-all", "undo-all"),
+          ("14-sheet-mixed-session-and-edit", "mixed"), ("15-sheet-remove-restore", "remove-restore"), ("16-today-applied-only", "applied-only")]
 res = {}
 with sync_playwright() as p:
     b = p.chromium.launch(executable_path="/usr/bin/google-chrome", args=["--no-sandbox"])
