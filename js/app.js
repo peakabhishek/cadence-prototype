@@ -527,7 +527,7 @@
     return ic("folder", 15) + " Saved on this laptop, in your OneDrive folder. Friday can read your goals and scorecard.";
   }
   function footline(right) {
-    return '<div class="footline">' + saveStatusHtml() + '<span class="links"><button type="button" class="btn text" data-act="load-example" style="height:auto;font-size:13.5px">Load example week</button><button type="button" class="reset" data-act="reset" style="font-size:13.5px;color:var(--text-muted)">Reset prototype</button>' + (right ? "<span>" + right + "</span>" : "") + "</span></div>";
+    return '<div class="footline">' + saveStatusHtml() + '<span class="links"><button type="button" class="btn text" data-act="load-example" style="height:auto;font-size:13.5px">Load example week</button><button type="button" class="reset" data-act="reset" style="font-size:13.5px;color:var(--text-muted)">Reset prototype</button><a class="reset" href="prototype/" style="font-size:13.5px;color:var(--text-muted)">More prototypes</a>' + (right ? "<span>" + right + "</span>" : "") + "</span></div>";
   }
 
   function viewToday() {

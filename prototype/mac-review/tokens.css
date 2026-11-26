@@ -1,0 +1,148 @@
+/* Cadence design tokens — Direction A “Windowsill”, 16 Nov 2026
+   Canonical names match tokens-a.css and the Cadence laptop sources
+   (src/cadence_laptop.py, src/cadence_states.py, src/extra.py LAP_CSS,
+   src/screens.py BASE_A, src/money_plant.py).
+   All text pairs: contrast.md. Terracotta and --sun are never used for text.
+   --wither-leaf is illustration only; withered text uses --wither-ink. */
+
+:root {
+  /* -------------------------------------------------
+     Colour — primary
+     ------------------------------------------------- */
+  --leaf: #1B5E3B;          /* primary actions, “Grew”, selected fills, progress */
+  --leaf-deep: #0F3D27;     /* wordmark, timers, hero numbers, outline labels */
+  --leaf-wash: #E6EEE3;     /* selected cards, active tabs, notification banner */
+  --on-leaf: #F7F0E6;       /* text on --leaf (6.85:1) */
+  --success: #1B5E3B;       /* alias of --leaf */
+
+  /* Colour — accent (decorative only; never text) */
+  --terracotta: #C45C2A;    /* pots only */
+  --sun: #F6D9A8;           /* morning-light glow only */
+
+  /* Colour — neutrals */
+  --bg: #F7F0E6;            /* warm plaster */
+  --surface: #FFFBF6;       /* cards, fields, dialogs, outline buttons */
+  --text: #2A2118;
+  --text-muted: #5C5146;    /* captions, placeholders, secondary meta */
+  --line: #E6D7C4;
+  --track: #EFE4D5;         /* progress tracks, tags, skeleton bars, empty wells */
+  --chrome: #EFE6DA;        /* window chrome bar */
+  --chrome-line: #E0D2BF;
+  --url-bg: #FBF6EF;        /* URL bar and “Install Cadence” pill */
+  --sill-top: #EADBC7;
+  --sill-bot: #E1CFB8;
+  --sill-edge: #D6C2A8;
+  --glow-wash: #F9F3EA;     /* top of the morning-light gradient */
+
+  /* Colour — semantic */
+  --wither-ink: #74492B;    /* withered label text, “Gave up”, shortfall copy */
+  --wither-bg: #F3E6D6;     /* withered page + save-failed alert */
+  --wither-leaf: #8B5E3C;   /* illustration + large outcome marks only, never small text */
+  --shortfall: #B98A62;     /* dashed gap / unmet top border (not text) */
+  --short-card: #FBF4EC;    /* unmet weekly goal card */
+  --short-card-line: #E5CFB6;
+  --short-badge-line: #D9BFA2;
+  --reason-chip: #E7D6C4;   /* “You gave up.” */
+  --wither-chrome: #ECDDCB;
+  --wither-light: #F6EBDD;
+  --radio-idle: #B9A790;    /* unselected goal-card radio */
+  --scrim: rgba(42, 33, 24, 0.38);
+
+  /* Colour — plant (illustration only, from src/money_plant.py) */
+  --soil: #5C3D2E;
+  --plant-leaf-1: #2F7148;
+  --plant-leaf-2: #3A8052;
+  --plant-leaf-3: #2A6842;
+  --plant-leaf-4: #357A4D;
+  --plant-leaf-5: #44875A;
+  --plant-young-1: #5E9A5C;
+  --plant-young-2: #6AA466;
+  --plant-young-3: #579457;
+  --plant-stem: #5C8A50;
+  --plant-dry-1: #B39566;
+  --plant-dry-2: #A99A5A;
+  --plant-dry-3: #BFA071;
+  --plant-dry-4: #9C7A4A;
+  --plant-dry-5: #B2A068;
+  --plant-dry-6: #AE8F5C;
+  --plant-dry-stem: #8A6D45;
+  --window-light-1: #E3B5A0;
+  --window-light-2: #E6CF9E;
+  --window-light-3: #B9CDAF;
+
+  /* -------------------------------------------------
+     Type
+     Display: Fraunces, opsz auto, SOFT 50–100.
+     UI: Source Sans 3, 400/500/600/700.
+     ------------------------------------------------- */
+  --font-display: "Fraunces", Georgia, serif;
+  --font-ui: "Source Sans 3", system-ui, sans-serif;
+
+  /* Base scale (tokens-a.css; also used on phone) */
+  --fs-wordmark: 20px;
+  --fs-title: 32px;          /* 28–34 */
+  --fs-timer: 76px;          /* 64–80, tabular-nums */
+  --fs-hero-number: 64px;
+  --fs-body: 17px;
+  --fs-caption: 13px;
+  --fs-button: 17px;
+  --lh-body: 1.45;
+
+  /* Laptop scale (sizes actually used in the Cadence laptop sources) */
+  --fs-wordmark-laptop: 27px;
+  --fs-title-laptop: 44px;   /* L0 / L1 morning */
+  --fs-title-grove: 40px;    /* L7 */
+  --fs-title-sheet: 34px;    /* L2, goal name on a live session */
+  --fs-end-title: 52px;      /* L5 / L6 / E3 */
+  --fs-timer-laptop: 120px;
+  --fs-hero-laptop: 84px;    /* L8 hero */
+  --fs-tally-laptop: 60px;   /* L7 “1h 40m” / “0m” */
+  --fs-dialog-title: 32px;
+  --fs-banner-title: 16px;
+  --fs-banner-body: 14.5px;
+  --fs-badge: 14.5px;
+  --fs-label: 13px;
+  --fs-nav: 15px;
+
+  /* -------------------------------------------------
+     Spacing (base 8)
+     ------------------------------------------------- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 40px;
+  --s-8: 48px;
+  --s-page: 64px;            /* laptop content inset */
+  --split-narrow: 1280px;    /* ABH-28 artboard; plant column at --split-plant-min */
+  --split-wide: 1440px;      /* main-set artboard; plant column at --split-plant-max */
+  --split-plant-min: 584px;  /* plant column at 1280; text starts ~608 */
+  --split-plant-max: 780px;  /* plant column at 1440; text starts ~805 */
+  --s-panel: 40px;           /* large panel padding */
+  --s-card: 22px;
+
+  /* Radius */
+  --r-input: 12px;
+  --r-card: 16px;
+  --r-sheet: 24px;
+  --r-pill: 999px;
+  --r-chrome: 8px;           /* URL bar */
+
+  /* Shadow */
+  --shadow-card: 0 1px 0 rgba(92, 61, 46, 0.06), 0 8px 24px -12px rgba(92, 61, 46, 0.18);
+  --shadow-sheet: 0 1px 0 rgba(92, 61, 46, 0.06), 0 30px 60px -24px rgba(92, 61, 46, 0.35);
+  --shadow-dialog: 0 1px 0 rgba(92, 61, 46, 0.06), 0 28px 64px -16px rgba(42, 33, 24, 0.48);
+  --shadow-primary: inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 10px 22px -12px rgba(15, 61, 39, 0.7);
+
+  /* Sizing */
+  --tap-min: 44px;
+  --button-h: 56px;
+  --button-h-laptop: 58px;   /* L0 / L1 primary; L2 start is 60px */
+  --field-h: 56px;
+  --nav-h: 40px;             /* laptop tab height */
+  --chrome-h: 46px;
+  --icon-stroke: 1.75px;
+  --time-box-w: 104px;       /* laptop goal-row time box */
+}

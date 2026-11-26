@@ -63,3 +63,5 @@ python build.py all     # frames (Playwright + Chromium)
 python mac.py           # Mac frame
 python boards.py        # boards
 ```
+
+Mac “Review held changes” sheet (cadence#58): frames in [`frames/mac/review-sheet/`](frames/mac/review-sheet/), notes in [`notes/review-sheet-58.md`](notes/review-sheet-58.md), clickable at [`prototype/mac-review/`](https://peakabhishek.github.io/cadence-prototype/prototype/mac-review/).
