@@ -250,7 +250,8 @@ def status_line(kind):
             "queued": (ic("cloud", 14), "2 changes waiting to upload"),
             "waiting": (ic("laptop", 14), "Waiting for your Mac"),
             "clock": (ic("timer", 14), "Phone clock is off. Times are being corrected."),
-            "macupdate": (ic("laptop", 14), "Your Mac needs an update to sync. Your changes are saved here.")}[kind]
+            "macupdate": (ic("laptop", 14), "Your Mac needs an update to sync. Your changes are saved here."),
+            "syncheld": (ic("cloud", 14), "Some changes couldn’t sync safely. They’re saved on this phone.")}[kind]
 
 def banner(kind, title, body="", act=""):
     icn = {"info": "cloudoff", "warn": "alert", "ok": "sync", "park": "list"}[kind]
@@ -555,6 +556,11 @@ def s_macupdate(o):
 def s_clock(o):
     return page(o, today_view(o, GOALS, status="clock", plant=None))
 
+def s_syncheld(o):
+    """Mac is up to date but refused to auto-apply because the rollback sidecar and backup are both lost. Not 'Mac needs update'."""
+    g = [GOALS[0], (GOALS[1][0], GOALS[1][1], GOALS[1][2], True, "unsynced"), GOALS[2], GOALS[3], ("Call the bank", "", "Not yet", False, "unsynced")]
+    return page(o, today_view(o, g, status="syncheld", plant=None))
+
 def s_tz(o):
     return page(o, today_view(o, GOALS, tz=True), t="5:11")
 
@@ -586,4 +592,5 @@ SCREENS = [
  ("21-mac-needs-update", "Mac needs update (older schema)", s_macupdate, "depends on sync decision"),
  ("22-not-ist-hint", "Phone not on IST", s_tz, ""),
  ("23-phone-clock-off", "Phone clock off by >5 min", s_clock, "depends on sync decision"),
+ ("24-sync-held", "Sync held: changes kept on the phone", s_syncheld, "depends on sync decision"),
 ]

@@ -61,7 +61,7 @@ def option_board(k):
 <div class=card><h3>Palette</h3><div class=sw>{sw}</div><h3>Spacing</h3>{m['space']}<h3>Radius</h3>{m['radius']}<h3>Icons</h3>{m['icons']}<h3>Plant imagery</h3>{m['plant']}</div>
 <div class=card><h3>WCAG contrast (checked)</h3><table>{rows}</table></div></div>
 <div class=grid>{grid}</div>
-<p class=foot>Frames labelled “depends on sync decision” show one way sync could look; the sync approach is undecided. Parked rule: Steve’s spec §4.3. Mac frame for the parked note: frames/mac/mac-parked-note.png. Source: design/ios-54/src (HTML/CSS rendered with headless Chromium).</p>
+<p class=foot>Frames labelled “depends on sync decision” show one way sync could look; the sync approach is undecided. Parked rule: Steve’s spec §4.3. Mac frames: frames/mac/mac-parked-note.png and frames/mac/mac-sync-held.png. Source: design/ios-54/src (HTML/CSS rendered with headless Chromium).</p>
 </body></html>"""
 
 def overview():
@@ -82,7 +82,7 @@ def overview():
     return f"""<!doctype html><html><head><meta charset=utf-8><style>{css}</style></head><body>
 <p style="font-weight:700;color:#5C5146;letter-spacing:.08em">CADENCE FOR IPHONE · #54 · VISUAL DIRECTION OPTIONS · Iris (Design), 26 Nov 2026 · fake data · provisional until Abhishek approves</p>
 <h1>Three iPhone directions from the shipped Windowsill look</h1>
-<p class=m style="font-size:17px">Each column: Today · Focus · Add goal (keyboard) · Parked with Move in disabled · Session past midnight IST. All 23 frames per option are on the option boards.</p>
+<p class=m style="font-size:17px">Each column: Today · Focus · Add goal (keyboard) · Parked with Move in disabled · Session past midnight IST. All 24 frames per option are on the option boards.</p>
 <div class=why>{why}</div>{cols}</body></html>"""
 
 jobs = [(OUT / "boards" / f"{o['slug']}.png", option_board(k), 2000, 2600) for k, o in OPTIONS.items()]

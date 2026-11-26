@@ -68,12 +68,14 @@ Rule: Steve’s spec §4.3 ([Notion](https://app.notion.com/p/4240cf07a801817484
   - **waiting for Mac:** laptop + “Waiting for your Mac” (edits uploaded but not yet merged)
   - **Mac needs update:** laptop + “Your Mac needs an update to sync. Your changes are saved here.” Shown when the Mac’s server uses an older data-file schema. Neutral/waiting style (`--ios-label-2`), never warn or red. Editing stays normal; edits queue and rows show the not-synced marker. Wraps to its own line under the date. Frame 21.
   - **Phone clock off:** timer icon + “Phone clock is off. Times are being corrected.” Shown when the phone clock is more than 5 minutes off OneDrive’s time. Neutral style, not blocking; editing stays normal. Frame 23.
+  - **syncHeld:** cloud + “Some changes couldn’t sync safely. They’re saved on this phone.” Shown when the Mac is already up to date but refuses to auto-apply phone changes because both the rollback sidecar and the backup are lost. This is not “Mac needs update”. Quiet waiting style (`--ios-label-2`), never warn or red. Editing stays normal; held edits stay on the phone and rows show the not-synced marker. Wraps to its own line under the date. Frame 24.
   - offline: cloud-slash + “Offline”
   - failed: alert + “Not synced” in `--ios-warn-ink`
-- Same spot and style for every state; only the icon and words change. Frames 01, 10, 11, 18–21, 23. Long states wrap to their own line under the date.
+- Same spot and style for every state; only the icon and words change. Frames 01, 10, 11, 18–21, 23, 24. Long states wrap to their own line under the date.
 - Tapping the line opens a small **Sync sheet**: device rows (“This iPhone”, “MacBook”), “Last synced 9:40 PM”, queued changes (“2 changes waiting”), and “Sync now”.
 - **Offline banner** (info): “You’re offline. Changes stay on this phone and sync when you’re back.”
 - **Sync failed banner** (warn): title “Couldn’t sync.” body “Your changes are safe on this phone.” action “Try again”.
+- **syncHeld, on the Mac** (frame `frames/mac/mac-sync-held.png`): a quiet info note, not an error, with a count from the data, plural-aware. One: “1 change from your phone wasn’t applied, to avoid overwriting newer edits.” Several, as in the mock: “3 changes from your phone weren’t applied, to avoid overwriting newer edits.”
 - **Edited on both devices** (conflict) sheet: title “Edited on both devices”, body “Nothing is lost. Choose which version to keep.” Two cards, **On your Mac** (time) and **On this iPhone** (time, “made offline”), each with its title and time box; buttons “Keep Mac version” / “Keep iPhone version”, and “Decide later” text button. Until chosen the row shows the iPhone version with a small “2 versions” chip in `--ios-warn-ink`.
 
 ## 8. First-run sign-in — **MOCKED**
