@@ -1,0 +1,387 @@
+{
+ "before/today-normal": {
+  "notes": [],
+  "banner": [],
+  "errors": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "title": "Good morning.",
+  "metrics": {
+   "panel": [
+    64,
+    84,
+    560,
+    752.6
+   ],
+   "h1": [
+    104,
+    124,
+    480,
+    48.4
+   ],
+   "sub": [
+    104,
+    180.4,
+    480,
+    27.5
+   ],
+   "note": null,
+   "noteIco": null,
+   "noteSpan": null,
+   "goalsLbl": [
+    106,
+    231.9,
+    476,
+    37.7
+   ],
+   "firstGoal": null,
+   "noteStyle": null,
+   "noteSpanStyle": null
+  },
+  "file": "/workspace/design-review-55/before/today-normal.png"
+ },
+ "before/today-held-empty-list": {
+  "notes": [],
+  "banner": [],
+  "errors": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "title": "Good morning.",
+  "metrics": {
+   "panel": [
+    64,
+    84,
+    560,
+    752.6
+   ],
+   "h1": [
+    104,
+    124,
+    480,
+    48.4
+   ],
+   "sub": [
+    104,
+    180.4,
+    480,
+    27.5
+   ],
+   "note": null,
+   "noteIco": null,
+   "noteSpan": null,
+   "goalsLbl": [
+    106,
+    231.9,
+    476,
+    37.7
+   ],
+   "firstGoal": null,
+   "noteStyle": null,
+   "noteSpanStyle": null
+  },
+  "file": "/workspace/design-review-55/before/today-held-empty-list.png"
+ },
+ "after/today-normal": {
+  "notes": [],
+  "banner": [],
+  "errors": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "title": "Good morning.",
+  "metrics": {
+   "panel": [
+    64,
+    84,
+    560,
+    752.6
+   ],
+   "h1": [
+    104,
+    124,
+    480,
+    48.4
+   ],
+   "sub": [
+    104,
+    180.4,
+    480,
+    27.5
+   ],
+   "note": null,
+   "noteIco": null,
+   "noteSpan": null,
+   "goalsLbl": [
+    106,
+    231.9,
+    476,
+    37.7
+   ],
+   "firstGoal": null,
+   "noteStyle": null,
+   "noteSpanStyle": null
+  },
+  "file": "/workspace/design-review-55/after/today-normal.png"
+ },
+ "after/today-held-empty-list": {
+  "notes": [],
+  "banner": [],
+  "errors": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "title": "Good morning.",
+  "metrics": {
+   "panel": [
+    64,
+    84,
+    560,
+    752.6
+   ],
+   "h1": [
+    104,
+    124,
+    480,
+    48.4
+   ],
+   "sub": [
+    104,
+    180.4,
+    480,
+    27.5
+   ],
+   "note": null,
+   "noteIco": null,
+   "noteSpan": null,
+   "goalsLbl": [
+    106,
+    231.9,
+    476,
+    37.7
+   ],
+   "firstGoal": null,
+   "noteStyle": null,
+   "noteSpanStyle": null
+  },
+  "file": "/workspace/design-review-55/after/today-held-empty-list.png"
+ },
+ "after/today-synchold-3": {
+  "notes": [
+   "3 changes from your phone weren’t applied, to avoid overwriting newer edits."
+  ],
+  "banner": [],
+  "errors": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "title": "Good morning.",
+  "metrics": {
+   "panel": [
+    64,
+    84,
+    560,
+    829.2
+   ],
+   "h1": [
+    104,
+    124,
+    480,
+    48.4
+   ],
+   "sub": [
+    104,
+    180.4,
+    480,
+    27.5
+   ],
+   "note": [
+    104,
+    219.9,
+    480,
+    64.6
+   ],
+   "noteIco": [
+    120,
+    235.9,
+    14.5,
+    14.5
+   ],
+   "noteSpan": [
+    142.5,
+    231.9,
+    425.5,
+    40.6
+   ],
+   "goalsLbl": [
+    106,
+    308.5,
+    476,
+    37.7
+   ],
+   "firstGoal": null,
+   "noteStyle": {
+    "fs": "14.5px",
+    "fw": "700",
+    "lh": "20.3px",
+    "color": "rgb(15, 61, 39)",
+    "bg": "rgb(230, 238, 227)",
+    "pad": "12px 16px",
+    "rad": "16px",
+    "gap": "8px",
+    "mt": "12px",
+    "mb": "0px"
+   },
+   "noteSpanStyle": {
+    "fs": "14.5px",
+    "fw": "700",
+    "lh": "20.3px",
+    "color": "rgb(15, 61, 39)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "rad": "0px",
+    "gap": "normal",
+    "mt": "0px",
+    "mb": "0px"
+   }
+  },
+  "file": "/workspace/design-review-55/after/today-synchold-3.png"
+ },
+ "after/today-synchold-1": {
+  "notes": [
+   "1 change from your phone wasn’t applied, to avoid overwriting newer edits."
+  ],
+  "banner": [],
+  "errors": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "title": "Good morning.",
+  "metrics": {
+   "panel": [
+    64,
+    84,
+    560,
+    829.2
+   ],
+   "h1": [
+    104,
+    124,
+    480,
+    48.4
+   ],
+   "sub": [
+    104,
+    180.4,
+    480,
+    27.5
+   ],
+   "note": [
+    104,
+    219.9,
+    480,
+    64.6
+   ],
+   "noteIco": [
+    120,
+    235.9,
+    14.5,
+    14.5
+   ],
+   "noteSpan": [
+    142.5,
+    231.9,
+    425.5,
+    40.6
+   ],
+   "goalsLbl": [
+    106,
+    308.5,
+    476,
+    37.7
+   ],
+   "firstGoal": null,
+   "noteStyle": {
+    "fs": "14.5px",
+    "fw": "700",
+    "lh": "20.3px",
+    "color": "rgb(15, 61, 39)",
+    "bg": "rgb(230, 238, 227)",
+    "pad": "12px 16px",
+    "rad": "16px",
+    "gap": "8px",
+    "mt": "12px",
+    "mb": "0px"
+   },
+   "noteSpanStyle": {
+    "fs": "14.5px",
+    "fw": "700",
+    "lh": "20.3px",
+    "color": "rgb(15, 61, 39)",
+    "bg": "rgba(0, 0, 0, 0)",
+    "pad": "0px",
+    "rad": "0px",
+    "gap": "normal",
+    "mt": "0px",
+    "mb": "0px"
+   }
+  },
+  "file": "/workspace/design-review-55/after/today-synchold-1.png"
+ },
+ "after/today-v3-file": {
+  "notes": [],
+  "banner": [],
+  "errors": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "title": "Good morning.",
+  "metrics": {
+   "panel": [
+    64,
+    84,
+    560,
+    752.6
+   ],
+   "h1": [
+    104,
+    124,
+    480,
+    48.4
+   ],
+   "sub": [
+    104,
+    180.4,
+    480,
+    27.5
+   ],
+   "note": null,
+   "noteIco": null,
+   "noteSpan": null,
+   "goalsLbl": [
+    106,
+    231.9,
+    476,
+    37.7
+   ],
+   "firstGoal": null,
+   "noteStyle": null,
+   "noteSpanStyle": null
+  },
+  "file": "/workspace/design-review-55/after/today-v3-file-no-syncstate.png"
+ },
+ "after/phone-390-demo-banner": {
+  "notes": [],
+  "banner": [
+   "Demo data, not synced"
+  ],
+  "errors": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "title": "Good morning.",
+  "file": "/workspace/design-review-55/after/phone-390-demo-banner.png"
+ },
+ "before/phone-390-no-banner": {
+  "notes": [],
+  "banner": [],
+  "errors": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "title": "Good morning.",
+  "file": "/workspace/design-review-55/before/phone-390-no-banner.png"
+ }
+}

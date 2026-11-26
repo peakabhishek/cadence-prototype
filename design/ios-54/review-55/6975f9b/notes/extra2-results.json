@@ -1,0 +1,63 @@
+{
+ "before/normal/today notes": 0,
+ "before/normal/today cta": {
+  "top": 708,
+  "bottom": 766,
+  "vh": 854,
+  "scrollH": 861
+ },
+ "before/normal/focus notes": 0,
+ "before/normal/week notes": 0,
+ "after/normal/today notes": 0,
+ "after/normal/today cta": {
+  "top": 708,
+  "bottom": 766,
+  "vh": 854,
+  "scrollH": 861
+ },
+ "after/normal/focus notes": 0,
+ "after/normal/week notes": 0,
+ "after/held3/today notes": 1,
+ "after/held3/today cta": {
+  "top": 785,
+  "bottom": 843,
+  "vh": 854,
+  "scrollH": 937
+ },
+ "after/held3/focus notes": 0,
+ "after/held3/week notes": 0,
+ "phone inset 47 banner": {
+  "rect": [
+   0,
+   47,
+   390,
+   24
+  ],
+  "bg": "rgb(246, 217, 168)",
+  "color": "rgb(90, 58, 18)",
+  "font": "13px/18px 600 -apple-system, BlinkMacSystemFont, \"SF P",
+  "radius": "0px",
+  "align": "center",
+  "nextTop": 0,
+  "role": "status",
+  "text": "Demo data, not synced",
+  "btns": 0
+ },
+ "phone inset 54 banner": {
+  "rect": [
+   0,
+   54,
+   390,
+   24
+  ],
+  "bg": "rgb(246, 217, 168)",
+  "color": "rgb(90, 58, 18)",
+  "font": "13px/18px 600 -apple-system, BlinkMacSystemFont, \"SF P",
+  "radius": "0px",
+  "align": "center",
+  "nextTop": 0,
+  "role": "status",
+  "text": "Demo data, not synced",
+  "btns": 0
+ }
+}
