@@ -1,0 +1,1409 @@
+{
+ "audit": {},
+ "texts": {
+  "13b-keep-all-and-undo": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus 2 changes Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Name: Deep work (Mac has Focus) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Gym Name: Gym, legs day (Mac has Gym) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "4 phone changes to review Review",
+   "toast": null
+  },
+  "single-row-undo-with-keepall-visible": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus 2 changes Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Name: Deep work (Mac has Focus) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Gym Name: Gym, legs day (Mac has Gym) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "4 phone changes to review Review",
+   "toast": null
+  },
+  "noleftover-undo-reopens": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 3 changes, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus Name: Synthetic Deep work (Mac has Synthetic Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Synthetic weekly review Time box: 60 min (Mac has 45 min) You also changed the target on this Mac Keep Mac’s version Use phone’s version Synthetic Gym Name: Synthetic Gym legs day (Mac has Synthetic Gym) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Close",
+   "note": "3 phone changes to review Review",
+   "toast": null
+  },
+  "fallback-no-keepall": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus 2 changes Add 25-min session from your phone (18 Nov) From your phone on 18 Nov Add this session Name: Synthetic Deep work (Mac has Synthetic Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Close",
+   "note": "2 phone changes to review Review",
+   "toast": null
+  },
+  "frame06-last-choice-undo": {
+   "sheet": null,
+   "note": "1 phone change to review Review",
+   "toast": null
+  },
+  "linus-keep-all-mix": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus 2 changes Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Name: Synthetic Deep work (Mac has Synthetic Focus) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Synthetic Gym Name: Synthetic Gym legs day (Mac has Synthetic Gym) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Synthetic Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "4 phone changes to review Review",
+   "toast": null
+  }
+ },
+ "errors": {
+  "13b-keep-all-and-undo": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "single-row-undo-with-keepall-visible": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "noleftover-undo-reopens": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "fallback-no-keepall": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "frame06-last-choice-undo": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "linus-keep-all-mix": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ]
+ },
+ "metrics": {
+  "13b_before": {
+   "focus": {
+    "tag": "DIV",
+    "id": null,
+    "act": null,
+    "key": null,
+    "text": "Held changes from your phoneYour Mac didn’t apply these 4 changes, to avoid over",
+    "className": "sheet",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(42, 33, 24) none 3px",
+    "outlineColor": "rgb(42, 33, 24)",
+    "outlineWidth": "3px",
+    "outlineOffset": "0px",
+    "outlineStyle": "none",
+    "boxShadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.48) 0px 28px 64px -16px",
+    "leafToken": "#1B5E3B",
+    "tabindex": "-1"
+   },
+   "groups": [
+    {
+     "key": "x1",
+     "title": "Focus",
+     "acts": [
+      {
+       "act": "add",
+       "key": "phone-r3:4",
+       "text": "Add this session"
+      },
+      {
+       "act": "keep",
+       "key": "x1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x1",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "x2",
+     "title": "Gym",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "x2",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x2",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "n1",
+     "title": "Call the bank",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "n1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "n1",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": {
+    "text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+    "width": 240,
+    "height": 35.1,
+    "lines": 2,
+    "font": "600 13px / 17.55px \"Source Sans 3\", system-ui, sans-serif",
+    "color": "rgb(92, 81, 70)",
+    "maxWidth": "240px",
+    "nonAscii": [
+     "U+2019"
+    ]
+   },
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus 2 changes Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Name: Deep work (Mac has Focus) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Gym Name: Gym, legs day (Mac has Gym) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "4 phone changes to review Review",
+   "toast": null,
+   "sheetPresent": true,
+   "keepAll": true,
+   "heading": "Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "13b_tokens": {
+   "--shadow-dialog": "0 1px 0 rgba(92, 61, 46, 0.06), 0 28px 64px -16px rgba(42, 33, 24, 0.48)",
+   "--plant-dry-6": "#AE8F5C",
+   "--s-5": "24px",
+   "--plant-leaf-3": "#2A6842",
+   "--r-chrome": "8px",
+   "--fs-nav": "15px",
+   "--button-h": "56px",
+   "--r-sheet": "24px",
+   "--wither-light": "#F6EBDD",
+   "--s-page": "64px",
+   "--plant-stem": "#5C8A50",
+   "--s-1": "4px",
+   "--s-8": "48px",
+   "--chrome-line": "#E0D2BF",
+   "--split-narrow": "1280px",
+   "--fs-banner-body": "14.5px",
+   "--plant-leaf-1": "#2F7148",
+   "--shortfall": "#B98A62",
+   "--wither-ink": "#74492B",
+   "--wither-leaf": "#8B5E3C",
+   "--on-leaf": "#F7F0E6",
+   "--success": "#1B5E3B",
+   "--s-6": "32px",
+   "--plant-dry-stem": "#8A6D45",
+   "--fs-banner-title": "16px",
+   "--leaf-wash": "#E6EEE3",
+   "--text-muted": "#5C5146",
+   "--line": "#E6D7C4",
+   "--bg": "#F7F0E6",
+   "--track": "#EFE4D5",
+   "--plant-leaf-2": "#3A8052",
+   "--radio-idle": "#B9A790",
+   "--field-h": "56px",
+   "--window-light-1": "#E3B5A0",
+   "--leaf-deep": "#0F3D27",
+   "--chrome": "#EFE6DA",
+   "--fs-title-grove": "40px",
+   "--terracotta": "#C45C2A",
+   "--fs-end-title": "52px",
+   "--plant-leaf-4": "#357A4D",
+   "--fs-dialog-title": "32px",
+   "--fs-timer": "76px",
+   "--soil": "#5C3D2E",
+   "--short-badge-line": "#D9BFA2",
+   "--lh-body": "1.45",
+   "--split-wide": "1440px",
+   "--split-plant-max": "780px",
+   "--plant-dry-1": "#B39566",
+   "--fs-badge": "14.5px",
+   "--s-card": "22px",
+   "--sun": "#F6D9A8",
+   "--font-ui": "\"Source Sans 3\", system-ui, sans-serif",
+   "--shadow-primary": "inset 0 1px 0 rgba(255, 255, 255, 0.12), 0 10px 22px -12px rgba(15, 61, 39, 0.7)",
+   "--plant-dry-2": "#A99A5A",
+   "--fs-button": "17px",
+   "--shadow-card": "0 1px 0 rgba(92, 61, 46, 0.06), 0 8px 24px -12px rgba(92, 61, 46, 0.18)",
+   "--fs-title-laptop": "44px",
+   "--nav-h": "40px",
+   "--fs-timer-laptop": "120px",
+   "--fs-title": "32px",
+   "--sill-edge": "#D6C2A8",
+   "--s-3": "12px",
+   "--glow-wash": "#F9F3EA",
+   "--scrim": "rgba(42, 33, 24, 0.38)",
+   "--fs-title-sheet": "34px",
+   "--s-2": "8px",
+   "--fs-hero-number": "64px",
+   "--fs-tally-laptop": "60px",
+   "--fs-caption": "13px",
+   "--button-h-laptop": "58px",
+   "--r-input": "12px",
+   "--plant-young-1": "#5E9A5C",
+   "--short-card": "#FBF4EC",
+   "--url-bg": "#FBF6EF",
+   "--shadow-sheet": "0 1px 0 rgba(92, 61, 46, 0.06), 0 30px 60px -24px rgba(92, 61, 46, 0.35)",
+   "--plant-dry-4": "#9C7A4A",
+   "--fs-body": "17px",
+   "--window-light-2": "#E6CF9E",
+   "--reason-chip": "#E7D6C4",
+   "--wither-bg": "#F3E6D6",
+   "--fs-wordmark-laptop": "27px",
+   "--plant-leaf-5": "#44875A",
+   "--window-light-3": "#B9CDAF",
+   "--split-plant-min": "584px",
+   "--chrome-h": "46px",
+   "--leaf": "#1B5E3B",
+   "--fs-hero-laptop": "84px",
+   "--text": "#2A2118",
+   "--fs-label": "13px",
+   "--sill-top": "#EADBC7",
+   "--r-pill": "999px",
+   "--icon-stroke": "1.75px",
+   "--font-display": "\"Fraunces\", Georgia, serif",
+   "--short-card-line": "#E5CFB6",
+   "--s-panel": "40px",
+   "--plant-young-3": "#579457",
+   "--sill-bot": "#E1CFB8",
+   "--plant-dry-3": "#BFA071",
+   "--surface": "#FFFBF6",
+   "--time-box-w": "104px",
+   "--r-card": "16px",
+   "--wither-chrome": "#ECDDCB",
+   "--plant-young-2": "#6AA466",
+   "--tap-min": "44px",
+   "--s-7": "40px",
+   "--plant-dry-5": "#B2A068",
+   "--fs-wordmark": "20px",
+   "--s-4": "16px"
+  },
+  "13b_after_keepall": {
+   "focus": {
+    "tag": "BUTTON",
+    "id": null,
+    "act": "add",
+    "key": "phone-r3:4",
+    "text": "Add this session",
+    "className": "btn outline",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(27, 94, 59) solid 2px",
+    "outlineColor": "rgb(27, 94, 59)",
+    "outlineWidth": "2px",
+    "outlineOffset": "2px",
+    "outlineStyle": "solid",
+    "boxShadow": "rgb(27, 94, 59) 0px 0px 0px 1.5px inset",
+    "leafToken": "#1B5E3B",
+    "tabindex": null
+   },
+   "groups": [
+    {
+     "key": "x1",
+     "title": "Focus",
+     "acts": [
+      {
+       "act": "add",
+       "key": "phone-r3:4",
+       "text": "Add this session"
+      }
+     ]
+    },
+    {
+     "key": "n1",
+     "title": "Call the bank",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "n1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "n1",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": null,
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Close",
+   "note": "2 phone changes to review Review",
+   "toast": "Kept your Mac’s version for 2 goal edits. Undo",
+   "sheetPresent": true,
+   "keepAll": false,
+   "heading": "Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "13b_after_undo": {
+   "focus": {
+    "tag": "BUTTON",
+    "id": null,
+    "act": "keepall",
+    "key": null,
+    "text": "Keep Mac’s version for all",
+    "className": "btn outline",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(27, 94, 59) solid 2px",
+    "outlineColor": "rgb(27, 94, 59)",
+    "outlineWidth": "2px",
+    "outlineOffset": "2px",
+    "outlineStyle": "solid",
+    "boxShadow": "rgb(27, 94, 59) 0px 0px 0px 1.5px inset",
+    "leafToken": "#1B5E3B",
+    "tabindex": null
+   },
+   "groups": [
+    {
+     "key": "x1",
+     "title": "Focus",
+     "acts": [
+      {
+       "act": "add",
+       "key": "phone-r3:4",
+       "text": "Add this session"
+      },
+      {
+       "act": "keep",
+       "key": "x1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x1",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "x2",
+     "title": "Gym",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "x2",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x2",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "n1",
+     "title": "Call the bank",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "n1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "n1",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": {
+    "text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+    "width": 240,
+    "height": 35.1,
+    "lines": 2,
+    "font": "600 13px / 17.55px \"Source Sans 3\", system-ui, sans-serif",
+    "color": "rgb(92, 81, 70)",
+    "maxWidth": "240px",
+    "nonAscii": [
+     "U+2019"
+    ]
+   },
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus 2 changes Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Name: Deep work (Mac has Focus) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Gym Name: Gym, legs day (Mac has Gym) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "4 phone changes to review Review",
+   "toast": null,
+   "sheetPresent": true,
+   "keepAll": true,
+   "heading": "Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "13b-keep-all-and-undo": {
+   "held_resolve_posts": []
+  },
+  "single_before": {
+   "focus": {
+    "tag": "DIV",
+    "id": null,
+    "act": null,
+    "key": null,
+    "text": "Held changes from your phoneYour Mac didn’t apply these 4 changes, to avoid over",
+    "className": "sheet",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(42, 33, 24) none 3px",
+    "outlineColor": "rgb(42, 33, 24)",
+    "outlineWidth": "3px",
+    "outlineOffset": "0px",
+    "outlineStyle": "none",
+    "boxShadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.48) 0px 28px 64px -16px",
+    "leafToken": "#1B5E3B",
+    "tabindex": "-1"
+   },
+   "groups": [
+    {
+     "key": "x1",
+     "title": "Focus",
+     "acts": [
+      {
+       "act": "add",
+       "key": "phone-r3:4",
+       "text": "Add this session"
+      },
+      {
+       "act": "keep",
+       "key": "x1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x1",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "x2",
+     "title": "Gym",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "x2",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x2",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "n1",
+     "title": "Call the bank",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "n1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "n1",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": {
+    "text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+    "width": 240,
+    "height": 35.1,
+    "lines": 2,
+    "font": "600 13px / 17.55px \"Source Sans 3\", system-ui, sans-serif",
+    "color": "rgb(92, 81, 70)",
+    "maxWidth": "240px",
+    "nonAscii": [
+     "U+2019"
+    ]
+   },
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus 2 changes Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Name: Deep work (Mac has Focus) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Gym Name: Gym, legs day (Mac has Gym) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "4 phone changes to review Review",
+   "toast": null,
+   "sheetPresent": true,
+   "keepAll": true,
+   "heading": "Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "single_acted_row": {
+   "exists": true,
+   "keepAll": true,
+   "groupTitle": "Gym"
+  },
+  "single_after_keep": {
+   "focus": {
+    "tag": "BUTTON",
+    "id": null,
+    "act": "keep",
+    "key": "n1",
+    "text": "Keep Mac’s version",
+    "className": "btn primary",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(27, 94, 59) solid 2px",
+    "outlineColor": "rgb(27, 94, 59)",
+    "outlineWidth": "2px",
+    "outlineOffset": "2px",
+    "outlineStyle": "solid",
+    "boxShadow": "rgba(255, 255, 255, 0.12) 0px 1px 0px 0px inset, rgba(15, 61, 39, 0.7) 0px 10px 22px -12px",
+    "leafToken": "#1B5E3B",
+    "tabindex": null
+   },
+   "groups": [
+    {
+     "key": "x1",
+     "title": "Focus",
+     "acts": [
+      {
+       "act": "add",
+       "key": "phone-r3:4",
+       "text": "Add this session"
+      },
+      {
+       "act": "keep",
+       "key": "x1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x1",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "n1",
+     "title": "Call the bank",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "n1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "n1",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": null,
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 3 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus 2 changes Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Name: Deep work (Mac has Focus) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Close",
+   "note": "3 phone changes to review Review",
+   "toast": "Kept your Mac’s version for Gym. Undo",
+   "sheetPresent": true,
+   "keepAll": false,
+   "heading": "Your Mac didn’t apply these 3 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "single_after_undo": {
+   "focus": {
+    "tag": "BUTTON",
+    "id": null,
+    "act": "keep",
+    "key": "x2",
+    "text": "Keep Mac’s version",
+    "className": "btn primary",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(27, 94, 59) solid 2px",
+    "outlineColor": "rgb(27, 94, 59)",
+    "outlineWidth": "2px",
+    "outlineOffset": "2px",
+    "outlineStyle": "solid",
+    "boxShadow": "rgba(255, 255, 255, 0.12) 0px 1px 0px 0px inset, rgba(15, 61, 39, 0.7) 0px 10px 22px -12px",
+    "leafToken": "#1B5E3B",
+    "tabindex": null
+   },
+   "groups": [
+    {
+     "key": "x1",
+     "title": "Focus",
+     "acts": [
+      {
+       "act": "add",
+       "key": "phone-r3:4",
+       "text": "Add this session"
+      },
+      {
+       "act": "keep",
+       "key": "x1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x1",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "x2",
+     "title": "Gym",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "x2",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x2",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "n1",
+     "title": "Call the bank",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "n1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "n1",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": {
+    "text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+    "width": 240,
+    "height": 35.1,
+    "lines": 2,
+    "font": "600 13px / 17.55px \"Source Sans 3\", system-ui, sans-serif",
+    "color": "rgb(92, 81, 70)",
+    "maxWidth": "240px",
+    "nonAscii": [
+     "U+2019"
+    ]
+   },
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus 2 changes Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Name: Deep work (Mac has Focus) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Gym Name: Gym, legs day (Mac has Gym) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "4 phone changes to review Review",
+   "toast": null,
+   "sheetPresent": true,
+   "keepAll": true,
+   "heading": "Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "single-row-undo-with-keepall-visible": {
+   "held_resolve_posts": []
+  },
+  "noleftover_before": {
+   "focus": {
+    "tag": "DIV",
+    "id": null,
+    "act": null,
+    "key": null,
+    "text": "Held changes from your phoneYour Mac didn’t apply these 3 changes, to avoid over",
+    "className": "sheet",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(42, 33, 24) none 3px",
+    "outlineColor": "rgb(42, 33, 24)",
+    "outlineWidth": "3px",
+    "outlineOffset": "0px",
+    "outlineStyle": "none",
+    "boxShadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.48) 0px 28px 64px -16px",
+    "leafToken": "#1B5E3B",
+    "tabindex": "-1"
+   },
+   "groups": [
+    {
+     "key": "g1",
+     "title": "Synthetic Focus",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "g1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "g1",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "g2",
+     "title": "Synthetic weekly review",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "g2",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "g2",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "g3",
+     "title": "Synthetic Gym",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "g3",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "g3",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": null,
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 3 changes, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus Name: Synthetic Deep work (Mac has Synthetic Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Synthetic weekly review Time box: 60 min (Mac has 45 min) You also changed the target on this Mac Keep Mac’s version Use phone’s version Synthetic Gym Name: Synthetic Gym legs day (Mac has Synthetic Gym) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Close",
+   "note": "3 phone changes to review Review",
+   "toast": null,
+   "sheetPresent": true,
+   "keepAll": true,
+   "heading": "Your Mac didn’t apply these 3 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "noleftover_before_sheet_text": "Held changes from your phone Your Mac didn’t apply these 3 changes, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus Name: Synthetic Deep work (Mac has Synthetic Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Synthetic weekly review Time box: 60 min (Mac has 45 min) You also changed the target on this Mac Keep Mac’s version Use phone’s version Synthetic Gym Name: Synthetic Gym legs day (Mac has Synthetic Gym) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Close",
+  "noleftover_after_close": {
+   "focus": {
+    "tag": "MAIN",
+    "id": "view",
+    "act": null,
+    "key": null,
+    "text": "Good morning.What matters today?GoalsTime box · optionalPer day123Add a goalTime",
+    "className": "view",
+    "isBody": false,
+    "isHtml": false,
+    "isView": true,
+    "inSheet": false,
+    "inToast": false,
+    "outline": "rgb(42, 33, 24) none 3px",
+    "outlineColor": "rgb(42, 33, 24)",
+    "outlineWidth": "3px",
+    "outlineOffset": "0px",
+    "outlineStyle": "none",
+    "boxShadow": "none",
+    "leafToken": "#1B5E3B",
+    "tabindex": "-1"
+   },
+   "groups": null,
+   "helper": null,
+   "sheet": null,
+   "note": null,
+   "toast": "Kept your Mac’s version for 3 goal edits. Undo",
+   "sheetPresent": false,
+   "keepAll": false,
+   "heading": null
+  },
+  "noleftover_after_undo": {
+   "focus": {
+    "tag": "BUTTON",
+    "id": null,
+    "act": "keepall",
+    "key": null,
+    "text": "Keep Mac’s version for all",
+    "className": "btn outline",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(27, 94, 59) solid 2px",
+    "outlineColor": "rgb(27, 94, 59)",
+    "outlineWidth": "2px",
+    "outlineOffset": "2px",
+    "outlineStyle": "solid",
+    "boxShadow": "rgb(27, 94, 59) 0px 0px 0px 1.5px inset",
+    "leafToken": "#1B5E3B",
+    "tabindex": null
+   },
+   "groups": [
+    {
+     "key": "g1",
+     "title": "Synthetic Focus",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "g1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "g1",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "g2",
+     "title": "Synthetic weekly review",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "g2",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "g2",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "g3",
+     "title": "Synthetic Gym",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "g3",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "g3",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": null,
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 3 changes, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus Name: Synthetic Deep work (Mac has Synthetic Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Synthetic weekly review Time box: 60 min (Mac has 45 min) You also changed the target on this Mac Keep Mac’s version Use phone’s version Synthetic Gym Name: Synthetic Gym legs day (Mac has Synthetic Gym) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Close",
+   "note": "3 phone changes to review Review",
+   "toast": null,
+   "sheetPresent": true,
+   "keepAll": true,
+   "heading": "Your Mac didn’t apply these 3 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "noleftover_after_undo_sheet_text": "Held changes from your phone Your Mac didn’t apply these 3 changes, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus Name: Synthetic Deep work (Mac has Synthetic Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Synthetic weekly review Time box: 60 min (Mac has 45 min) You also changed the target on this Mac Keep Mac’s version Use phone’s version Synthetic Gym Name: Synthetic Gym legs day (Mac has Synthetic Gym) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Close",
+  "noleftover-undo-reopens": {
+   "held_resolve_posts": []
+  },
+  "fallback_before": {
+   "focus": {
+    "tag": "DIV",
+    "id": null,
+    "act": null,
+    "key": null,
+    "text": "Held changes from your phoneYour Mac didn’t apply these 2 changes, to avoid over",
+    "className": "sheet",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(42, 33, 24) none 3px",
+    "outlineColor": "rgb(42, 33, 24)",
+    "outlineWidth": "3px",
+    "outlineOffset": "0px",
+    "outlineStyle": "none",
+    "boxShadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.48) 0px 28px 64px -16px",
+    "leafToken": "#1B5E3B",
+    "tabindex": "-1"
+   },
+   "groups": [
+    {
+     "key": "g1",
+     "title": "Synthetic Focus",
+     "acts": [
+      {
+       "act": "add",
+       "key": "phone-r3:1",
+       "text": "Add this session"
+      },
+      {
+       "act": "keep",
+       "key": "g1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "g1",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": null,
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus 2 changes Add 25-min session from your phone (18 Nov) From your phone on 18 Nov Add this session Name: Synthetic Deep work (Mac has Synthetic Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Close",
+   "note": "2 phone changes to review Review",
+   "toast": null,
+   "sheetPresent": true,
+   "keepAll": false,
+   "heading": "Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "fallback_after_keep": {
+   "focus": {
+    "tag": "BUTTON",
+    "id": null,
+    "act": "add",
+    "key": "phone-r3:1",
+    "text": "Add this session",
+    "className": "btn outline",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(27, 94, 59) solid 2px",
+    "outlineColor": "rgb(27, 94, 59)",
+    "outlineWidth": "2px",
+    "outlineOffset": "2px",
+    "outlineStyle": "solid",
+    "boxShadow": "rgb(27, 94, 59) 0px 0px 0px 1.5px inset",
+    "leafToken": "#1B5E3B",
+    "tabindex": null
+   },
+   "groups": [
+    {
+     "key": "g1",
+     "title": "Synthetic Focus",
+     "acts": [
+      {
+       "act": "add",
+       "key": "phone-r3:1",
+       "text": "Add this session"
+      }
+     ]
+    }
+   ],
+   "helper": null,
+   "sheet": "Held changes from your phone Your Mac didn’t apply this change, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus Add 25-min session from your phone (18 Nov) From your phone on 18 Nov Add this session Closing keeps every change held. Close",
+   "note": "1 phone change to review Review",
+   "toast": "Kept your Mac’s version for Synthetic Focus. Undo",
+   "sheetPresent": true,
+   "keepAll": false,
+   "heading": "Your Mac didn’t apply this change, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "fallback_after_undo": {
+   "focus": {
+    "tag": "BUTTON",
+    "id": null,
+    "act": "keep",
+    "key": "g1",
+    "text": "Keep Mac’s version",
+    "className": "btn primary",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(27, 94, 59) solid 2px",
+    "outlineColor": "rgb(27, 94, 59)",
+    "outlineWidth": "2px",
+    "outlineOffset": "2px",
+    "outlineStyle": "solid",
+    "boxShadow": "rgba(255, 255, 255, 0.12) 0px 1px 0px 0px inset, rgba(15, 61, 39, 0.7) 0px 10px 22px -12px",
+    "leafToken": "#1B5E3B",
+    "tabindex": null
+   },
+   "groups": [
+    {
+     "key": "g1",
+     "title": "Synthetic Focus",
+     "acts": [
+      {
+       "act": "add",
+       "key": "phone-r3:1",
+       "text": "Add this session"
+      },
+      {
+       "act": "keep",
+       "key": "g1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "g1",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": null,
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus 2 changes Add 25-min session from your phone (18 Nov) From your phone on 18 Nov Add this session Name: Synthetic Deep work (Mac has Synthetic Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Close",
+   "note": "2 phone changes to review Review",
+   "toast": null,
+   "sheetPresent": true,
+   "keepAll": false,
+   "heading": "Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "fallback-no-keepall": {
+   "held_resolve_posts": []
+  },
+  "frame06_before": {
+   "focus": {
+    "tag": "DIV",
+    "id": null,
+    "act": null,
+    "key": null,
+    "text": "Held changes from your phoneYour Mac didn’t apply this change, to avoid overwrit",
+    "className": "sheet",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(42, 33, 24) none 3px",
+    "outlineColor": "rgb(42, 33, 24)",
+    "outlineWidth": "3px",
+    "outlineOffset": "0px",
+    "outlineStyle": "none",
+    "boxShadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.48) 0px 28px 64px -16px",
+    "leafToken": "#1B5E3B",
+    "tabindex": "-1"
+   },
+   "groups": [
+    {
+     "key": "g1",
+     "title": "Synthetic Focus",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "g1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "g1",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": null,
+   "sheet": "Held changes from your phone Your Mac didn’t apply this change, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus Name: Synthetic Deep work (Mac has Synthetic Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Close",
+   "note": "1 phone change to review Review",
+   "toast": null,
+   "sheetPresent": true,
+   "keepAll": false,
+   "heading": "Your Mac didn’t apply this change, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "frame06_after_use": {
+   "focus": {
+    "tag": "MAIN",
+    "id": "view",
+    "act": null,
+    "key": null,
+    "text": "Good morning.What matters today?GoalTime box · optionalPer day1Add a goalTime bo",
+    "className": "view",
+    "isBody": false,
+    "isHtml": false,
+    "isView": true,
+    "inSheet": false,
+    "inToast": false,
+    "outline": "rgb(42, 33, 24) none 3px",
+    "outlineColor": "rgb(42, 33, 24)",
+    "outlineWidth": "3px",
+    "outlineOffset": "0px",
+    "outlineStyle": "none",
+    "boxShadow": "none",
+    "leafToken": "#1B5E3B",
+    "tabindex": "-1"
+   },
+   "groups": null,
+   "helper": null,
+   "sheet": null,
+   "note": null,
+   "toast": "Used your phone’s version for Synthetic Focus. Undo",
+   "sheetPresent": false,
+   "keepAll": false,
+   "heading": null
+  },
+  "frame06_after_undo": {
+   "focus": {
+    "tag": "BODY",
+    "id": null,
+    "act": null,
+    "key": null,
+    "text": "Cadence\n    \n    \n      Today\n      Focus\n      Week\n    \n    Thursday 26 Nov\n  ",
+    "className": "",
+    "isBody": true,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": false,
+    "inToast": false,
+    "outline": "rgb(42, 33, 24) none 3px",
+    "outlineColor": "rgb(42, 33, 24)",
+    "outlineWidth": "3px",
+    "outlineOffset": "0px",
+    "outlineStyle": "none",
+    "boxShadow": "none",
+    "leafToken": "#1B5E3B",
+    "tabindex": null
+   },
+   "groups": null,
+   "helper": null,
+   "sheet": null,
+   "note": "1 phone change to review Review",
+   "toast": null,
+   "sheetPresent": false,
+   "keepAll": false,
+   "heading": null,
+   "sheetCount": 0,
+   "reviewBtn": true
+  },
+  "frame06-last-choice-undo": {
+   "held_resolve_posts": []
+  },
+  "linus_before": {
+   "focus": {
+    "tag": "DIV",
+    "id": null,
+    "act": null,
+    "key": null,
+    "text": "Held changes from your phoneYour Mac didn’t apply these 4 changes, to avoid over",
+    "className": "sheet",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(42, 33, 24) none 3px",
+    "outlineColor": "rgb(42, 33, 24)",
+    "outlineWidth": "3px",
+    "outlineOffset": "0px",
+    "outlineStyle": "none",
+    "boxShadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.48) 0px 28px 64px -16px",
+    "leafToken": "#1B5E3B",
+    "tabindex": "-1"
+   },
+   "groups": [
+    {
+     "key": "x1",
+     "title": "Synthetic Focus",
+     "acts": [
+      {
+       "act": "add",
+       "key": "phone-r3:4",
+       "text": "Add this session"
+      },
+      {
+       "act": "keep",
+       "key": "x1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x1",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "x2",
+     "title": "Synthetic Gym",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "x2",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x2",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "n1",
+     "title": "Synthetic Call the bank",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "n1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "n1",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": {
+    "text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+    "width": 240,
+    "height": 35.1,
+    "lines": 2,
+    "font": "600 13px / 17.55px \"Source Sans 3\", system-ui, sans-serif",
+    "color": "rgb(92, 81, 70)",
+    "maxWidth": "240px",
+    "nonAscii": [
+     "U+2019"
+    ]
+   },
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus 2 changes Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Name: Synthetic Deep work (Mac has Synthetic Focus) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Synthetic Gym Name: Synthetic Gym legs day (Mac has Synthetic Gym) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Synthetic Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "4 phone changes to review Review",
+   "toast": null,
+   "sheetPresent": true,
+   "keepAll": true,
+   "heading": "Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "linus_after_keepall": {
+   "focus": {
+    "tag": "BUTTON",
+    "id": null,
+    "act": "add",
+    "key": "phone-r3:4",
+    "text": "Add this session",
+    "className": "btn outline",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(27, 94, 59) solid 2px",
+    "outlineColor": "rgb(27, 94, 59)",
+    "outlineWidth": "2px",
+    "outlineOffset": "2px",
+    "outlineStyle": "solid",
+    "boxShadow": "rgb(27, 94, 59) 0px 0px 0px 1.5px inset",
+    "leafToken": "#1B5E3B",
+    "tabindex": null
+   },
+   "groups": [
+    {
+     "key": "x1",
+     "title": "Synthetic Focus",
+     "acts": [
+      {
+       "act": "add",
+       "key": "phone-r3:4",
+       "text": "Add this session"
+      }
+     ]
+    },
+    {
+     "key": "n1",
+     "title": "Synthetic Call the bank",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "n1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "n1",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": null,
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Synthetic Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Close",
+   "note": "2 phone changes to review Review",
+   "toast": "Kept your Mac’s version for 2 goal edits. Undo",
+   "sheetPresent": true,
+   "keepAll": false,
+   "heading": "Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "linus_after_undo": {
+   "focus": {
+    "tag": "BUTTON",
+    "id": null,
+    "act": "keepall",
+    "key": null,
+    "text": "Keep Mac’s version for all",
+    "className": "btn outline",
+    "isBody": false,
+    "isHtml": false,
+    "isView": false,
+    "inSheet": true,
+    "inToast": false,
+    "outline": "rgb(27, 94, 59) solid 2px",
+    "outlineColor": "rgb(27, 94, 59)",
+    "outlineWidth": "2px",
+    "outlineOffset": "2px",
+    "outlineStyle": "solid",
+    "boxShadow": "rgb(27, 94, 59) 0px 0px 0px 1.5px inset",
+    "leafToken": "#1B5E3B",
+    "tabindex": null
+   },
+   "groups": [
+    {
+     "key": "x1",
+     "title": "Synthetic Focus",
+     "acts": [
+      {
+       "act": "add",
+       "key": "phone-r3:4",
+       "text": "Add this session"
+      },
+      {
+       "act": "keep",
+       "key": "x1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x1",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "x2",
+     "title": "Synthetic Gym",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "x2",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "x2",
+       "text": "Use phone’s version"
+      }
+     ]
+    },
+    {
+     "key": "n1",
+     "title": "Synthetic Call the bank",
+     "acts": [
+      {
+       "act": "keep",
+       "key": "n1",
+       "text": "Keep Mac’s version"
+      },
+      {
+       "act": "use",
+       "key": "n1",
+       "text": "Use phone’s version"
+      }
+     ]
+    }
+   ],
+   "helper": {
+    "text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+    "width": 240,
+    "height": 35.1,
+    "lines": 2,
+    "font": "600 13px / 17.55px \"Source Sans 3\", system-ui, sans-serif",
+    "color": "rgb(92, 81, 70)",
+    "maxWidth": "240px",
+    "nonAscii": [
+     "U+2019"
+    ]
+   },
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Synthetic Focus 2 changes Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Name: Synthetic Deep work (Mac has Synthetic Focus) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Synthetic Gym Name: Synthetic Gym legs day (Mac has Synthetic Gym) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Synthetic Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "4 phone changes to review Review",
+   "toast": null,
+   "sheetPresent": true,
+   "keepAll": true,
+   "heading": "Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose."
+  },
+  "linus-keep-all-mix": {
+   "held_resolve_posts": []
+  }
+ },
+ "tree": "/workspace/cadence-r63-0013b16",
+ "label": "0013b16"
+}
