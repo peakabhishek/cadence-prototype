@@ -22,7 +22,7 @@
   /* Synthetic held entries (cadence#58, Steve’s three calls, 27 Nov 2026).
      kind "session"  = held add_session: own "Add this session" button; never added or dropped by bulk or by a goal’s Keep/Use
      kind "edit"     = held edit_goal (name, target) or a held add: per-goal "Keep Mac’s version" / "Use phone’s version"
-       basis "snapshot" = the Mac that held it had #58 and knows it edited this field after the hold
+       basis "snapshot" = the Mac also edited this field after the phone last saw the Mac’s file (PR #60 at 1233e17); that can be before the hold
        basis "nostamp"  = the Mac that held it ran #55 only: it can’t tell which is newer (Tony’s no-stamp wording)
        basis "old"      = more than 7 days old
      kind "remove" / "restore" = held remove or restore of a goal, with their own button labels
@@ -30,7 +30,7 @@
   var ALL = [
     { id: "e1", kind: "session", goal: "Read one paper", line: "Add 30-min session from your phone (18 Nov)", ctx: "Mac’s total for 18 Nov: 20 min", meta: "More than 7 days old",
       useV: "adds a 30-min session on 18 Nov. The Mac’s own sessions stay as they are", date: "18 Nov" },
-    { id: "e2", kind: "edit", basis: "snapshot", goal: "Focus", chg: "Name: Deep work", mac: "Mac has Focus", meta: "You changed the name on this Mac after this was held", date: "25 Nov",
+    { id: "e2", kind: "edit", basis: "snapshot", goal: "Focus", chg: "Name: Deep work", mac: "Mac has Focus", meta: "You also changed the name on this Mac", date: "25 Nov",
       keepV: "keeps the name Focus and drops the phone’s name Deep work", useV: "renames it to Deep work, replacing the Mac’s Focus" },
     { id: "e3", kind: "edit", basis: "nostamp", goal: "Write the weekly review", chg: "Time box: 60 min", meta: "Can’t tell which is newer. Mac has 45 min", date: "25 Nov",
       keepV: "keeps the 45 min time box and drops the phone’s 60 min", useV: "sets the time box to 60 min, replacing the Mac’s 45 min" },
@@ -42,9 +42,9 @@
       keepV: "17 Nov stays without it and the phone’s add is dropped", useV: "adds it to 17 Nov" },
     { id: "e7", kind: "update", reason: "unreadable", date: "24 Nov" },
     { id: "e8", kind: "update", reason: "schema", date: null },
-    { id: "e9", kind: "edit", basis: "snapshot", goal: "Plan Friday’s demo", chg: "Time box: 50 min", mac: "Mac has 25 min", meta: "You changed the time box on this Mac after this was held", date: "26 Nov",
+    { id: "e9", kind: "edit", basis: "snapshot", goal: "Plan Friday’s demo", chg: "Time box: 50 min", mac: "Mac has 25 min", meta: "You also changed the target on this Mac", date: "26 Nov",
       keepV: "keeps the 25 min time box and drops the phone’s 50 min", useV: "sets the time box to 50 min, replacing the Mac’s 25 min" },
-    { id: "e10", kind: "edit", basis: "snapshot", goal: "Write the weekly review", chg: "Time box: 60 min", mac: "Mac has 45 min", meta: "You changed the time box on this Mac after this was held", date: "25 Nov",
+    { id: "e10", kind: "edit", basis: "snapshot", goal: "Write the weekly review", chg: "Time box: 60 min", mac: "Mac has 45 min", meta: "You also changed the target on this Mac", date: "25 Nov",
       keepV: "keeps the 45 min time box and drops the phone’s 60 min", useV: "sets the time box to 60 min, replacing the Mac’s 45 min" },
     { id: "e11", kind: "session", goal: "Focus", line: "Add 30-min session from your phone (18 Nov)", ctx: null, meta: "From your phone on 18 Nov",
       useV: "adds a 30-min session on 18 Nov. The Mac’s own sessions stay as they are", date: "18 Nov" },

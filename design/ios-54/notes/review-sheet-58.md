@@ -5,6 +5,9 @@ Iris (Design), 27 Nov 2026, updated for Steve’s three room calls and his [Prod
 **Credits.** Scope: Steve. Snapshot approach (fields untouched since the hold apply from the phone, only Mac-edited fields go to Review): Linus. “Can’t tell which is newer” wording for fields with no stamp: Tony. **Where the snapshot and the once-only counts live is Linus’s to build, within the limits below. This file only draws the outcomes.** Questions 2, 5, 6 and 9 are assumed defaults, which Abhishek may overrule.
 
 ## What changed in this update
+
+**Reason copy (27 Nov, later).** The snapshot reason is no longer “You changed the name on this Mac after this was held”. Linus’s PR #60 at `1233e17` sends a field to Review when the Mac edited it after the phone last saw the Mac’s file, which can be before the hold, so that line can be false. It now reads “You also changed the name on this Mac” (and “You also changed the target on this Mac”). The no-stamp / old-phone / save-nonce fallback is unchanged: “Can’t tell which is newer. Mac has Focus”.
+
 1. **Today note.** Once #58 ships, “N phone changes to review” replaces #55’s longer “N changes from your phone weren’t applied…”. #55 keeps its copy until then. Frame 01 already shows the new copy. The sheet subtitle keeps the longer sentence (Iris’s call, which Steve left open).
 2. **One Keep/Use per goal** moves every held name and target edit on that goal together. “Keep Mac’s version” keeps them all as they are on the Mac. “Use phone’s version” applies every held phone edit field on that goal. A choice per field is not needed in this slice (Steve’s default, Abhishek may overrule). Frame 03 shows this on “Write the weekly review” (time box and name, one pair of buttons, labelled “2 changes”).
 3. **Sessions are separate.** Each held session keeps its own “Add this session” button and is never added or dropped by a per-goal Keep/Use or by “Keep Mac’s version for all”. After “for all”, session rows stay in the sheet (frame 13). A quiet helper under the bulk button reads “Sessions stay here until you add them.”
@@ -17,7 +20,7 @@ Iris (Design), 27 Nov 2026, updated for Steve’s three room calls and his [Prod
 | # | File | State |
 |---|---|---|
 | 1 | `01-today-note-review.png` | Today with the housekeeping note “3 phone changes to review” and the “Review” text link. This is the ordinary Today note once #58 ships. |
-| 2 | `02-sheet-one-entry.png` | The sheet with one held change (goal Focus, snapshot reason). |
+| 2 | `02-sheet-one-entry.png` | The sheet with one held change (goal Focus, reason: “You also changed the name on this Mac”). |
 | 3 | `03-sheet-many-scrolling.png` | **Main frame.** Held changes grouped by goal: a session-only goal (Add this session only, with a Mac day total), snapshot and no-stamp reasons, a goal with two edit fields and one Keep/Use pair, too-old, unreadable and newer-schema last. The footer has “Keep Mac’s version for all” and the helper “Sessions stay here until you add them.” |
 | 4 | `04-undo-keep-mac.png` | After “Keep Mac’s version” on Focus: the edit is gone, the session-only group stays, the Undo toast shows. |
 | 5 | `05-undo-use-phone.png` | After “Add this session” on Read one paper: the session is gone, the Undo toast shows. |
@@ -53,7 +56,7 @@ Annotations (frames 9, 10, 11 and 16, dashed box at top left) are not product UI
 | Group header | Goal name as the Mac has it now (“Focus”), plus “2 changes” when the group has more than one row. |
 | Session row, day has Mac sessions | “Add 30-min session from your phone (18 Nov)” · muted “Mac’s total for 18 Nov: 20 min”. Meta as needed, e.g. “More than 7 days old”. |
 | Session row, day has no Mac sessions | “Add 30-min session from your phone (18 Nov)” only. No total, and never “0 min”. |
-| Goal-edit row (snapshot) | “Name: Deep work (Mac has Focus)”. Meta: “You changed the name on this Mac after this was held”. Time box: “You changed the time box on this Mac after this was held”. |
+| Goal-edit row (snapshot) | “Name: Deep work (Mac has Focus)”. Meta: “You also changed the name on this Mac”. Target: “You also changed the target on this Mac”. (The Mac edited the field after the phone last saw the Mac’s file, which can be before the hold; PR #60 at 1233e17.) |
 | Goal-edit row (no snapshot or no stamp) | “Time box: 60 min”. Meta: “Can’t tell which is newer. Mac has 45 min”. The Mac value sits in the meta line here, so it isn’t said twice. |
 | Goal-edit and add row (too old) | “Name: Gym, legs day (Mac has Gym)” / “Added to 17 Nov (Mac doesn’t have it)”. Meta: “From your phone on 19 Nov · More than 7 days old”. |
 | Per-goal buttons | “Keep Mac’s version” (default, filled) · “Use phone’s version” (outline). These cover that goal’s held name and target edits only, all of them together. |
@@ -142,6 +145,7 @@ A sheet left open across midnight IST keeps its groups, rows, dates and count. N
 No new colour pairs in this update, so the table still covers the quiet lines, the bulk helper and the muted parentheticals.
 
 ## Build limits (for Linus; not product decisions)
-- Review must show the matching reason for snapshot (case a) and no-stamp (case b). Whether the Mac stores a per-field snapshot, or tells the two cases apart another way, is Linus’s call. Any new record stays to ids, timestamps or flags, never goal names or values.
+- Review must show the matching reason for the two cases. When the Mac can tell it also edited the field (after the phone last saw the Mac’s file, which can be before the hold; Linus’s PR #60 at 1233e17), the reason is “You also changed the name on this Mac” or “You also changed the target on this Mac”. When it can’t tell (no stamp, old phone, or save-nonce fallback), the reason stays “Can’t tell which is newer. Mac has Focus”. How those cases are stored is Linus’s call. Any new record stays to ids, timestamps or flags, never goal names or values.
+- After a downgrade to #55 and back, the once-only applied counts are lost and every held entry returns as the no-stamp row (“Can’t tell which is newer…”). No applied note is shown in that case. **Open question for Steve:** the frames and prototype draw it this way; confirm it matches the spec, or say otherwise.
 - The two once-only counts and the acknowledgment state must survive a reload. Where they live is Linus’s call, with the same limit.
 - The Mac already has that day’s sessions in the main file. How the session-row total is read is Linus’s call. If that day has no sessions on the Mac, show no total and do not invent a number.
