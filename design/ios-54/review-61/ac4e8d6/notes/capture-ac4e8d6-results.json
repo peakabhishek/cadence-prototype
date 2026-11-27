@@ -1,0 +1,4834 @@
+{
+ "audit": {
+  "01-today-note-review": [
+   {
+    "text": "3 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "02-sheet-one-entry": [
+   {
+    "text": "1 phone change to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply this change, to avoid over",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Focus",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Deep work",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Focus)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the name on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "03-sheet-many-scrolling": [
+   {
+    "text": "9 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 9 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Read one paper",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Add 25-min session from your phone (18 Nov)",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "· Mac’s total for 18 Nov: 25 min",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Add this session",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Focus",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Deep work",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Focus)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the name on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Write the weekly review",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "2 changes",
+    "sel": ".cnt",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Time box: 60 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has 45 min",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Name: Weekly review",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has Write the wee",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Gym",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Gym, legs day",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Gym)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "From your phone on 19 Nov · More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Call the bank",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Added to 17 Nov",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac doesn’t have it)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "From your phone on 17 Nov · More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Plan Friday’s demo",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Time box: 50 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has 25 min)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the target on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Can’t be applied on this Mac yet",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "A change from your phone",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "From your phone on 24 Nov · This Mac can’t read ",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Changes from a newer Cadence on your phone",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "From your phone · Made by a newer version of Cad",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Update Cadence on this Mac to apply this.",
+    "sel": ".upd",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version for all",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Keeps your Mac’s version of goal edits. Everythi",
+    "sel": ".foot-help",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "focus-after-keep": [
+   {
+    "text": "8 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 8 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Read one paper",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Add 25-min session from your phone (18 Nov)",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "· Mac’s total for 18 Nov: 25 min",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Add this session",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Write the weekly review",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "2 changes",
+    "sel": ".cnt",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Time box: 60 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has 45 min",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Name: Weekly review",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has Write the wee",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Gym",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Gym, legs day",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Gym)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "From your phone on 19 Nov · More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Call the bank",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Added to 17 Nov",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac doesn’t have it)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "From your phone on 17 Nov · More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Plan Friday’s demo",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Time box: 50 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has 25 min)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the target on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Can’t be applied on this Mac yet",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "A change from your phone",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "From your phone on 24 Nov · This Mac can’t read ",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Changes from a newer Cadence on your phone",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "From your phone · Made by a newer version of Cad",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Update Cadence on this Mac to apply this.",
+    "sel": ".upd",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version for all",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Keeps your Mac’s version of goal edits. Everythi",
+    "sel": ".foot-help",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Kept your Mac’s version for Focus.",
+    "sel": ".t-text",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Undo",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "helper-hidden-edits-only": [
+   {
+    "text": "2 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 2 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Focus",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Deep work",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Focus)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the name on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Write the weekly review",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Time box: 60 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has 45 min",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version for all",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "13-keep-for-all-helper": [
+   {
+    "text": "9 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 9 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Read one paper",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Add 25-min session from your phone (18 Nov)",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "· Mac’s total for 18 Nov: 25 min",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Add this session",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Focus",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Deep work",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Focus)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the name on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Write the weekly review",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "2 changes",
+    "sel": ".cnt",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Time box: 60 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has 45 min",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Name: Weekly review",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has Write the wee",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Gym",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Gym, legs day",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Gym)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "From your phone on 19 Nov · More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Call the bank",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Added to 17 Nov",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac doesn’t have it)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "From your phone on 17 Nov · More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Plan Friday’s demo",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Time box: 50 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has 25 min)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the target on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Can’t be applied on this Mac yet",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "A change from your phone",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "From your phone on 24 Nov · This Mac can’t read ",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Changes from a newer Cadence on your phone",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "From your phone · Made by a newer version of Cad",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Update Cadence on this Mac to apply this.",
+    "sel": ".upd",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version for all",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Keeps your Mac’s version of goal edits. Everythi",
+    "sel": ".foot-help",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "15-sheet-remove-restore-helper": [
+   {
+    "text": "4 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 4 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Remove from phone: Deep work",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(still on this Mac)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Past days stay in your history.",
+    "sel": ".quiet",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep goal",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Remove goal",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Restored on phone: Deep work",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(removed on this Mac)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Today has 6 goals, so this goes to Parked.",
+    "sel": ".quiet",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep removed",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Restore goal",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Write the weekly review",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Weekly review",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Write the weekly review)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the name on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Read one paper",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Read two papers",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Read one paper)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the name on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version for all",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Keeps your Mac’s version of goal edits. Everythi",
+    "sel": ".foot-help",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "bulk-error-nothing-else-changed": [
+   {
+    "text": "9 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 9 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Couldn’t save your choice, so all 5 goal edits a",
+    "sel": ".t",
+    "ratio": 6.26,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 600,
+    "color": "rgb(116, 73, 43)"
+   },
+   {
+    "text": "Try again",
+    "sel": ".btn.text",
+    "ratio": 6.26,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(116, 73, 43)"
+   },
+   {
+    "text": "Read one paper",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Add 25-min session from your phone (18 Nov)",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "· Mac’s total for 18 Nov: 25 min",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Add this session",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Focus",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Deep work",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Focus)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the name on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Write the weekly review",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "2 changes",
+    "sel": ".cnt",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Time box: 60 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has 45 min",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Name: Weekly review",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has Write the wee",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Gym",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Gym, legs day",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Gym)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "From your phone on 19 Nov · More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Call the bank",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Added to 17 Nov",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac doesn’t have it)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "From your phone on 17 Nov · More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Plan Friday’s demo",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Time box: 50 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has 25 min)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the target on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Can’t be applied on this Mac yet",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "A change from your phone",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "From your phone on 24 Nov · This Mac can’t read ",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Changes from a newer Cadence on your phone",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "From your phone · Made by a newer version of Cad",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Update Cadence on this Mac to apply this.",
+    "sel": ".upd",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version for all",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Keeps your Mac’s version of goal edits. Everythi",
+    "sel": ".foot-help",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "04-undo-keep-mac": [
+   {
+    "text": "2 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 2 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Read one paper",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Add 25-min session from your phone (18 Nov)",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "· Mac’s total for 18 Nov: 25 min",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Add this session",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Write the weekly review",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Time box: 60 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has 45 min",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Kept your Mac’s version for Focus.",
+    "sel": ".t-text",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Undo",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "05-undo-use-phone": [
+   {
+    "text": "2 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 2 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Focus",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Deep work",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Focus)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the name on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Write the weekly review",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Time box: 60 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has 45 min",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version for all",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Added the 25-min session to Read one paper.",
+    "sel": ".t-text",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Undo",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "06-last-resolved-note-gone": [
+   {
+    "text": "Used your phone’s version for Focus.",
+    "sel": ".t-text",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Undo",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "07-loading": [
+   {
+    "text": "3 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 3 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Read one paper",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Add 25-min session from your phone (18 Nov)",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "· Mac’s total for 18 Nov: 25 min",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Add this session",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Focus",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Deep work",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Focus)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the name on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Write the weekly review",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Time box: 60 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has 45 min",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version for all",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Keeps your Mac’s version of goal edits. Everythi",
+    "sel": ".foot-help",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "07b-load-error-try-again": [
+   {
+    "text": "3 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Nothing has changed.",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Couldn’t read the held changes. Check that your ",
+    "sel": ".t",
+    "ratio": 6.26,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 600,
+    "color": "rgb(116, 73, 43)"
+   },
+   {
+    "text": "Try again",
+    "sel": ".btn.text",
+    "ratio": 6.26,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(116, 73, 43)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "08-error-still-held": [
+   {
+    "text": "3 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 3 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Read one paper",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Add 25-min session from your phone (18 Nov)",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "· Mac’s total for 18 Nov: 25 min",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Add this session",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Focus",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Deep work",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Focus)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the name on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Couldn’t save your choice, so this change is sti",
+    "sel": ".t",
+    "ratio": 6.26,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 600,
+    "color": "rgb(116, 73, 43)"
+   },
+   {
+    "text": "Try again",
+    "sel": ".btn.text",
+    "ratio": 6.26,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(116, 73, 43)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Write the weekly review",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Time box: 60 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has 45 min",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version for all",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Keeps your Mac’s version of goal edits. Everythi",
+    "sel": ".foot-help",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "09-day-boundary-midnight-ist": [
+   {
+    "text": "3 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 3 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Read one paper",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Add 25-min session from your phone (18 Nov)",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "· Mac’s total for 18 Nov: 25 min",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Add this session",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Focus",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Name: Deep work",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Focus)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the name on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Write the weekly review",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Time box: 60 min",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Can’t tell which is newer. Mac has 45 min",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version for all",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Keeps your Mac’s version of goal edits. Everythi",
+    "sel": ".foot-help",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "10-closed-without-action": [
+   {
+    "text": "3 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "11-today-applied-note-once": [
+   {
+    "text": "8 phone changes applied, 3 to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Got it",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "12-sheet-empty": [
+   {
+    "text": "1 phone change to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Nothing from your phone is held right now.",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "No held changes",
+    "sel": ".e1",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 600,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Nothing needs your choice right now.",
+    "sel": ".e2",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "13-undo-keep-for-all": [
+   {
+    "text": "4 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 4 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Read one paper",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Add 25-min session from your phone (18 Nov)",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "· Mac’s total for 18 Nov: 25 min",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Add this session",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Call the bank",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Added to 17 Nov",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac doesn’t have it)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "From your phone on 17 Nov · More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Can’t be applied on this Mac yet",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "A change from your phone",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "From your phone on 24 Nov · This Mac can’t read ",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Changes from a newer Cadence on your phone",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "From your phone · Made by a newer version of Cad",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Update Cadence on this Mac to apply this.",
+    "sel": ".upd",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Kept your Mac’s version for 5 goal edits.",
+    "sel": ".t-text",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Undo",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "13b-keep-for-all-leaves-the-add-and-session-held": [
+   {
+    "text": "2 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 2 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Call the bank",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Added to 17 Nov",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac doesn’t have it)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "From your phone on 17 Nov · More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Focus",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Add 25-min session from your phone (17 Nov)",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "More than 7 days old",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Add this session",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Kept your Mac’s version for 2 goal edits.",
+    "sel": ".t-text",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Undo",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "14-sheet-mixed-session-and-edit": [
+   {
+    "text": "2 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 2 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Focus",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "2 changes",
+    "sel": ".cnt",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Add 25-min session from your phone (18 Nov)",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "From your phone on 18 Nov",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Add this session",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Name: Deep work",
+    "sel": ".chg",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(Mac has Focus)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "You also changed the name on this Mac",
+    "sel": ".meta",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep Mac’s version",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Use phone’s version",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "15-remove-restore-no-extra-edits": [
+   {
+    "text": "2 phone changes to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply these 2 changes, to avoid ",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Remove from phone: Deep work",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(still on this Mac)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Past days stay in your history.",
+    "sel": ".quiet",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep goal",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Remove goal",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Restored on phone: Deep work",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(removed on this Mac)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Today has 6 goals, so this goes to Parked.",
+    "sel": ".quiet",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep removed",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Restore goal",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "15b-restore-parked-toast": [
+   {
+    "text": "1 phone change to review",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Review",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Held changes from your phone",
+    "sel": "H2",
+    "ratio": 15.33,
+    "need": 3,
+    "fs": 32,
+    "fw": 500,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Your Mac didn’t apply this change, to avoid over",
+    "sel": "P",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Remove from phone: Deep work",
+    "sel": ".gn",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 17,
+    "fw": 700,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "(still on this Mac)",
+    "sel": ".mac",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Past days stay in your history.",
+    "sel": ".quiet",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Keep goal",
+    "sel": ".btn.primary",
+    "ratio": 6.85,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(247, 240, 230)"
+   },
+   {
+    "text": "Remove goal",
+    "sel": ".btn.outline",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "Closing keeps every change held.",
+    "sel": ".hint",
+    "ratio": 7.49,
+    "need": 4.5,
+    "fs": 13,
+    "fw": 600,
+    "color": "rgb(92, 81, 70)"
+   },
+   {
+    "text": "Close",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   },
+   {
+    "text": "1 goal didn’t fit today’s 6. It’s in Parked.",
+    "sel": ".t-text",
+    "ratio": 15.33,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 400,
+    "color": "rgb(42, 33, 24)"
+   },
+   {
+    "text": "Undo",
+    "sel": ".btn.text",
+    "ratio": 7.52,
+    "need": 4.5,
+    "fs": 15,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ],
+  "16-today-applied-only": [
+   {
+    "text": "8 phone changes applied",
+    "sel": ".sn-text",
+    "ratio": 10.31,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(15, 61, 39)"
+   },
+   {
+    "text": "Got it",
+    "sel": ".sn-link",
+    "ratio": 6.53,
+    "need": 4.5,
+    "fs": 14.5,
+    "fw": 700,
+    "color": "rgb(27, 94, 59)"
+   }
+  ]
+ },
+ "texts": {
+  "01-today-note-review": {
+   "sheet": null,
+   "note": "3 phone changes to review Review",
+   "toast": null
+  },
+  "02-sheet-one-entry": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply this change, to avoid overwriting newer edits. Nothing changes until you choose. Focus Name: Deep work (Mac has Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Close",
+   "note": "1 phone change to review Review",
+   "toast": null
+  },
+  "03-sheet-many-scrolling": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 9 changes, to avoid overwriting newer edits. Nothing changes until you choose. Read one paper Add 25-min session from your phone (18 Nov) · Mac’s total for 18 Nov: 25 min More than 7 days old Add this session Focus Name: Deep work (Mac has Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Write the weekly review 2 changes Time box: 60 min Can’t tell which is newer. Mac has 45 min Name: Weekly review Can’t tell which is newer. Mac has Write the weekly review Keep Mac’s version Use phone’s version Gym Name: Gym, legs day (Mac has Gym) From your phone on 19 Nov · More than 7 days old Keep Mac’s version Use phone’s version Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Plan Friday’s demo Time box: 50 min (Mac has 25 min) You also changed the target on this Mac Keep Mac’s version Use phone’s version Can’t be applied on this Mac yet A change from your phone From your phone on 24 Nov · This Mac can’t read it yet Changes from a newer Cadence on your phone From your phone · Made by a newer version of Cadence Update Cadence on this Mac to apply this. Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "9 phone changes to review Review",
+   "toast": null
+  },
+  "focus-after-keep": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 8 changes, to avoid overwriting newer edits. Nothing changes until you choose. Read one paper Add 25-min session from your phone (18 Nov) · Mac’s total for 18 Nov: 25 min More than 7 days old Add this session Write the weekly review 2 changes Time box: 60 min Can’t tell which is newer. Mac has 45 min Name: Weekly review Can’t tell which is newer. Mac has Write the weekly review Keep Mac’s version Use phone’s version Gym Name: Gym, legs day (Mac has Gym) From your phone on 19 Nov · More than 7 days old Keep Mac’s version Use phone’s version Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Plan Friday’s demo Time box: 50 min (Mac has 25 min) You also changed the target on this Mac Keep Mac’s version Use phone’s version Can’t be applied on this Mac yet A change from your phone From your phone on 24 Nov · This Mac can’t read it yet Changes from a newer Cadence on your phone From your phone · Made by a newer version of Cadence Update Cadence on this Mac to apply this. Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "8 phone changes to review Review",
+   "toast": "Kept your Mac’s version for Focus. Undo"
+  },
+  "helper-hidden-edits-only": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus Name: Deep work (Mac has Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Write the weekly review Time box: 60 min Can’t tell which is newer. Mac has 45 min Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Close",
+   "note": "2 phone changes to review Review",
+   "toast": null
+  },
+  "13-keep-for-all-helper": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 9 changes, to avoid overwriting newer edits. Nothing changes until you choose. Read one paper Add 25-min session from your phone (18 Nov) · Mac’s total for 18 Nov: 25 min More than 7 days old Add this session Focus Name: Deep work (Mac has Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Write the weekly review 2 changes Time box: 60 min Can’t tell which is newer. Mac has 45 min Name: Weekly review Can’t tell which is newer. Mac has Write the weekly review Keep Mac’s version Use phone’s version Gym Name: Gym, legs day (Mac has Gym) From your phone on 19 Nov · More than 7 days old Keep Mac’s version Use phone’s version Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Plan Friday’s demo Time box: 50 min (Mac has 25 min) You also changed the target on this Mac Keep Mac’s version Use phone’s version Can’t be applied on this Mac yet A change from your phone From your phone on 24 Nov · This Mac can’t read it yet Changes from a newer Cadence on your phone From your phone · Made by a newer version of Cadence Update Cadence on this Mac to apply this. Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "9 phone changes to review Review",
+   "toast": null
+  },
+  "15-sheet-remove-restore-helper": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Remove from phone: Deep work (still on this Mac) Past days stay in your history. Keep goal Remove goal Restored on phone: Deep work (removed on this Mac) Today has 6 goals, so this goes to Parked. Keep removed Restore goal Write the weekly review Name: Weekly review (Mac has Write the weekly review) You also changed the name on this Mac Keep Mac’s version Use phone’s version Read one paper Name: Read two papers (Mac has Read one paper) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "4 phone changes to review Review",
+   "toast": null
+  },
+  "bulk-error-nothing-else-changed": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 9 changes, to avoid overwriting newer edits. Nothing changes until you choose. Couldn’t save your choice, so all 5 goal edits are still held. Check that your OneDrive folder is available. Nothing else was changed. Try again Read one paper Add 25-min session from your phone (18 Nov) · Mac’s total for 18 Nov: 25 min More than 7 days old Add this session Focus Name: Deep work (Mac has Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Write the weekly review 2 changes Time box: 60 min Can’t tell which is newer. Mac has 45 min Name: Weekly review Can’t tell which is newer. Mac has Write the weekly review Keep Mac’s version Use phone’s version Gym Name: Gym, legs day (Mac has Gym) From your phone on 19 Nov · More than 7 days old Keep Mac’s version Use phone’s version Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Plan Friday’s demo Time box: 50 min (Mac has 25 min) You also changed the target on this Mac Keep Mac’s version Use phone’s version Can’t be applied on this Mac yet A change from your phone From your phone on 24 Nov · This Mac can’t read it yet Changes from a newer Cadence on your phone From your phone · Made by a newer version of Cadence Update Cadence on this Mac to apply this. Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "9 phone changes to review Review",
+   "toast": null
+  },
+  "04-undo-keep-mac": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Read one paper Add 25-min session from your phone (18 Nov) · Mac’s total for 18 Nov: 25 min More than 7 days old Add this session Write the weekly review Time box: 60 min Can’t tell which is newer. Mac has 45 min Keep Mac’s version Use phone’s version Closing keeps every change held. Close",
+   "note": "2 phone changes to review Review",
+   "toast": "Kept your Mac’s version for Focus. Undo"
+  },
+  "05-undo-use-phone": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus Name: Deep work (Mac has Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Write the weekly review Time box: 60 min Can’t tell which is newer. Mac has 45 min Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Close",
+   "note": "2 phone changes to review Review",
+   "toast": "Added the 25-min session to Read one paper. Undo"
+  },
+  "06-last-resolved-note-gone": {
+   "sheet": null,
+   "note": null,
+   "toast": "Used your phone’s version for Focus. Undo"
+  },
+  "07-loading": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 3 changes, to avoid overwriting newer edits. Nothing changes until you choose. Read one paper Add 25-min session from your phone (18 Nov) · Mac’s total for 18 Nov: 25 min More than 7 days old Add this session Focus Name: Deep work (Mac has Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Write the weekly review Time box: 60 min Can’t tell which is newer. Mac has 45 min Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "3 phone changes to review Review",
+   "toast": null
+  },
+  "07b-load-error-try-again": {
+   "sheet": "Held changes from your phone Nothing has changed. Couldn’t read the held changes. Check that your OneDrive folder is available. Try again Closing keeps every change held. Close",
+   "note": "3 phone changes to review Review",
+   "toast": null
+  },
+  "08-error-still-held": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 3 changes, to avoid overwriting newer edits. Nothing changes until you choose. Read one paper Add 25-min session from your phone (18 Nov) · Mac’s total for 18 Nov: 25 min More than 7 days old Add this session Focus Name: Deep work (Mac has Focus) You also changed the name on this Mac Couldn’t save your choice, so this change is still held. Check that your OneDrive folder is available. Try again Keep Mac’s version Use phone’s version Write the weekly review Time box: 60 min Can’t tell which is newer. Mac has 45 min Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "3 phone changes to review Review",
+   "toast": null
+  },
+  "09-day-boundary-midnight-ist": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 3 changes, to avoid overwriting newer edits. Nothing changes until you choose. Read one paper Add 25-min session from your phone (18 Nov) · Mac’s total for 18 Nov: 25 min More than 7 days old Add this session Focus Name: Deep work (Mac has Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Write the weekly review Time box: 60 min Can’t tell which is newer. Mac has 45 min Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+   "note": "3 phone changes to review Review",
+   "toast": null
+  },
+  "10-closed-without-action": {
+   "sheet": null,
+   "note": "3 phone changes to review Review",
+   "toast": null
+  },
+  "11-today-applied-note-once": {
+   "sheet": null,
+   "note": "8 phone changes applied, 3 to review Review Got it",
+   "toast": null
+  },
+  "12-sheet-empty": {
+   "sheet": "Held changes from your phone Nothing from your phone is held right now. No held changes Nothing needs your choice right now. Closing keeps every change held. Close",
+   "note": "1 phone change to review Review",
+   "toast": null
+  },
+  "13-undo-keep-for-all": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Read one paper Add 25-min session from your phone (18 Nov) · Mac’s total for 18 Nov: 25 min More than 7 days old Add this session Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Can’t be applied on this Mac yet A change from your phone From your phone on 24 Nov · This Mac can’t read it yet Changes from a newer Cadence on your phone From your phone · Made by a newer version of Cadence Update Cadence on this Mac to apply this. Closing keeps every change held. Close",
+   "note": "4 phone changes to review Review",
+   "toast": "Kept your Mac’s version for 5 goal edits. Undo"
+  },
+  "13b-keep-for-all-leaves-the-add-and-session-held": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Focus Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Closing keeps every change held. Close",
+   "note": "2 phone changes to review Review",
+   "toast": "Kept your Mac’s version for 2 goal edits. Undo"
+  },
+  "14-sheet-mixed-session-and-edit": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus 2 changes Add 25-min session from your phone (18 Nov) From your phone on 18 Nov Add this session Name: Deep work (Mac has Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Close",
+   "note": "2 phone changes to review Review",
+   "toast": null
+  },
+  "15-remove-restore-no-extra-edits": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Remove from phone: Deep work (still on this Mac) Past days stay in your history. Keep goal Remove goal Restored on phone: Deep work (removed on this Mac) Today has 6 goals, so this goes to Parked. Keep removed Restore goal Closing keeps every change held. Close",
+   "note": "2 phone changes to review Review",
+   "toast": null
+  },
+  "15b-restore-parked-toast": {
+   "sheet": "Held changes from your phone Your Mac didn’t apply this change, to avoid overwriting newer edits. Nothing changes until you choose. Remove from phone: Deep work (still on this Mac) Past days stay in your history. Keep goal Remove goal Closing keeps every change held. Close",
+   "note": "1 phone change to review Review",
+   "toast": "1 goal didn’t fit today’s 6. It’s in Parked. Undo"
+  },
+  "16-today-applied-only": {
+   "sheet": null,
+   "note": "8 phone changes applied Got it",
+   "toast": null
+  }
+ },
+ "errors": {
+  "01-today-note-review": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "02-sheet-one-entry": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "03-sheet-many-scrolling": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "focus-after-keep": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "helper-hidden-edits-only": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "13-keep-for-all-helper": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "15-sheet-remove-restore-helper": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "bulk-error-nothing-else-changed": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)",
+   "console:Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+  ],
+  "04-undo-keep-mac": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "05-undo-use-phone": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "06-last-resolved-note-gone": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "07-loading": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "07b-load-error-try-again": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)",
+   "console:Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+  ],
+  "08-error-still-held": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)",
+   "console:Failed to load resource: the server responded with a status of 500 (Internal Server Error)"
+  ],
+  "09-day-boundary-midnight-ist": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "10-closed-without-action": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "11-today-applied-note-once": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "12-sheet-empty": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "13-undo-keep-for-all": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "13b-keep-for-all-leaves-the-add-and-session-held": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "14-sheet-mixed-session-and-edit": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "15-remove-restore-no-extra-edits": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "15b-restore-parked-toast": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "16-today-applied-only": [
+   "console:Failed to load resource: the server responded with a status of 404 (File not found)"
+  ]
+ },
+ "metrics": {
+  "nits03": {
+   "help": {
+    "text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+    "w": 240,
+    "h": 35.1,
+    "pad": "0px",
+    "maxWidth": "240px",
+    "font": "600 13px / 17.55px \"Source Sans 3\", system-ui, sans-serif"
+   },
+   "btn": {
+    "w": 162.6,
+    "h": 44,
+    "pad": "0px 18px"
+   },
+   "settled": {
+    "text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose one by one.",
+    "width": 240,
+    "height": 52.6,
+    "lines": 3,
+    "maxWidth": "240px",
+    "font": "600 13px / 17.55px \"Source Sans 3\", system-ui, sans-serif",
+    "lineHeight": "17.55px"
+   },
+   "settledShort": {
+    "text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+    "width": 240,
+    "height": 35.1,
+    "lines": 2,
+    "maxWidth": "240px",
+    "font": "600 13px / 17.55px \"Source Sans 3\", system-ui, sans-serif",
+    "lineHeight": "17.55px"
+   },
+   "currentHelp": {
+    "text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+    "width": 240,
+    "height": 35.1,
+    "lines": 2,
+    "maxWidth": "240px",
+    "font": "600 13px / 17.55px \"Source Sans 3\", system-ui, sans-serif",
+    "lineHeight": "17.55px"
+   }
+  },
+  "focus_before_keep": "Keep Mac’s version for Focus: keeps the name Focus and drops the phone’s name Deep work",
+  "focus_after_keep": "keep Keep Mac’s version for Write the weekly review: keeps the 45 min time box and drops the phone’s 60 min; keeps the name W",
+  "only_edits_text": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus Name: Deep work (Mac has Focus) You also changed the name on this Mac Keep Mac’s version Use phone’s version Write the weekly review Time box: 60 min Can’t tell which is newer. Mac has 45 min Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Close",
+  "only_edits_has_bulk": true,
+  "only_edits_has_help": false,
+  "only_edits_help": null,
+  "only_edits_aria": "Keep Mac’s version for all 2 goal edits you can choose. Everything else stays here to choose.",
+  "13_help_text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+  "13_help_codepoints": [
+   75,
+   101,
+   101,
+   112,
+   115,
+   32,
+   121,
+   111,
+   117,
+   114,
+   32,
+   77,
+   97,
+   99,
+   8217,
+   115,
+   32,
+   118,
+   101,
+   114,
+   115,
+   105,
+   111,
+   110,
+   32,
+   111,
+   102,
+   32,
+   103,
+   111,
+   97,
+   108,
+   32,
+   101,
+   100,
+   105,
+   116,
+   115,
+   46,
+   32,
+   69,
+   118,
+   101,
+   114,
+   121,
+   116,
+   104,
+   105,
+   110,
+   103,
+   32,
+   101,
+   108,
+   115,
+   101,
+   32,
+   115,
+   116,
+   97,
+   121,
+   115,
+   32,
+   104,
+   101,
+   114,
+   101,
+   32,
+   116,
+   111,
+   32,
+   99,
+   104,
+   111,
+   111,
+   115,
+   101,
+   46
+  ],
+  "13_aria": "Keep Mac’s version for all 5 goal edits you can choose. Everything else stays here to choose.",
+  "13_help_box": {
+   "text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+   "width": 240,
+   "height": 35.1,
+   "lines": 2,
+   "maxWidth": "240px",
+   "font": "600 13px / 17.55px \"Source Sans 3\", system-ui, sans-serif",
+   "pad": "0px",
+   "apos": [
+    8217
+   ]
+  },
+  "15_help_text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+  "15_aria": "Keep Mac’s version for all 2 goal edits you can choose. Everything else stays here to choose.",
+  "15_help_box": {
+   "text": "Keeps your Mac’s version of goal edits. Everything else stays here to choose.",
+   "width": 240,
+   "height": 35.1,
+   "lines": 2,
+   "maxWidth": "240px",
+   "font": "600 13px / 17.55px \"Source Sans 3\", system-ui, sans-serif"
+  },
+  "15_sheet": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Remove from phone: Deep work (still on this Mac) Past days stay in your history. Keep goal Remove goal Restored on phone: Deep work (removed on this Mac) Today has 6 goals, so this goes to Parked. Keep removed Restore goal Write the weekly review Name: Weekly review (Mac has Write the weekly review) You also changed the name on this Mac Keep Mac’s version Use phone’s version Read one paper Name: Read two papers (Mac has Read one paper) You also changed the name on this Mac Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+  "bulk_err_text": "Couldn’t save your choice, so all 5 goal edits are still held. Check that your OneDrive folder is available. Nothing else was changed. Try again",
+  "loading_text": "Held changes from your phone Your Mac didn’t apply some changes from your phone, to avoid overwriting newer edits. Reading held changes… Closing keeps every change held. Close",
+  "loading_aria_busy": "true",
+  "load_error_html": "<div class=\"sh-head\"><div class=\"hd\"><h2 id=\"sh-title\">Held changes from your phone</h2><p id=\"sh-sub\">Nothing has changed.</p></div><button type=\"button\" class=\"closex\" data-act=\"close\" aria-label=\"Close. Every change stays held.\"><svg class=\"ic \" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6 6l12 12M18 6L6 18\"></path></svg></button></div><div class=\"list\"><div class=\"err\" role=\"alert\"><svg class=\"ic \" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.75\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 3l9.5 17h-19z\"></path><path d=\"M12 10v4.5M12 17.5v.01\"></path></svg><span class=\"t\">Couldn’t read the held changes. Check that your OneDrive folder is available.</span><button type=\"button\" class=\"btn text\" data-act=\"reload\" aria-label=\"Try again: read the held changes\">Try again</button></div></div><div class=\"sh-foot\"><span class=\"hint\">Closing keeps every change held.</span><div class=\"foot-right\"><button type=\"button\" class=\"btn text\" data-act=\"close\" aria-label=\"Close. Every change stays held.\">Close</button></div></div>",
+  "load_error_has_retry": true,
+  "midnight_sheet_unchanged": true,
+  "focus_returns_to_review": "review",
+  "13b_before": "Held changes from your phone Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose. Focus 2 changes Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Name: Deep work (Mac has Focus) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Gym Name: Gym, legs day (Mac has Gym) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Closing keeps every change held. Keep Mac’s version for all Keeps your Mac’s version of goal edits. Everything else stays here to choose. Close",
+  "13b_before_heading": "Your Mac didn’t apply these 4 changes, to avoid overwriting newer edits. Nothing changes until you choose.",
+  "13b_before_note": "4 phone changes to review Review",
+  "13b_focus_before": "DIV",
+  "13b_after": "Held changes from your phone Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose. Call the bank Added to 17 Nov (Mac doesn’t have it) From your phone on 17 Nov · More than 7 days old Keep Mac’s version Use phone’s version Focus Add 25-min session from your phone (17 Nov) More than 7 days old Add this session Closing keeps every change held. Close",
+  "13b_after_heading": "Your Mac didn’t apply these 2 changes, to avoid overwriting newer edits. Nothing changes until you choose.",
+  "13b_after_note": "2 phone changes to review Review",
+  "13b_focus_after": "sheet DIV",
+  "13b_buttons": {
+   "keep": [
+    "n1"
+   ],
+   "use": [
+    "n1"
+   ],
+   "add": [
+    "phone-r3:4"
+   ],
+   "bulk": false
+  }
+ }
+}
