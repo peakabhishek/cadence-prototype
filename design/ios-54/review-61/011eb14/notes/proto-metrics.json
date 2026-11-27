@@ -1,0 +1,867 @@
+{
+ "one": {
+  "sheet": [
+   720,
+   371.1875
+  ],
+  "radius": "24px",
+  "shadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.4",
+  "h2": "Fraunces, Georgia, serif | 30px | 600 | 34.5px | normal",
+  "h2rel": [
+   36,
+   32,
+   598,
+   34.5
+  ],
+  "sub": [
+   36,
+   72.5,
+   598,
+   43.5
+  ],
+  "subcs": "15px | 21.75px | rgb(92, 81, 70)",
+  "head": [
+   0,
+   0,
+   720,
+   133
+  ],
+  "headpad": "32px | 36px | 16px",
+  "closex": [
+   650,
+   24,
+   44,
+   44
+  ],
+  "foot": [
+   0,
+   294.2,
+   720,
+   77
+  ],
+  "footpad": "16px | 36px",
+  "btns": [
+   {
+    "t": "Keep Mac\u2019s version",
+    "r": [
+     36,
+     236.2,
+     161.3,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Use phone\u2019s version",
+    "r": [
+     205.3,
+     236.2,
+     167.8,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Close",
+    "r": [
+     624.3,
+     311.2,
+     59.7,
+     44
+    ],
+    "pad": "0px 12px",
+    "fs": "15px",
+    "fw": "700"
+   }
+  ],
+  "grps": [
+   [
+    36,
+    133,
+    633,
+    161.2
+   ]
+  ],
+  "gn": "17px | 700",
+  "chg": "15px | 21px",
+  "meta": "13px | 600",
+  "err": null,
+  "errcs": null,
+  "errbtn": null,
+  "errbtncs": null
+ },
+ "many": {
+  "sheet": [
+   720,
+   800
+  ],
+  "radius": "24px",
+  "shadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.4",
+  "h2": "Fraunces, Georgia, serif | 30px | 600 | 34.5px | normal",
+  "h2rel": [
+   36,
+   32,
+   598,
+   34.5
+  ],
+  "sub": [
+   36,
+   72.5,
+   598,
+   43.5
+  ],
+  "subcs": "15px | 21.75px | rgb(92, 81, 70)",
+  "head": [
+   0,
+   0,
+   720,
+   133
+  ],
+  "headpad": "32px | 36px | 16px",
+  "closex": [
+   650,
+   24,
+   44,
+   44
+  ],
+  "foot": [
+   0,
+   701.5,
+   720,
+   98.5
+  ],
+  "footpad": "16px | 36px",
+  "btns": [
+   {
+    "t": "Add this session",
+    "r": [
+     50,
+     232.2,
+     141.6,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Keep Mac\u2019s version",
+    "r": [
+     36,
+     394.4,
+     161.3,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Use phone\u2019s version",
+    "r": [
+     205.3,
+     394.4,
+     167.8,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Keep Mac\u2019s version",
+    "r": [
+     36,
+     611.8,
+     161.3,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Use phone\u2019s version",
+    "r": [
+     205.3,
+     611.8,
+     167.8,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Keep Mac\u2019s version",
+    "r": [
+     36,
+     773.9,
+     161.3,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   }
+  ],
+  "grps": [
+   [
+    36,
+    133,
+    633,
+    158.2
+   ],
+   [
+    36,
+    291.2,
+    633,
+    162.2
+   ],
+   [
+    36,
+    453.4,
+    633,
+    217.4
+   ],
+   [
+    36,
+    670.8,
+    633,
+    162.2
+   ]
+  ],
+  "gn": "17px | 700",
+  "chg": "15px | 21px",
+  "meta": "13px | 600",
+  "err": null,
+  "errcs": null,
+  "errbtn": null,
+  "errbtncs": null
+ },
+ "error": {
+  "sheet": [
+   720,
+   789.109375
+  ],
+  "radius": "24px",
+  "shadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.4",
+  "h2": "Fraunces, Georgia, serif | 30px | 600 | 34.5px | normal",
+  "h2rel": [
+   36,
+   32,
+   598,
+   34.5
+  ],
+  "sub": [
+   36,
+   72.5,
+   598,
+   43.5
+  ],
+  "subcs": "15px | 21.75px | rgb(92, 81, 70)",
+  "head": [
+   0,
+   0,
+   720,
+   133
+  ],
+  "headpad": "32px | 36px | 16px",
+  "closex": [
+   650,
+   24,
+   44,
+   44
+  ],
+  "foot": [
+   0,
+   690.6,
+   720,
+   98.5
+  ],
+  "footpad": "16px | 36px",
+  "btns": [
+   {
+    "t": "Add this session",
+    "r": [
+     50,
+     232.2,
+     141.6,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Try again",
+    "r": [
+     572.1,
+     409.4,
+     84.9,
+     32
+    ],
+    "pad": "0px 12px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Keep Mac\u2019s version",
+    "r": [
+     36,
+     470.4,
+     161.3,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Use phone\u2019s version",
+    "r": [
+     205.3,
+     470.4,
+     167.8,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Keep Mac\u2019s version",
+    "r": [
+     36,
+     632.6,
+     161.3,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Use phone\u2019s version",
+    "r": [
+     205.3,
+     632.6,
+     167.8,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   }
+  ],
+  "grps": [
+   [
+    36,
+    133,
+    633,
+    158.2
+   ],
+   [
+    36,
+    291.2,
+    633,
+    238.2
+   ],
+   [
+    36,
+    529.4,
+    633,
+    161.2
+   ]
+  ],
+  "gn": "17px | 700",
+  "chg": "15px | 21px",
+  "meta": "13px | 600",
+  "err": [
+   36,
+   394.4,
+   633,
+   62
+  ],
+  "errcs": "14.5px | 600 | 10px 12px | 12px | rgb(243, 230, 214) | rgb(116, 73, 43)",
+  "errbtn": [
+   572.1,
+   409.4,
+   84.9,
+   32
+  ],
+  "errbtncs": "underline | rgb(116, 73, 43)"
+ },
+ "loading": {
+  "sheet": [
+   720,
+   581.25
+  ],
+  "radius": "24px",
+  "shadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.4",
+  "h2": "Fraunces, Georgia, serif | 30px | 600 | 34.5px | normal",
+  "h2rel": [
+   36,
+   32,
+   598,
+   34.5
+  ],
+  "sub": [
+   36,
+   72.5,
+   598,
+   21.8
+  ],
+  "subcs": "15px | 21.75px | rgb(92, 81, 70)",
+  "head": [
+   0,
+   0,
+   720,
+   111.3
+  ],
+  "headpad": "32px | 36px | 16px",
+  "closex": [
+   650,
+   24,
+   44,
+   44
+  ],
+  "foot": [
+   0,
+   504.3,
+   720,
+   77
+  ],
+  "footpad": "16px | 36px",
+  "btns": [
+   {
+    "t": "Close",
+    "r": [
+     624.3,
+     521.3,
+     59.7,
+     44
+    ],
+    "pad": "0px 12px",
+    "fs": "15px",
+    "fw": "700"
+   }
+  ],
+  "grps": [
+   [
+    36,
+    148.3,
+    633,
+    119
+   ],
+   [
+    36,
+    267.3,
+    633,
+    119
+   ],
+   [
+    36,
+    386.3,
+    633,
+    118
+   ]
+  ],
+  "gn": null,
+  "chg": null,
+  "meta": null,
+  "err": null,
+  "errcs": null,
+  "errbtn": null,
+  "errbtncs": null
+ },
+ "mixed": {
+  "sheet": [
+   720,
+   480.375
+  ],
+  "radius": "24px",
+  "shadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.4",
+  "h2": "Fraunces, Georgia, serif | 30px | 600 | 34.5px | normal",
+  "h2rel": [
+   36,
+   32,
+   598,
+   34.5
+  ],
+  "sub": [
+   36,
+   72.5,
+   598,
+   43.5
+  ],
+  "subcs": "15px | 21.75px | rgb(92, 81, 70)",
+  "head": [
+   0,
+   0,
+   720,
+   133
+  ],
+  "headpad": "32px | 36px | 16px",
+  "closex": [
+   650,
+   24,
+   44,
+   44
+  ],
+  "foot": [
+   0,
+   403.4,
+   720,
+   77
+  ],
+  "footpad": "16px | 36px",
+  "btns": [
+   {
+    "t": "Add this session",
+    "r": [
+     50,
+     232.2,
+     141.6,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Keep Mac\u2019s version",
+    "r": [
+     36,
+     345.4,
+     161.3,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Use phone\u2019s version",
+    "r": [
+     205.3,
+     345.4,
+     167.8,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Close",
+    "r": [
+     624.3,
+     420.4,
+     59.7,
+     44
+    ],
+    "pad": "0px 12px",
+    "fs": "15px",
+    "fw": "700"
+   }
+  ],
+  "grps": [
+   [
+    36,
+    133,
+    633,
+    270.4
+   ]
+  ],
+  "gn": "17px | 700",
+  "chg": "15px | 21px",
+  "meta": "13px | 600",
+  "err": null,
+  "errcs": null,
+  "errbtn": null,
+  "errbtncs": null
+ },
+ "empty": {
+  "sheet": [
+   720,
+   371.25
+  ],
+  "radius": "24px",
+  "shadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.4",
+  "h2": "Fraunces, Georgia, serif | 30px | 600 | 34.5px | normal",
+  "h2rel": [
+   36,
+   32,
+   598,
+   34.5
+  ],
+  "sub": [
+   36,
+   72.5,
+   598,
+   21.8
+  ],
+  "subcs": "15px | 21.75px | rgb(92, 81, 70)",
+  "head": [
+   0,
+   0,
+   720,
+   111.3
+  ],
+  "headpad": "32px | 36px | 16px",
+  "closex": [
+   650,
+   24,
+   44,
+   44
+  ],
+  "foot": [
+   0,
+   294.3,
+   720,
+   77
+  ],
+  "footpad": "16px | 36px",
+  "btns": [
+   {
+    "t": "Close",
+    "r": [
+     624.3,
+     311.3,
+     59.7,
+     44
+    ],
+    "pad": "0px 12px",
+    "fs": "15px",
+    "fw": "700"
+   }
+  ],
+  "grps": [],
+  "gn": null,
+  "chg": null,
+  "meta": null,
+  "err": null,
+  "errcs": null,
+  "errbtn": null,
+  "errbtncs": null
+ },
+ "remove-restore": {
+  "sheet": [
+   720,
+   479.375
+  ],
+  "radius": "24px",
+  "shadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.4",
+  "h2": "Fraunces, Georgia, serif | 30px | 600 | 34.5px | normal",
+  "h2rel": [
+   36,
+   32,
+   598,
+   34.5
+  ],
+  "sub": [
+   36,
+   72.5,
+   598,
+   43.5
+  ],
+  "subcs": "15px | 21.75px | rgb(92, 81, 70)",
+  "head": [
+   0,
+   0,
+   720,
+   133
+  ],
+  "headpad": "32px | 36px | 16px",
+  "closex": [
+   650,
+   24,
+   44,
+   44
+  ],
+  "foot": [
+   0,
+   402.4,
+   720,
+   77
+  ],
+  "footpad": "16px | 36px",
+  "btns": [
+   {
+    "t": "Keep goal",
+    "r": [
+     36,
+     209.2,
+     100.2,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Remove goal",
+    "r": [
+     144.2,
+     209.2,
+     120.5,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Keep removed",
+    "r": [
+     36,
+     344.4,
+     130.8,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Restore goal",
+    "r": [
+     174.8,
+     344.4,
+     117.6,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Close",
+    "r": [
+     624.3,
+     419.4,
+     59.7,
+     44
+    ],
+    "pad": "0px 12px",
+    "fs": "15px",
+    "fw": "700"
+   }
+  ],
+  "grps": [
+   [
+    36,
+    133,
+    633,
+    135.2
+   ],
+   [
+    36,
+    268.2,
+    633,
+    134.2
+   ]
+  ],
+  "gn": "17px | 700",
+  "chg": null,
+  "meta": null,
+  "err": null,
+  "errcs": null,
+  "errbtn": null,
+  "errbtncs": null
+ },
+ "undo-all": {
+  "sheet": [
+   720,
+   557.5625
+  ],
+  "radius": "24px",
+  "shadow": "rgba(92, 61, 46, 0.06) 0px 1px 0px 0px, rgba(42, 33, 24, 0.4",
+  "h2": "Fraunces, Georgia, serif | 30px | 600 | 34.5px | normal",
+  "h2rel": [
+   36,
+   32,
+   598,
+   34.5
+  ],
+  "sub": [
+   36,
+   72.5,
+   598,
+   43.5
+  ],
+  "subcs": "15px | 21.75px | rgb(92, 81, 70)",
+  "head": [
+   0,
+   0,
+   720,
+   133
+  ],
+  "headpad": "32px | 36px | 16px",
+  "closex": [
+   650,
+   24,
+   44,
+   44
+  ],
+  "foot": [
+   0,
+   480.6,
+   720,
+   77
+  ],
+  "footpad": "16px | 36px",
+  "btns": [
+   {
+    "t": "Add this session",
+    "r": [
+     50,
+     232.2,
+     141.6,
+     44
+    ],
+    "pad": "0px 18px",
+    "fs": "15px",
+    "fw": "700"
+   },
+   {
+    "t": "Close",
+    "r": [
+     624.3,
+     497.6,
+     59.7,
+     44
+    ],
+    "pad": "0px 12px",
+    "fs": "15px",
+    "fw": "700"
+   }
+  ],
+  "grps": [
+   [
+    36,
+    133,
+    633,
+    158.2
+   ],
+   [
+    36,
+    291.2,
+    633,
+    189.4
+   ]
+  ],
+  "gn": "17px | 700",
+  "chg": "15px | 21px",
+  "meta": "13px | 600",
+  "err": null,
+  "errcs": null,
+  "errbtn": null,
+  "errbtncs": null
+ }
+}

@@ -1,0 +1,61 @@
+{
+ "link_tag": "BUTTON Review",
+ "after_open_focus": "sheet: div \"Held changes from your phone\" aria=\"\"",
+ "dialog_attrs": {
+  "role": "dialog",
+  "modal": "true",
+  "labelledby": "sh-title",
+  "describedby": "sh-sub",
+  "tabindex": "-1",
+  "scrimRole": null,
+  "shellInert": [
+   "shell"
+  ],
+  "rootLive": "status/polite"
+ },
+ "tab_order": [
+  "sheet: button[act=close] \"\" aria=\"Close. Every change stays held.\"",
+  "sheet: button[act=add] \"Add this session\" aria=\"Add this session to Read one paper: adds a 25-min session on 18 Nov. The Mac’s own sessions stay as they are\"",
+  "sheet: button[act=keep] \"Keep Mac’s version\" aria=\"Keep Mac’s version for Focus: keeps the name Focus and drops the phone’s name Deep work\"",
+  "sheet: button[act=use] \"Use phone’s version\" aria=\"Use phone’s version for Focus: renames it to Deep work, replacing the Mac’s Focus\"",
+  "sheet: button[act=keep] \"Keep Mac’s version\" aria=\"Keep Mac’s version for Write the weekly review: keeps the 45 min time box and drops the phone’s 60 min\"",
+  "sheet: button[act=use] \"Use phone’s version\" aria=\"Use phone’s version for Write the weekly review: sets the time box to 60 min, replacing the Mac’s 45 min\"",
+  "sheet: button[act=keepall] \"Keep Mac’s version for all\" aria=\"Keep Mac’s version for all 2 goal edits you can choose. Sessions stay held until you add them.\"",
+  "sheet: button[act=close] \"Close\" aria=\"Close. Every change stays held.\"",
+  "sheet: button[act=close] \"\" aria=\"Close. Every change stays held.\"",
+  "sheet: button[act=add] \"Add this session\" aria=\"Add this session to Read one paper: adds a 25-min session on 18 Nov. The Mac’s own sessions stay as they are\"",
+  "sheet: button[act=keep] \"Keep Mac’s version\" aria=\"Keep Mac’s version for Focus: keeps the name Focus and drops the phone’s name Deep work\"",
+  "sheet: button[act=use] \"Use phone’s version\" aria=\"Use phone’s version for Focus: renames it to Deep work, replacing the Mac’s Focus\"",
+  "sheet: button[act=keep] \"Keep Mac’s version\" aria=\"Keep Mac’s version for Write the weekly review: keeps the 45 min time box and drops the phone’s 60 min\"",
+  "sheet: button[act=use] \"Use phone’s version\" aria=\"Use phone’s version for Write the weekly review: sets the time box to 60 min, replacing the Mac’s 45 min\""
+ ],
+ "shift_tab": [
+  "sheet: button[act=keep] \"Keep Mac’s version\" aria=\"Keep Mac’s version for Write the weekly review: keeps the 45 min time box and drops the phone’s 60 min\"",
+  "sheet: button[act=use] \"Use phone’s version\" aria=\"Use phone’s version for Focus: renames it to Deep work, replacing the Mac’s Focus\"",
+  "sheet: button[act=keep] \"Keep Mac’s version\" aria=\"Keep Mac’s version for Focus: keeps the name Focus and drops the phone’s name Deep work\""
+ ],
+ "focus_outline": "solid 2px rgb(27, 94, 59) offset 2px",
+ "esc_closed": true,
+ "esc_focus": "page: button[act=review] \"Review\" aria=\"Review 3 held changes\"",
+ "scrim_closed": true,
+ "scrim_focus": "page: button[act=review] \"Review\" aria=\"Review 3 held changes\"",
+ "inside_click_stays_open": true,
+ "after_resolve_focus": "sheet: div \"Held changes from your phone\" aria=\"\"",
+ "toast_visible": true,
+ "tab_after_resolve": [
+  "sheet: button[act=close] \"\" aria=\"Close. Every change stays held.\"",
+  "sheet: button[act=add] \"Add this session\" aria=\"Add this session to Read one paper: adds a 25-min session on 18 Nov. The Mac’s own sessions stay as they are\"",
+  "sheet: button[act=keep] \"Keep Mac’s version\" aria=\"Keep Mac’s version for Write the weekly review: keeps the 45 min time box and drops the phone’s 60 min\"",
+  "sheet: button[act=use] \"Use phone’s version\" aria=\"Use phone’s version for Write the weekly review: sets the time box to 60 min, replacing the Mac’s 45 min\"",
+  "sheet: button[act=close] \"Close\" aria=\"Close. Every change stays held.\"",
+  "toast: button[act=undo] \"Undo\" aria=\"\"",
+  "sheet: button[act=close] \"\" aria=\"Close. Every change stays held.\"",
+  "sheet: button[act=add] \"Add this session\" aria=\"Add this session to Read one paper: adds a 25-min session on 18 Nov. The Mac’s own sessions stay as they are\"",
+  "sheet: button[act=keep] \"Keep Mac’s version\" aria=\"Keep Mac’s version for Write the weekly review: keeps the 45 min time box and drops the phone’s 60 min\"",
+  "sheet: button[act=use] \"Use phone’s version\" aria=\"Use phone’s version for Write the weekly review: sets the time box to 60 min, replacing the Mac’s 45 min\"",
+  "sheet: button[act=close] \"Close\" aria=\"Close. Every change stays held.\"",
+  "toast: button[act=undo] \"Undo\" aria=\"\""
+ ],
+ "toast_inert?": false,
+ "body_overflow_open": "hidden auto"
+}
